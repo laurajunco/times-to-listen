@@ -3,6 +3,11 @@ Exposición virtual los momentos de la escucha
 
 ## Scripts para desarollo
 
+Clonar repositorio:
+```bash
+git clone https://github.com/laurajunco/momentos-de-escucha-virtual.git
+```
+
 Instalar las dependencias:
 ```bash
 npm install
