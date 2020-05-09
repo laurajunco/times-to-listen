@@ -1,5 +1,4 @@
-# momentos-de-escucha-virtual
-Exposición virtual los momentos de la escucha
+# Exposición virtual los momentos de la escucha
 
 ## Scripts para desarollo
 
