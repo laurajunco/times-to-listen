@@ -9,6 +9,60 @@ if(w<=600){
     desktopNav();
 }
 
+function desktopNav(){
+    var pos = 0;
+    $('html').on('mousewheel', function(event) {
+
+        pos += event.deltaY;
+        console.log(pos);
+        if(pos < -w){
+            pos = -w;
+        }else if(pos > 0){
+            pos = 0;
+        }
+
+
+        //console.log(pos);
+
+        if(pos > -0.25*w){
+            $('#barra_2').css("left",pos);
+            $('#barra_3').css("left",pos);
+            $('#barra_4').css("left",pos);
+            $('#barra_5').css("left",pos);
+            $('#barra_6').css("left",pos);
+            $('#barra_7').css("left",pos);
+            $('#barra_8').css("left",pos);
+        }else if(pos > -0.50*w){
+            $('#barra_2').css("left",(-.25*w));
+            $('#barra_3').css("left",pos);
+            $('#barra_4').css("left",pos);
+            $('#barra_5').css("left",pos);
+            $('#barra_6').css("left",pos);
+            $('#barra_7').css("left",pos);
+            $('#barra_8').css("left",pos);
+
+        }else if(pos > -0.75*w){
+            $('#barra_2').css("left",(-.25*w));
+            $('#barra_3').css("left",(-.50*w));
+            $('#barra_4').css("left",pos);
+            $('#barra_5').css("left",pos);
+            $('#barra_6').css("left",pos);
+            $('#barra_7').css("left",pos);
+            $('#barra_8').css("left",pos);
+        }else{
+            $('#barra_2').css("left",(-.25*w));
+            $('#barra_3').css("left",(-.50*w));
+            $('#barra_4').css("left",(-.75*w));
+            $('#barra_5').css("left",pos);
+            $('#barra_6').css("left",pos);
+            $('#barra_7').css("left",pos);
+            $('#barra_8').css("left",pos);
+
+        }
+    });
+}
+
+
 function smartphonNav(){
     $("#content").touchInit({
         preventDefault: true,
@@ -90,58 +144,4 @@ function smartphonNav(){
 
     });
 
-}
-
-function desktopNav(){
-    var pos = 0;
-    $('html').on('mousewheel', function(event) {
-
-        pos += event.deltaY;
-        if(pos < -w){
-            pos = -w;
-        }else if(pos > 0){
-            pos = 0;
-        }
-
-
-        console.log(pos);
-
-        
-
-        if(pos > -0.25*w){
-            $('#barra_2').css("left",pos);
-            $('#barra_3').css("left",pos);
-            $('#barra_4').css("left",pos);
-            $('#barra_5').css("left",pos);
-            $('#barra_6').css("left",pos);
-            $('#barra_7').css("left",pos);
-            $('#barra_8').css("left",pos);
-        }else if(pos > -0.50*w){
-            $('#barra_2').css("left",(-.25*w));
-            $('#barra_3').css("left",pos);
-            $('#barra_4').css("left",pos);
-            $('#barra_5').css("left",pos);
-            $('#barra_6').css("left",pos);
-            $('#barra_7').css("left",pos);
-            $('#barra_8').css("left",pos);
-
-        }else if(pos > -0.75*w){
-            $('#barra_2').css("left",(-.25*w));
-            $('#barra_3').css("left",(-.50*w));
-            $('#barra_4').css("left",pos);
-            $('#barra_5').css("left",pos);
-            $('#barra_6').css("left",pos);
-            $('#barra_7').css("left",pos);
-            $('#barra_8').css("left",pos);
-        }else{
-            $('#barra_2').css("left",(-.25*w));
-            $('#barra_3').css("left",(-.50*w));
-            $('#barra_4').css("left",(-.75*w));
-            $('#barra_5').css("left",pos);
-            $('#barra_6').css("left",pos);
-            $('#barra_7').css("left",pos);
-            $('#barra_8').css("left",pos);
-
-        }
-    });
 }
