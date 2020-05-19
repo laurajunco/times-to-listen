@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "css": "node-sass --output-style --include-path scss scss/estilo.scss public/css/estilo.css",
+    "css": "node-sass --output-style --include-path --recursive scss scss/ -o public/css/",
     "watch": "nodemon -e scss -x \"npm run css\""
   },
   "author": "",
