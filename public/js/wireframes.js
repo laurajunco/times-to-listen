@@ -69,7 +69,6 @@ $('html').on('mousewheel', function(event) {
 /* funcion para cambiar de sección */
 function seleccionarBarra(i) {
     if (i === 1) {
-        console.log('1');
         $barra1.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra1.addClass('selected');
 
@@ -82,7 +81,6 @@ function seleccionarBarra(i) {
         $barra4.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra4.addClass('siguiente');
     } else if (i === 2) {
-        console.log('2');
         $barra1.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra1.addClass('anterior');
 
@@ -96,7 +94,6 @@ function seleccionarBarra(i) {
         $barra4.addClass('siguiente');
 
     }  else if (i === 3) { 
-        console.log('3');
         $barra1.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra1.addClass('anterior');
 
@@ -109,7 +106,6 @@ function seleccionarBarra(i) {
         $barra4.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra4.addClass('siguiente');
     } else if (i === 4) {
-        console.log('4');
         $barra1.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra1.addClass('anterior');
 
