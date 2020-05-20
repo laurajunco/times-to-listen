@@ -8,7 +8,7 @@ var $barra4 = $('#barra_4');
 var height;
 var pos = 0;
 var id = 1;
-var selected;
+var $selected;
 
 // Iniciar en la seccion 1
 seleccionarBarra(id);
@@ -37,23 +37,29 @@ $barra4.click(function() {
 
 $('html').on('mousewheel', function(event) {
     
-    //console.log('height', height);
+    var deltaY = event.deltaY;
 
-    pos -= event.deltaY*event.deltaFactor ;
+    if (deltaY < -80) {
+        deltaY = -80;
+    } else if (deltaY > 80) {
+        deltaY = 80;
+    }
 
-    console.log('pos', pos);
+    pos -= deltaY*event.deltaFactor ;
 
-    if(pos > height) {
+    if( pos > height + 100) {
         if (id < 4) {
             id++;
             seleccionarBarra(id);
             console.log('id', id);
+            pos = 0;
         }
-    } else if (pos < 0) {
-        if (id > 1) {
+    } else if ( pos < 0 - 100) {
+        if ( id > 1 ) {
             id--;
             seleccionarBarra(id);
             console.log('id', id);
+            pos = height;
         }
     } 
  
@@ -71,7 +77,7 @@ function seleccionarBarra(i) {
 
         $barra2.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra2.addClass('siguiente');
-
+        
         $barra3.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra3.addClass('siguiente');
 
@@ -80,7 +86,7 @@ function seleccionarBarra(i) {
 
         height = $barra1.prop("scrollHeight");
         $selected = $barra1;
-        
+        pos = 10;
 
     } else if (i === 2) {
         $barra1.removeClass('selected').removeClass('siguiente').removeClass('anterior');
@@ -97,6 +103,7 @@ function seleccionarBarra(i) {
 
         height = $barra2.prop("scrollHeight");
         $selected = $barra2;
+        
 
     }  else if (i === 3) { 
         $barra1.removeClass('selected').removeClass('siguiente').removeClass('anterior');
@@ -130,7 +137,6 @@ function seleccionarBarra(i) {
         height = $barra4.prop("scrollHeight");
         $selected = $barra4;
     }
-    pos = 0;
 }
 
 
