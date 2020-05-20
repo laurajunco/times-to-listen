@@ -69,16 +69,20 @@ section {
   background-attachment: fixed; }
 
 .contenido:nth-child(odd) section:nth-child(odd) {
-  background: #ee7e7e; }
+  background: #fdd456;
+  color: #213d78; }
 
 .contenido:nth-child(odd) section:nth-child(even) {
-  background: #80e5f0; }
+  background: #213d78;
+  color: white; }
 
 .contenido:nth-child(even) section:nth-child(even) {
-  background: #ee7e7e; }
+  background: #fdd456;
+  color: #213d78; }
 
 .contenido:nth-child(even) section:nth-child(odd) {
-  background: #80e5f0; }
+  background: #213d78;
+  color: white; }
 
 ::-webkit-scrollbar {
   display: none; }

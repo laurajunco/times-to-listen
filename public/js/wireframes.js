@@ -51,14 +51,12 @@ $('html').on('mousewheel', function(event) {
         if (id < 4) {
             id++;
             seleccionarBarra(id);
-            console.log('id', id);
             pos = 0;
         }
     } else if ( pos < 0 - 100) {
         if ( id > 1 ) {
             id--;
             seleccionarBarra(id);
-            console.log('id', id);
             pos = height;
         }
     } 

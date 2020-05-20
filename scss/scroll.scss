@@ -106,11 +106,13 @@ section {
     &:nth-child(odd) {
         section {
             &:nth-child(odd) {
-                background: rgb(238, 126, 126);
+                background: rgb(253, 212, 86);
+                color: rgb(33, 61, 120)
             }
         
             &:nth-child(even) {
-                background: rgb(128, 229, 240);
+                background: rgb(33, 61, 120);
+                color: white
             }
         }
     }
@@ -118,11 +120,13 @@ section {
     &:nth-child(even) {
         section {
             &:nth-child(even) {
-                background: rgb(238, 126, 126);
+                background: rgb(253, 212, 86);
+                color: rgb(33, 61, 120)
             }
         
             &:nth-child(odd) {
-                background: rgb(128, 229, 240);
+                background: rgb(33, 61, 120);
+                color: white
             }
         }
     }
