@@ -23,19 +23,17 @@ h1 {
 .contenido {
   width: 85vw;
   height: 100vh;
-  background-color: white;
   border: none;
   text-align: center;
   display: inline-block;
   vertical-align: top;
-  box-shadow: -5px 0px 25px #a6a4a4;
-  transition: 0.5s; }
+  box-shadow: -5px 0px 25px #0000002b;
+  transition: 1s; }
 
 .selected {
   position: absolute;
   height: 100%;
-  top: 0;
-  background-color: LIGHTCYAN; }
+  top: 0; }
   .selected#barra_1 {
     left: 0; }
   .selected#barra_2 {
@@ -53,8 +51,6 @@ h1 {
   .siguiente h1 {
     writing-mode: vertical-rl;
     transform: translate(0, -50%); }
-  .siguiente:hover {
-    background-color: LIGHTPINK; }
   .siguiente#barra_2 {
     left: 85vw; }
   .siguiente#barra_3 {
@@ -65,10 +61,8 @@ h1 {
 .anterior {
   position: absolute;
   top: 0;
-  transition: 0.5s;
   height: 100vh;
-  cursor: pointer;
-  transition: 0.5s; }
+  cursor: pointer; }
   .anterior h1 {
     writing-mode: vertical-rl;
     transform: translate(0, -50%); }
@@ -78,3 +72,26 @@ h1 {
     left: 5vw; }
   .anterior#barra_3 {
     left: 10vw; }
+
+section {
+  height: 100%;
+  transition: color 0.3s; }
+
+.contenido {
+  overflow-x: hidden; }
+  .contenido.selected {
+    overflow-x: overlay; }
+  .contenido:nth-child(odd) section:nth-child(odd) {
+    background: #ee7e7e; }
+  .contenido:nth-child(odd) section:nth-child(even) {
+    background: #80e5f0; }
+  .contenido:nth-child(even) section:nth-child(even) {
+    background: #ee7e7e; }
+  .contenido:nth-child(even) section:nth-child(odd) {
+    background: #80e5f0; }
+
+::-webkit-scrollbar {
+  display: none; }
+
+body {
+  -ms-overflow-style: none; }

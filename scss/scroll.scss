@@ -30,16 +30,15 @@ h1 {
 
 .contenido {
 width: 100vw - ($left*3); 
-height: 100vh; 
-background-color: white; 
+height: 100vh;  
 border: none;
 text-align:center;
 //position: relative;
 display: inline-block;
 vertical-align: top;
 
-box-shadow: -5px 0px 25px #a6a4a4;
-transition: 0.5s;
+box-shadow: -5px 0px 25px #0000002b;
+transition: 1s;
 
 }
 
@@ -48,8 +47,6 @@ transition: 0.5s;
     height: 100%;
     top: 0;
     
-    background-color: LIGHTCYAN;
-
     &#barra_1 {
         left: 0;
     }
@@ -79,10 +76,6 @@ transition: 0.5s;
         transform: translate(0, -50%);
     }
 
-    &:hover{
-        background-color:  LIGHTPINK;
-    }
-
     &#barra_2 {
         left: 100vw - ($left*3);
     }
@@ -99,10 +92,8 @@ transition: 0.5s;
 .anterior {
     position: absolute;
     top: 0;
-    transition: 0.5s;
     height: 100vh;
     cursor: pointer;
-    transition: 0.5s;
 
     h1 {
         writing-mode: vertical-rl;
@@ -123,10 +114,52 @@ transition: 0.5s;
 
 }
 
+section {
+    height: 100%;
+    transition: color 0.3s;
+}
 
 
+.contenido {
+    overflow-x: hidden;
+    
+    &.selected {
+        overflow-x: overlay;
+    }
+
+    &:nth-child(odd) {
+        section {
+            &:nth-child(odd) {
+                background: rgb(238, 126, 126);
+            }
+        
+            &:nth-child(even) {
+                background: rgb(128, 229, 240);
+            }
+        }
+    }
+
+    &:nth-child(even) {
+        section {
+            &:nth-child(even) {
+                background: rgb(238, 126, 126);
+            }
+        
+            &:nth-child(odd) {
+                background: rgb(128, 229, 240);
+            }
+        }
+    }
+}
 
 
+// remove scrollbars
+
+::-webkit-scrollbar {
+    display: none;
+}
 
 
-
+body {
+    -ms-overflow-style: none;
+}

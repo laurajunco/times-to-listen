@@ -34,7 +34,7 @@ $barra4.click(function() {
 });
 
 
-$('html').on('mousewheel', function(event) {
+/*$('html').on('mousewheel', function(event) {
 
     pos -= event.deltaY/2;
     if(pos > width){
@@ -62,7 +62,7 @@ $('html').on('mousewheel', function(event) {
     seleccionarBarra(id);
     
     //console.log('position: ', pos);
-});
+});*/
 
 
 
