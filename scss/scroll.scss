@@ -3,12 +3,12 @@ $left:5vw;
 * {
     box-sizing: border-box;
     overscroll-behavior: none;
-    
 }
+
 html, body{
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -16,36 +16,27 @@ h1 {
     position: relative;
     top: 50%;
     font-size: 30px;
+    margin: 0;
 }
 
-/* Pantallas grandes */
 
 #content    {
-    width: 300vw;
     height: 100vh;
-    box-sizing: border-box;
-    float: left;
-    //position: relative;
 }
 
 .contenido {
+overflow-x: hidden;
 width: 100vw - ($left*3); 
-height: 100vh;  
-border: none;
+height: 100%;  
 text-align:center;
-//position: relative;
-display: inline-block;
-vertical-align: top;
-
 box-shadow: -5px 0px 25px #0000002b;
 transition: 1s;
 
+position: absolute;
+top: 0;
 }
 
 .selected {
-    position: absolute;
-    height: 100%;
-    top: 0;
     
     &#barra_1 {
         left: 0;
@@ -64,18 +55,17 @@ transition: 1s;
     }
 }
 
-
-.siguiente {
-    position: absolute;
-    top: 0;
-    height: 100vh;
+.siguiente, .anterior {
     cursor: pointer;
+    overflow-y: hidden;
 
     h1 {
         writing-mode: vertical-rl;
-        transform: translate(0, -50%);
+        transform: translate(50%, -50%);
     }
-
+}
+.siguiente {
+    
     &#barra_2 {
         left: 100vw - ($left*3);
     }
@@ -90,16 +80,7 @@ transition: 1s;
 }
 
 .anterior {
-    position: absolute;
-    top: 0;
-    height: 100vh;
-    cursor: pointer;
-
-    h1 {
-        writing-mode: vertical-rl;
-        transform: translate(0, -50%);
-    }
-
+ 
     &#barra_1 {
         left: 0;
     }
@@ -116,17 +97,12 @@ transition: 1s;
 
 section {
     height: 100%;
-    transition: color 0.3s;
+    background-attachment: fixed;
 }
 
 
 .contenido {
-    overflow-x: hidden;
     
-    &.selected {
-        overflow-x: overlay;
-    }
-
     &:nth-child(odd) {
         section {
             &:nth-child(odd) {
