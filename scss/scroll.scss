@@ -100,6 +100,12 @@ section {
     background-attachment: fixed;
 }
 
+footer {
+    height: 300px;
+    background-color: white;
+    color: rgb(33, 61, 120)
+}
+
 
 .contenido {
     
@@ -107,7 +113,7 @@ section {
         section {
             &:nth-child(odd) {
                 background: rgb(253, 212, 86);
-                color: rgb(33, 61, 120)
+                color: rgb(33, 61, 120);
             }
         
             &:nth-child(even) {

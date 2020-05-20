@@ -68,6 +68,11 @@ section {
   height: 100%;
   background-attachment: fixed; }
 
+footer {
+  height: 300px;
+  background-color: white;
+  color: #213d78; }
+
 .contenido:nth-child(odd) section:nth-child(odd) {
   background: #fdd456;
   color: #213d78; }
