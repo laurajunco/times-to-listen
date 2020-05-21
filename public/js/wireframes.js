@@ -34,26 +34,30 @@ $barra4.click(function() {
     seleccionarBarra(id);
 });
 
-
+//Event listener scroll
 $('html').on('mousewheel', function(event) {
     
     var deltaY = event.deltaY;
+    var tol = 100; //tolerancia
 
+    //limitar deltaY entre 80 y -80
     if (deltaY < -80) {
         deltaY = -80;
     } else if (deltaY > 80) {
         deltaY = 80;
     }
 
+    //calcular la posición en Y
     pos -= deltaY*event.deltaFactor ;
-
-    if( pos > height + 100) {
+    
+    //si termina el scroll pasar a la sigueinte (o anterior) sección
+    if( pos > height + tol) {
         if (id < 4) {
             id++;
             seleccionarBarra(id);
         }
         pos = 0;
-    } else if ( pos < 0 - 100) {
+    } else if ( pos < 0 - tol) {
         if ( id > 1 ) {
             id--;
             seleccionarBarra(id);
