@@ -5,7 +5,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  scrollbar-width: none; }
 
 h1 {
   font-family: 'IBM Plex Serif', serif;
@@ -94,3 +95,6 @@ footer {
 
 body {
   -ms-overflow-style: none; }
+
+.contenido {
+  scrollbar-width: none; }
