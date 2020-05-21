@@ -51,14 +51,14 @@ $('html').on('mousewheel', function(event) {
         if (id < 4) {
             id++;
             seleccionarBarra(id);
-            pos = 0;
         }
+        pos = 0;
     } else if ( pos < 0 - 100) {
         if ( id > 1 ) {
             id--;
             seleccionarBarra(id);
-            pos = height;
         }
+        pos = height;
     } 
  
 });
@@ -84,7 +84,7 @@ function seleccionarBarra(i) {
 
         height = $barra1.prop("scrollHeight");
         $selected = $barra1;
-        pos = 10;
+
 
     } else if (i === 2) {
         $barra1.removeClass('selected').removeClass('siguiente').removeClass('anterior');
