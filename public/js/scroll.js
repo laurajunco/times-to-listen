@@ -52,7 +52,7 @@ $('html').on('mousewheel', function(event) {
     //calcular la posición en Y
     pos -= deltaY*event.deltaFactor ;
     
-    //si termina el scroll pasar a la sigueinte (o anterior) sección
+    //si termina el scroll pasar a la siguiente (o anterior) sección
     if( pos > height + tol) {
         if (id < 4) {
             id++;

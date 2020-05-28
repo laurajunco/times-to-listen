@@ -25,6 +25,21 @@ html, body{
     font-size: 18px;
 }
 
+h4 {
+    font-family: $poppins;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+h1 {
+    font-family: $pixel;
+    font-size: 42px;
+    -webkit-font-smoothing: none;
+}
+.text-center {
+    text-align: center;
+}
+
 /* -------- HOME -------- */
 .home {
     height: 100vh;
@@ -52,15 +67,6 @@ html, body{
         }
     }
 }
-
-
-h1 {
-    position: relative;
-    top: 50%;
-    font-size: 30px;
-    margin: 0;
-}
-
 
 #content    {
     height: 100vh;
@@ -158,7 +164,7 @@ section {
     width: 100%;
     max-width: 1400px;
     padding: 20px;
-    //border: solid 1px red;
+    border: solid 1px red;
     margin: auto auto;
     display: flex;
 
@@ -177,6 +183,7 @@ section {
 /* ------- INTRODUCCIÓN -------- */
 .intro-expo {
     display: flex;
+
     p {
         margin: 0;
         font-size: 24px;
@@ -186,6 +193,10 @@ section {
     img {
         margin-top: 8px;
     }
+}
+
+.caminos {
+    display: flex;
 }
 
 
@@ -237,5 +248,5 @@ body {
 @font-face {
     font-family: 'Mister Pixel';
     font-weight: normal;
-    src: url('../fonts/pixel.otf') format('opentype');
+    src: url('../fonts/pixel.woff') format('woff');
 }
