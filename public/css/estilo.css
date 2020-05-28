@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* -------- Variables--------- */
 @import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
@@ -9,7 +10,10 @@ html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  scrollbar-width: none; }
+  scrollbar-width: none;
+  font-family: "Poppins", sans-serif;
+  color: #2727e5;
+  font-size: 18px; }
 
 /* -------- HOME -------- */
 .home {
@@ -46,11 +50,11 @@ h1 {
   overflow-x: hidden;
   width: calc(100vw - (60px*3));
   height: 100%;
-  text-align: center;
   box-shadow: -5px 0px 25px #0000002b;
   transition: 1s;
   position: absolute;
-  top: 0; }
+  top: 0;
+  background-color: white; }
 
 .selected .sidebar {
   display: none; }
@@ -95,29 +99,33 @@ h1 {
   left: 120px; }
 
 section {
-  height: 100%;
-  background-attachment: fixed; }
+  min-height: 100%;
+  background-attachment: fixed;
+  border-bottom: 2px #2727e5 dashed; }
 
-footer {
-  height: 300px;
-  background-color: white;
-  color: #213d78; }
+/*-- contenidos --*/
+.container {
+  width: 100%;
+  max-width: 1400px;
+  padding: 20px;
+  margin: auto auto;
+  display: flex; }
+  .container .col-6 {
+    width: 50%;
+    padding: 10px; }
+    .container .col-6 img {
+      width: 100%;
+      height: auto; }
 
-.contenido:nth-child(odd) section:nth-child(odd) {
-  background: #fdd456;
-  color: #213d78; }
-
-.contenido:nth-child(odd) section:nth-child(even) {
-  background: #213d78;
-  color: white; }
-
-.contenido:nth-child(even) section:nth-child(even) {
-  background: #fdd456;
-  color: #213d78; }
-
-.contenido:nth-child(even) section:nth-child(odd) {
-  background: #213d78;
-  color: white; }
+/* ------- INTRODUCCIÓN -------- */
+.intro-expo {
+  display: flex; }
+  .intro-expo p {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.5; }
+  .intro-expo img {
+    margin-top: 8px; }
 
 /*---- side bar ---- */
 .sidebar {
@@ -126,7 +134,7 @@ footer {
   left: 0;
   width: 60px;
   height: 100%;
-  background-color: #e5e5e5;
+  background-color: white;
   padding: 20px 10px;
   display: flex;
   flex-direction: column; }

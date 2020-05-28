@@ -20,7 +20,9 @@ html, body{
     padding: 0;
     overflow-x: hidden;
     scrollbar-width: none;
-    
+    font-family: $poppins;
+    color: $azul;
+    font-size: 18px;
 }
 
 /* -------- HOME -------- */
@@ -68,12 +70,11 @@ h1 {
     overflow-x: hidden;
     width: calc(100vw - (#{$left}*3)); 
     height: 100%;  
-    text-align:center;
     box-shadow: -5px 0px 25px #0000002b;
     transition: 1s;
-
     position: absolute;
     top: 0;
+    background-color: white;
 }
 
 .selected {
@@ -147,47 +148,48 @@ h1 {
 }
 
 section {
-    height: 100%;
+    min-height: 100%;
     background-attachment: fixed;
+    border-bottom: 2px $azul dashed;
 }
 
-footer {
-    height: 300px;
-    background-color: white;
-    color: rgb(33, 61, 120)
-}
+/*-- contenidos --*/
+.container {
+    width: 100%;
+    max-width: 1400px;
+    padding: 20px;
+    //border: solid 1px red;
+    margin: auto auto;
+    display: flex;
 
+    .col-6 {
+        width: 50%;
+        padding: 10px;
 
-.contenido {
-    
-    &:nth-child(odd) {
-        section {
-            &:nth-child(odd) {
-                background: rgb(253, 212, 86);
-                color: rgb(33, 61, 120);
-            }
-        
-            &:nth-child(even) {
-                background: rgb(33, 61, 120);
-                color: white
-            }
-        }
-    }
-
-    &:nth-child(even) {
-        section {
-            &:nth-child(even) {
-                background: rgb(253, 212, 86);
-                color: rgb(33, 61, 120)
-            }
-        
-            &:nth-child(odd) {
-                background: rgb(33, 61, 120);
-                color: white
-            }
+        img {
+            width: 100%;
+            height: auto;
         }
     }
 }
+
+
+/* ------- INTRODUCCIÓN -------- */
+.intro-expo {
+    display: flex;
+    p {
+        margin: 0;
+        font-size: 24px;
+        line-height: 1.5;
+    }
+
+    img {
+        margin-top: 8px;
+    }
+}
+
+
+
 
 /*---- side bar ---- */
     .sidebar {
@@ -196,7 +198,7 @@ footer {
         left: 0;
         width: 60px;
         height: 100%;
-        background-color: $gris;
+        background-color: white;
         padding: 20px 10px;
     
         display: flex;
