@@ -7,8 +7,7 @@ $grotesque: 'Darker Grotesque', sans-serif;
 $poppins: 'Poppins', sans-serif;
 $pixel: 'Mister Pixel', sans-serif;
 
-
-$left: 5vw; 
+$left: 60px; 
 
 * {
     box-sizing: border-box;
@@ -43,7 +42,7 @@ html, body{
 
         a {
             text-decoration: none;
-
+            color: $azul;
             &:hover {
                 color: $rojo;
             }
@@ -53,7 +52,6 @@ html, body{
 
 
 h1 {
-    font-family: 'IBM Plex Serif', serif;
     position: relative;
     top: 50%;
     font-size: 30px;
@@ -67,7 +65,7 @@ h1 {
 
 .contenido {
     overflow-x: hidden;
-    width: 100vw - ($left*3); 
+    width: calc(100vw - (#{$left}*3)); 
     height: 100%;  
     text-align:center;
     box-shadow: -5px 0px 25px #0000002b;
@@ -100,24 +98,24 @@ h1 {
     cursor: pointer;
     overflow-y: hidden;
 
-    h1 {
+    /*h1 {
         writing-mode: vertical-rl;
         transform: translate(50%, -50%);
-    }
+    }*/
 }
 
 .siguiente {
     
     &#barra_2 {
-        left: 100vw - ($left*3);
+        left: calc(100vw - (#{$left}*3));
     }
     
     &#barra_3 {
-        left: 100vw - ($left*2);
+        left: calc(100vw - (#{$left}*2));
     }
     
     &#barra_4 {
-        left: 100vw - ($left);
+        left: calc(100vw - #{$left});
     }
 }
 

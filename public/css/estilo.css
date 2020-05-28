@@ -28,12 +28,12 @@ html, body {
     font-weight: 600;
     font-size: 30px; }
     .home .botones a {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #2727e5; }
       .home .botones a:hover {
         color: #fc4141; }
 
 h1 {
-  font-family: 'IBM Plex Serif', serif;
   position: relative;
   top: 50%;
   font-size: 30px;
@@ -44,7 +44,7 @@ h1 {
 
 .contenido {
   overflow-x: hidden;
-  width: 85vw;
+  width: calc(100vw - (60px*3));
   height: 100%;
   text-align: center;
   box-shadow: -5px 0px 25px #0000002b;
@@ -56,38 +56,39 @@ h1 {
   left: 0; }
 
 .selected#barra_2 {
-  left: 5vw; }
+  left: 60px; }
 
 .selected#barra_3 {
-  left: 10vw; }
+  left: 120px; }
 
 .selected#barra_4 {
-  left: 15vw; }
+  left: 180px; }
 
 .siguiente, .anterior {
   cursor: pointer;
-  overflow-y: hidden; }
-  .siguiente h1, .anterior h1 {
-    writing-mode: vertical-rl;
-    transform: translate(50%, -50%); }
+  overflow-y: hidden;
+  /*h1 {
+        writing-mode: vertical-rl;
+        transform: translate(50%, -50%);
+    }*/ }
 
 .siguiente#barra_2 {
-  left: 85vw; }
+  left: calc(100vw - (60px*3)); }
 
 .siguiente#barra_3 {
-  left: 90vw; }
+  left: calc(100vw - (60px*2)); }
 
 .siguiente#barra_4 {
-  left: 95vw; }
+  left: calc(100vw - 60px); }
 
 .anterior#barra_1 {
   left: 0; }
 
 .anterior#barra_2 {
-  left: 5vw; }
+  left: 60px; }
 
 .anterior#barra_3 {
-  left: 10vw; }
+  left: 120px; }
 
 section {
   height: 100%;
