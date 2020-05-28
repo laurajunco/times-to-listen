@@ -32,13 +32,13 @@ html, body {
       .home .botones a:hover {
         color: #fc4141; }
 
-/*h1 {
-    font-family: 'IBM Plex Serif', serif;
-    position: relative;
-    top: 50%;
-    font-size: 30px;
-    margin: 0;
-}*/
+h1 {
+  font-family: 'IBM Plex Serif', serif;
+  position: relative;
+  top: 50%;
+  font-size: 30px;
+  margin: 0; }
+
 #content {
   height: 100vh; }
 
