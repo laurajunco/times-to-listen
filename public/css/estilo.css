@@ -1,3 +1,6 @@
+/* -------- Variables--------- */
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 * {
   box-sizing: border-box;
   overscroll-behavior: none; }
@@ -8,13 +11,30 @@ html, body {
   overflow-x: hidden;
   scrollbar-width: none; }
 
-h1 {
-  font-family: 'IBM Plex Serif', serif;
-  position: relative;
-  top: 50%;
-  font-size: 30px;
-  margin: 0; }
+/* -------- HOME -------- */
+.home {
+  height: 100vh;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px; }
+  .home .botones {
+    margin-top: 2em;
+    text-align: center;
+    color: #2727e5;
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 600;
+    font-size: 30px; }
 
+/*h1 {
+    font-family: 'IBM Plex Serif', serif;
+    position: relative;
+    top: 50%;
+    font-size: 30px;
+    margin: 0;
+}*/
 #content {
   height: 100vh; }
 
@@ -98,3 +118,9 @@ body {
 
 .contenido {
   scrollbar-width: none; }
+
+/* ------ Fuentes ------ */
+@font-face {
+  font-family: 'Mister Pixel';
+  font-weight: normal;
+  src: url("../fonts/pixel.otf") format("opentype"); }
