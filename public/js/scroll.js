@@ -71,14 +71,15 @@ $('html').on('mousewheel', function(event) {
 
 /* Función para mantener las barras de menu en 
 la parte de arriba de la pantalla */
-
 function sidebarsOnTop() {
+
+    //iterador
     $(".sidebar").each(function() {
 
-        var $sidebar = $(this);
-        var $parent = $sidebar.parent();
-        $sidebar.css('top', $parent.scrollTop());
-
+        var $sidebar = $(this); //seleccionar esta barra
+        var $parent = $sidebar.parent(); //seleccionar a su padre
+        //la propiedad de top siempre va a ser igual al scrollTop del padre
+        $sidebar.css('top', $parent.scrollTop()); 
     });    
 };
 
