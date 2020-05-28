@@ -115,7 +115,6 @@ section {
   width: 100%;
   max-width: 1400px;
   padding: 20px;
-  border: solid 1px red;
   margin: auto auto;
   display: flex; }
   .container .col-6 {
