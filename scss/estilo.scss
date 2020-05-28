@@ -2,6 +2,7 @@
 $rojo: #fc4141;
 $azul: #2727e5;
 $amarillo: #fedb31;
+$gris: #e5e5e5;
 
 $grotesque: 'Darker Grotesque', sans-serif;
 $poppins: 'Poppins', sans-serif;
@@ -37,7 +38,7 @@ html, body{
         text-align: center;
         color: $azul;
         font-family: $grotesque;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 30px;
 
         a {
@@ -76,6 +77,9 @@ h1 {
 }
 
 .selected {
+    .sidebar {
+        display: none;
+    }
     
     &#barra_1 {
         left: 0;
@@ -94,14 +98,22 @@ h1 {
     }
 }
 
+/* ------ barras no seleccionadas ------ */
 .siguiente, .anterior {
     cursor: pointer;
     overflow-y: hidden;
 
-    /*h1 {
-        writing-mode: vertical-rl;
-        transform: translate(50%, -50%);
-    }*/
+    &.siguiente {
+        .sidebar {
+            color: $azul;
+        }
+    }
+
+    &.anterior {
+        .sidebar {
+            color: $rojo;
+        }
+    }
 }
 
 .siguiente {
@@ -177,6 +189,29 @@ footer {
     }
 }
 
+/*---- side bar ---- */
+    .sidebar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 100%;
+        background-color: $gris;
+        padding: 20px 10px;
+    
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+        transform: rotate(90deg);
+        font-family: $grotesque;
+        font-weight: 600;
+        }
+
+        img {
+            height: 40px;
+        }
+    }
 
 // quitar scrollbars
 ::-webkit-scrollbar {

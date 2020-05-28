@@ -34,8 +34,10 @@ $barra4.click(function() {
     seleccionarBarra(id);
 });
 
+
 //Event listener scroll
 $('html').on('mousewheel', function(event) {
+    sidebarsOnTop();
     
     var deltaY = event.deltaY;
     var tol = 100; //tolerancia
@@ -66,6 +68,19 @@ $('html').on('mousewheel', function(event) {
     } 
  
 });
+
+/* Función para mantener las barras de menu en 
+la parte de arriba de la pantalla */
+
+function sidebarsOnTop() {
+    $(".sidebar").each(function() {
+
+        var $sidebar = $(this);
+        var $parent = $sidebar.parent();
+        $sidebar.css('top', $parent.scrollTop());
+
+    });    
+};
 
 
 
