@@ -40,6 +40,14 @@ html, body{
         font-family: $grotesque;
         font-weight: 600;
         font-size: 30px;
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                color: $rojo;
+            }
+        }
     }
 }
 
