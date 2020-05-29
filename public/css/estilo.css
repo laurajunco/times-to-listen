@@ -118,15 +118,11 @@ section {
   border: solid 1px red;
   margin: auto auto;
   display: flex; }
+  .container img {
+    width: 100%;
+    height: auto; }
   .container .col-6 {
     width: 50%;
-    padding: 10px;
-    border: solid 1px blue; }
-    .container .col-6 img {
-      width: 100%;
-      height: auto; }
-  .container .col-5 {
-    width: 41.66%;
     padding: 10px;
     border: solid 1px blue; }
   .container .col-2 {
@@ -135,22 +131,34 @@ section {
     border: solid 1px blue; }
   .container .col-10 {
     display: flex;
+    flex-wrap: wrap;
     width: 83.33%;
+    padding: 10px;
+    border: solid 1px blue; }
+  .container .col-12 {
+    display: flex;
+    width: 100%;
     padding: 10px;
     border: solid 1px blue; }
 
 /* ------- INTRODUCCIÓN -------- */
-.intro-expo {
+.intro-expo, .infografia {
   display: flex; }
-  .intro-expo p {
+  .intro-expo p, .infografia p {
     margin: 0;
     font-size: 24px;
     line-height: 1.5; }
-  .intro-expo img {
+  .intro-expo img, .infografia img {
     margin-top: 8px; }
 
 .caminos {
   display: flex; }
+
+/* ---infografia---- */
+.infografia .titulo {
+  flex-direction: column; }
+  .infografia .titulo h1 {
+    margin-top: 0; }
 
 /*---- side bar ---- */
 .sidebar {
