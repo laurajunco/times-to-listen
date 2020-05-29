@@ -60,10 +60,10 @@ $('html').on('mousewheel', function(event) {
     var tol = 100; //tolerancia
 
     //limitar deltaY entre 80 y -80
-    if (deltaY < -40) {
-        deltaY = -40;
-    } else if (deltaY > 40) {
-        deltaY = 40;
+    if (deltaY < -35) {
+        deltaY = -35;
+    } else if (deltaY > 35) {
+        deltaY = 35;
     }
 
     //calcular la posición en Y
