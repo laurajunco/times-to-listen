@@ -2,9 +2,13 @@
 
 // Variables 
 var $barra1 = $('#barra_1');
+var $sidebar1 = $('#sidebar_1');
 var $barra2 = $('#barra_2');
+var $sidebar2 = $('#sidebar_2');
 var $barra3 = $('#barra_3');
+var $sidebar3 = $('#sidebar_3');
 var $barra4 = $('#barra_4');
+var $sidebar4 = $('#sidebar_4');
 var height;
 var pos = 0;
 var id = 1;
@@ -14,23 +18,36 @@ var $selected;
 seleccionarBarra(id);
 
 // Event listeners para cambiar de sección
-$barra1.click(function() {
+$sidebar1.click(function() {
     id = 1;
     seleccionarBarra(id);
 });
 
-$barra2.click(function() {
+$sidebar2.click(function() {
     id = 2;
     seleccionarBarra(id);
 });
 
-$barra3.click(function() {
+$sidebar3.click(function() {
     id = 3;
     seleccionarBarra(id);
 });
 
-$barra4.click(function() {
+$sidebar4.click(function() {
     id = 4;
+    seleccionarBarra(id);
+});
+
+// Botones para seleccionar camino
+$('#bojaya').click(function() {
+    console.log('bojaya');
+    id = 3;
+    seleccionarBarra(id);
+});
+
+$('#mampujan').click(function() {
+    console.log('mampujan');
+    id = 2;
     seleccionarBarra(id);
 });
 
