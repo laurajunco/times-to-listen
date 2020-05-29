@@ -28,6 +28,9 @@ h1 {
 .text-center {
   text-align: center; }
 
+.btm {
+  margin-bottom: 5vh; }
+
 /* -------- HOME -------- */
 .home {
   height: 100vh;
@@ -108,48 +111,46 @@ h1 {
 section {
   min-height: 100%;
   background-attachment: fixed;
-  border-bottom: 2px #2727e5 dashed; }
+  border-bottom: 2px #2727e5 dashed;
+  display: flex; }
 
 /*-- contenidos --*/
 .container {
   width: 100%;
   max-width: 1400px;
   padding: 20px;
-  border: solid 1px red;
   margin: auto auto;
   display: flex; }
   .container img {
     width: 100%;
-    height: auto; }
+    height: auto;
+    margin-bottom: 1em; }
+  .container p {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-top: 0; }
   .container .col-6 {
     width: 50%;
-    padding: 10px;
-    border: solid 1px blue; }
+    padding: 10px; }
   .container .col-2 {
     width: 16.66%;
-    padding: 10px;
-    border: solid 1px blue; }
+    padding: 10px; }
   .container .col-10 {
     display: flex;
     flex-wrap: wrap;
     width: 83.33%;
-    padding: 10px;
-    border: solid 1px blue; }
+    padding: 10px; }
   .container .col-12 {
     display: flex;
     width: 100%;
-    padding: 10px;
-    border: solid 1px blue; }
+    padding: 10px; }
 
 /* ------- INTRODUCCIÓN -------- */
-.intro-expo, .infografia {
-  display: flex; }
-  .intro-expo p, .infografia p {
-    margin: 0;
-    font-size: 24px;
-    line-height: 1.5; }
-  .intro-expo img, .infografia img {
-    margin-top: 8px; }
+.intro-expo p {
+  font-size: 24px; }
+
+.intro-expo img {
+  margin-top: 8px; }
 
 .caminos {
   display: flex; }

@@ -40,6 +40,10 @@ h1 {
     text-align: center;
 }
 
+.btm {
+    margin-bottom: 5vh;
+}
+
 /* -------- HOME -------- */
 .home {
     height: 100vh;
@@ -159,6 +163,7 @@ section {
     min-height: 100%;
     background-attachment: fixed;
     border-bottom: 2px $azul dashed;
+    display: flex;
 }
 
 /*-- contenidos --*/
@@ -166,25 +171,31 @@ section {
     width: 100%;
     max-width: 1400px;
     padding: 20px;
-    border: solid 1px red;
+    //border: solid 1px red;
     margin: auto auto;
     display: flex;
 
     img {
         width: 100%;
         height: auto;
+        margin-bottom: 1em;
     }
 
+    p {
+        font-size: 22px;
+        line-height: 1.5;
+        margin-top: 0;
+    }
     .col-6 {
         width: 50%;
         padding: 10px;
-        border: solid 1px blue;
+        //border: solid 1px blue;
     }
 
     .col-2 {
         width: 16.66%;
         padding: 10px;
-        border: solid 1px blue;
+        //border: solid 1px blue;
     }
 
     .col-10 {
@@ -192,26 +203,23 @@ section {
         flex-wrap: wrap;
         width: 83.33%;
         padding: 10px;
-        border: solid 1px blue;
+        //border: solid 1px blue;
     }
 
     .col-12 {
         display: flex;
         width: 100%;
         padding: 10px;
-        border: solid 1px blue;
+        //border: solid 1px blue;
     }
 }
 
 
 /* ------- INTRODUCCIÓN -------- */
-.intro-expo, .infografia {
-    display: flex;
-
+.intro-expo {
+    
     p {
-        margin: 0;
         font-size: 24px;
-        line-height: 1.5;
     }
 
     img {
