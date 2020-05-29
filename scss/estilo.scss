@@ -187,9 +187,6 @@ section {
         margin-top: 0;
     }
 
-    .cita {
-        font-size: 32px;
-    }
     .col-6 {
         width: 50%;
         padding: 10px;
@@ -253,7 +250,24 @@ section {
             margin-top: 0;
         }
     }
+
+    .cita {
+        font-size: 32px;
+    }
 }
+
+/* --- video ----*/
+.video {
+    background-color: $azul;
+    min-height: auto;
+
+    .player {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
 
 
 
