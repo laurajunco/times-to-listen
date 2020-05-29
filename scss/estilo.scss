@@ -186,6 +186,10 @@ section {
         line-height: 1.5;
         margin-top: 0;
     }
+
+    .cita {
+        font-size: 32px;
+    }
     .col-6 {
         width: 50%;
         padding: 10px;
@@ -211,6 +215,14 @@ section {
         width: 100%;
         padding: 10px;
         //border: solid 1px blue;
+    }
+
+    .divider {
+        width: 100%;
+        border-bottom: solid 1px blue;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        padding: 10px;
     }
 }
 
