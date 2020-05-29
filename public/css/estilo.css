@@ -89,6 +89,8 @@ h1 {
     color: #2727e5; }
   .siguiente.anterior .sidebar, .anterior.anterior .sidebar {
     color: #fc4141; }
+  .siguiente .video, .anterior .video {
+    visibility: hidden; }
 
 .siguiente#barra_2 {
   left: calc(100vw - (60px*3)); }
@@ -172,7 +174,6 @@ section {
 
 /* --- video ----*/
 .video {
-  background-color: #2727e5;
   min-height: auto; }
   .video .player {
     width: 100%;

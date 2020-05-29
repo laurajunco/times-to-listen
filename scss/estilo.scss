@@ -126,6 +126,10 @@ h1 {
             color: $rojo;
         }
     }
+
+    .video {
+        visibility: hidden;
+    }
 }
 
 //barras siguiente
@@ -258,9 +262,8 @@ section {
 
 /* --- video ----*/
 .video {
-    background-color: $azul;
     min-height: auto;
-
+    
     .player {
         width: 100%;
         height: 100%;
