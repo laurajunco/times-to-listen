@@ -216,7 +216,10 @@ section {
     left: 50%; }
   .parches .parche {
     background-color: white;
-    position: absolute; }
+    position: absolute;
+    cursor: pointer; }
+    .parches .parche.playing {
+      background-color: #fedb31; }
     .parches .parche:nth-child(1n) {
       top: 60vh;
       left: 10vw;

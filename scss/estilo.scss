@@ -323,6 +323,11 @@ section {
     .parche {
         background-color: white;
         position: absolute;
+        cursor: pointer;
+
+        &.playing {
+            background-color: $amarillo;
+        }
         
         &:nth-child(1n) {
             top: 60vh;
