@@ -1,4 +1,4 @@
-/* -------- Variables--------- */
+/* -------- VARIABLES --------- */
 $rojo: #fc4141;
 $azul: #2727e5;
 $amarillo: #fedb31;
@@ -94,7 +94,7 @@ h1 {
     background-color: white;
 }
 
-//barra seleccionada
+/* ------ BARRA SELECCIONADA ------ */
 .selected {
     .sidebar {
         display: none;
@@ -117,7 +117,7 @@ h1 {
     }
 }
 
-/* ------ barras no seleccionadas ------ */
+/* ------ BARRAS NO SELECCIONADAS ------ */
 .siguiente, .anterior {
     cursor: pointer;
     overflow-y: hidden;
@@ -139,7 +139,7 @@ h1 {
     }
 }
 
-//barras siguiente
+/* ------ BARRAS SIGUIENTES ------ */
 .siguiente {
     &#barra_2 {
         left: calc(100vw - (#{$left}*3));
@@ -154,7 +154,7 @@ h1 {
     }
 }
 
-//barras anteriores
+/* ------ BARRAS ANTERIORES ------ */
 .anterior {
  
     &#barra_1 {
@@ -173,7 +173,6 @@ h1 {
 section {
     min-height: 100%;
     background-attachment: fixed;
-    border-bottom: 2px $azul dashed;
     display: flex;
 }
 
@@ -182,20 +181,17 @@ section {
     width: 100%;
     max-width: 1400px;
     padding: 20px;
-    //border: solid 1px red;
     margin: auto auto;
     display: flex;
 
     .col-6 {
         width: 50%;
         padding: 10px;
-        //border: solid 1px blue;
     }
 
     .col-2 {
         width: 16.66%;
         padding: 10px;
-        //border: solid 1px blue;
     }
 
     .col-10 {
@@ -203,20 +199,17 @@ section {
         flex-wrap: wrap;
         width: 83.33%;
         padding: 10px;
-        //border: solid 1px blue;
     }
 
     .col-12 {
         display: flex;
         width: 100%;
         padding: 10px;
-        //border: solid 1px blue;
     }
 
     .col-8 {
         width: 66.6%;
         padding: 10px;
-        //border: solid 1px blue;
     }
 
     .col-4 {
@@ -224,7 +217,6 @@ section {
         flex-direction: column;
         width: 33.3%;
         padding: 10px;
-        //border: solid 1px blue;
     }
 
     .divider {
@@ -266,7 +258,6 @@ section {
 }
 
 /* ---infografia---- */
-
 .infografia {
     .titulo {
         flex-direction: column;
@@ -281,7 +272,7 @@ section {
     }
 }
 
-/* --- video ----*/
+/* --- VIDEO ----*/
 .video {
     min-height: auto;
     
@@ -291,7 +282,7 @@ section {
     }
 }
 
-/* --- pieza ---- */
+/* --- PIEZA ---- */
 .pieza {
     .container {
         flex-wrap: wrap;
@@ -306,7 +297,7 @@ section {
     }
 }
 
-/* ---- parches ----- */
+/* ---- PARCHES ----- */
 .parches {
     background-color: $azul;
     position: relative;
@@ -371,7 +362,7 @@ section {
 
 
 
-/*---- side bar ---- */
+/*---- BARRAS LATERALES ---- */
     .sidebar {
         position: absolute;
         top: 0;
@@ -395,7 +386,7 @@ section {
         }
     }
 
-// quitar scrollbars
+/* ------ QUITAR BARRAS DE SCROLL ------ */
 ::-webkit-scrollbar {
     display: none;
 }
@@ -410,7 +401,8 @@ body {
 
 
 
-/* ------ Fuentes ------ */
+/* ------ TIPOGRAFÍAS ------ */
+
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
