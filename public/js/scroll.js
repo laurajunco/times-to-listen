@@ -59,7 +59,7 @@ $('html').on('mousewheel', function(event) {
     var deltaY = event.deltaY;
     var tol = 100; //tolerancia
 
-    //limitar deltaY entre 80 y -80
+    //limitar deltaY
     if (deltaY < -35) {
         deltaY = -35;
     } else if (deltaY > 35) {
@@ -105,7 +105,6 @@ function sidebarsOnTop() {
 /* funcion para cambiar de sección */
 function seleccionarBarra(i) {
     
-
     if (i === 1) {
         $barra1.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra1.addClass('selected');
@@ -121,7 +120,6 @@ function seleccionarBarra(i) {
 
         height = $barra1.prop("scrollHeight");
         $selected = $barra1;
-
 
     } else if (i === 2) {
         $barra1.removeClass('selected').removeClass('siguiente').removeClass('anterior');
@@ -139,7 +137,6 @@ function seleccionarBarra(i) {
         height = $barra2.prop("scrollHeight");
         $selected = $barra2;
         
-
     }  else if (i === 3) { 
         $barra1.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra1.addClass('anterior');
@@ -173,6 +170,5 @@ function seleccionarBarra(i) {
         $selected = $barra4;
     }
 }
-
 
 })(jQuery, this);

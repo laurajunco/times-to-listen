@@ -166,18 +166,32 @@ section {
     width: 100%;
     max-width: 1400px;
     padding: 20px;
-    //border: solid 1px red;
+    border: solid 1px red;
     margin: auto auto;
     display: flex;
 
     .col-6 {
         width: 50%;
         padding: 10px;
+        border: solid 1px blue;
 
         img {
             width: 100%;
             height: auto;
         }
+    }
+
+    .col-2 {
+        width: 16.66%;
+        padding: 10px;
+        border: solid 1px blue;
+    }
+
+    .col-10 {
+        display: flex;
+        width: 83.33%;
+        padding: 10px;
+        border: solid 1px blue;
     }
 }
 
