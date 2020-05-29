@@ -12,7 +12,6 @@ var $sidebar4 = $('#sidebar_4');
 var height;
 var pos = 0;
 var id = 1;
-var $selected;
 
 // Iniciar en la seccion 1
 seleccionarBarra(id);
