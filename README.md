@@ -1,6 +1,6 @@
 # Exposición virtual los momentos de la escucha
 
-[Visitar](http://laurajunco.me/times-to-listen/public/)
+[Visitar](http://laurajunco.me/time-s-to-listen/public/)
 ## Scripts para desarollo
 
 Clonar repositorio:
