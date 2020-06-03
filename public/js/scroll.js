@@ -1,6 +1,7 @@
 (function ($, root, undefined) {
 
 // Variables 
+var $barra0 = $('#barra_0');
 var $barra1 = $('#barra_1');
 var $sidebar1 = $('#sidebar_1');
 var $barra2 = $('#barra_2');
@@ -11,10 +12,20 @@ var $barra4 = $('#barra_4');
 var $sidebar4 = $('#sidebar_4');
 var height;
 var pos = 0;
-var id = 1;
+var id = 0;
 
 // Iniciar en la seccion 1
 seleccionarBarra(id);
+
+$('#es-select').click(function() {
+    id = 1;
+    seleccionarBarra(id);
+});
+
+$('#en-select').click(function() {
+    id = 1;
+    seleccionarBarra(id);
+});
 
 // Event listeners para cambiar de sección
 $sidebar1.click(function() {
@@ -103,17 +114,28 @@ function sidebarsOnTop() {
 
 /* funcion para cambiar de sección */
 function seleccionarBarra(i) {
-    
-    if (i === 1) {
+
+    if (i === 0) {
+        $barra0.addClass('inicio');
+        $barra1.addClass('hidden');
+        $barra2.addClass('hidden');
+        $barra3.addClass('hidden');
+        $barra4.addClass('hidden');
+        
+    } else if (i === 1) {
+        $barra1.removeClass('hidden');
         $barra1.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra1.addClass('selected');
 
+        $barra2.removeClass('hidden');
         $barra2.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra2.addClass('siguiente');
         
+        $barra3.removeClass('hidden');
         $barra3.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra3.addClass('siguiente');
 
+        $barra4.removeClass('hidden');
         $barra4.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra4.addClass('siguiente');
 
@@ -121,15 +143,19 @@ function seleccionarBarra(i) {
         $selected = $barra1;
 
     } else if (i === 2) {
+        $barra1.removeClass('hidden');
         $barra1.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra1.addClass('anterior');
 
+        $barra2.removeClass('hidden');
         $barra2.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra2.addClass('selected');
 
+        $barra3.removeClass('hidden');
         $barra3.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra3.addClass('siguiente');
 
+        $barra4.removeClass('hidden');
         $barra4.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra4.addClass('siguiente');
 
@@ -137,15 +163,19 @@ function seleccionarBarra(i) {
         $selected = $barra2;
         
     }  else if (i === 3) { 
+        $barra1.removeClass('hidden');
         $barra1.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra1.addClass('anterior');
 
+        $barra2.removeClass('hidden');
         $barra2.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra2.addClass('anterior');
 
+        $barra3.removeClass('hidden');
         $barra3.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra3.addClass('selected');
 
+        $barra4.removeClass('hidden');
         $barra4.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra4.addClass('siguiente');
 
@@ -153,15 +183,19 @@ function seleccionarBarra(i) {
         $selected = $barra3;
 
     } else if (i === 4) {
+        $barra1.removeClass('hidden');
         $barra1.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra1.addClass('anterior');
 
+        $barra2.removeClass('hidden');
         $barra2.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra2.addClass('anterior');
 
+        $barra3.removeClass('hidden');
         $barra3.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra3.addClass('anterior');
 
+        $barra4.removeClass('hidden');
         $barra4.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra4.addClass('selected');
 
