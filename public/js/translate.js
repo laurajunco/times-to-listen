@@ -8,12 +8,12 @@ $(document).ready(function () {
 
    $('#en-select').click(function() {
     $.sls.setLang("en");
-    console.log('en');	
+    //console.log('en');	
    });
 
    $('#es-select').click(function() {
     $.sls.setLang("es");
-    console.log('es');	
+    //console.log('es');	
    });
 });
 

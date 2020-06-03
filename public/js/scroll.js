@@ -10,12 +10,14 @@ var $barra3 = $('#barra_3');
 var $sidebar3 = $('#sidebar_3');
 var $barra4 = $('#barra_4');
 var $sidebar4 = $('#sidebar_4');
-var height;
+
 var pos = 0;
-var id = 0;
+var id = 1;
+var $selected;
 
 // Iniciar en la seccion 1
 seleccionarBarra(id);
+
 
 // Pasar de el umbral a la intro
 console.log('es');	
@@ -67,21 +69,13 @@ $('#mampujan').click(function() {
 //Event listener scroll
 $('html').on('mousewheel', function(event) {
     sidebarsOnTop();
-    
-    var deltaY = event.deltaY;
-    var tol = 100; //tolerancia
 
-    //limitar deltaY
-    if (deltaY < -60) {
-        deltaY = -60;
-    } else if (deltaY > 60) {
-        deltaY = 60;
-    }
-
-    //calcular la posición en Y
-    pos -= deltaY*event.deltaFactor ;
+    var top = $selected.scrollTop();
+    console.log('top', top);
+    console.log('height', height);
     
-    //si termina el scroll pasar a la siguiente (o anterior) sección
+    
+    /*//si termina el scroll pasar a la siguiente (o anterior) sección
     if( pos > height + tol) {
         if (id < 4) {
             id++;
@@ -94,7 +88,7 @@ $('html').on('mousewheel', function(event) {
             seleccionarBarra(id);
         }
         pos = height;
-    } 
+    } */
  
 });
 
@@ -116,7 +110,7 @@ function sidebarsOnTop() {
 
 /* funcion para cambiar de sección */
 function seleccionarBarra(i) {
-
+    sidebarsOnTop();
     
     if (i === 0) {
         /* esconde todas las barras excepto la primera */
@@ -142,8 +136,11 @@ function seleccionarBarra(i) {
         $barra4.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra4.addClass('siguiente');
 
-        height = $barra1.prop("scrollHeight");
+       
+        height = $barra1.prop("scrollHeight") - $( window ).height();
         $selected = $barra1;
+        console.log('height', height);
+        
 
     } else if (i === 2) {
         $barra1.removeClass('hidden');
@@ -162,8 +159,10 @@ function seleccionarBarra(i) {
         $barra4.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra4.addClass('siguiente');
 
-        height = $barra2.prop("scrollHeight");
+
+        height = $barra2.prop("scrollHeight") - $( window ).height();
         $selected = $barra2;
+        console.log('height', height);
         
     }  else if (i === 3) { 
         $barra1.removeClass('hidden');
@@ -182,8 +181,9 @@ function seleccionarBarra(i) {
         $barra4.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra4.addClass('siguiente');
 
-        height = $barra3.prop("scrollHeight");
+        height = $barra3.prop("scrollHeight") - $( window ).height();
         $selected = $barra3;
+        console.log('height', height);
 
     } else if (i === 4) {
         $barra1.removeClass('hidden');
@@ -202,9 +202,12 @@ function seleccionarBarra(i) {
         $barra4.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra4.addClass('selected');
 
-        height = $barra4.prop("scrollHeight");
+        height = $barra4.prop("scrollHeight") - $( window ).height();
         $selected = $barra4;
+        console.log('height', height);
     }
 }
 
 })(jQuery, this);
+
+//height = $barra1.innerHeight() + $barra2.innerHeight() + $barra3.innerHeight() + $barra4.innerHeight();
