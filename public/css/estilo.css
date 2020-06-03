@@ -55,7 +55,8 @@ h1 {
     font-size: 30px; }
     .home .botones a {
       text-decoration: none;
-      color: #2727e5; }
+      color: #2727e5;
+      cursor: pointer; }
       .home .botones a:hover {
         color: #fc4141; }
 

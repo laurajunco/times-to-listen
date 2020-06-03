@@ -6,14 +6,14 @@ $(document).ready(function () {
         persistent: false,
     });
 
-    var lang = $.sls.getLang();
-
-    console.log('lang 1:', lang);
-
-    // Manually set language
-   $('#toggle').click(function() {
+   $('#en-select').click(function() {
     $.sls.setLang("en");
-    console.log('lang 2:', lang);	
+    console.log('en');	
+   });
+
+   $('#es-select').click(function() {
+    $.sls.setLang("es");
+    console.log('es');	
    });
 });
 

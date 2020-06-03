@@ -72,6 +72,7 @@ h1 {
         a {
             text-decoration: none;
             color: $azul;
+            cursor: pointer;
             &:hover {
                 color: $rojo;
             }
