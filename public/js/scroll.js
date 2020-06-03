@@ -17,6 +17,8 @@ var id = 0;
 // Iniciar en la seccion 1
 seleccionarBarra(id);
 
+// Pasar de el umbral a la intro
+console.log('es');	
 $('#es-select').click(function() {
     id = 1;
     seleccionarBarra(id);
@@ -115,8 +117,9 @@ function sidebarsOnTop() {
 /* funcion para cambiar de sección */
 function seleccionarBarra(i) {
 
+    
     if (i === 0) {
-        $barra0.addClass('inicio');
+        /* esconde todas las barras excepto la primera */
         $barra1.addClass('hidden');
         $barra2.addClass('hidden');
         $barra3.addClass('hidden');

@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    // Initialization
+
     $.sls.init({
         defaultLang: "es",
         path: "./languages/",
