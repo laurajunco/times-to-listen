@@ -1,37 +1,507 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<meta name="robots" content="noindex, nofollow">
-	<meta name="googlebot" content="noindex, nofollow">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang = 'es'>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="robots" content="noindex, nofollow">
+		<meta name="googlebot" content="noindex, nofollow">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	  	<title>Time(s) to listen</title>
 
-	<script type="text/javascript" src="./js/jquery.js"></script>
-	<link rel="stylesheet" href="./css/estilo.css" media="all">
+		<!-- jQuery CDN -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-	<title>Time(s) to listen</title>
+		<!-- Libraría js mouseWheel -->
+		<script type="text/javascript" src="./js/jQuery.mousewheel.js"></script>
+
+		<!-- Libraría jQuery Touch CDN -->
+		<script type="text/javascript" src="./js/jQuery.touch.js"></script>
+
+		<!-- Libraría jQuery sls -->
+		<script type="text/javascript" src="./js/jquery-sls.js"></script>
+
+		<!-- Estilos -->
+		<link rel="stylesheet" type="text/css" href="./css/estilo.css">
+	</head>
+
+	<body>
+		<div id="content">
+				<div id="barra_0" class = "contenido">
+					<section class="home">
+		
+						<img src="img/svg/logo_titulo.svg" alt="times to listen">
+						
+						
+						<div class="botones">
+							<a href="es.html"> Entrar </a> 
+							|
+							<a href="es.html"> Enter </a>
+						</div> 
+						
+					</section>
+					
+				</div>
+
+				<!-- Barra de introducción -->
+               <div id="barra_1" class = "contenido">
+				   
+                   <section class=intro-expo>
+					   <div class="container">
+							<div class="col-6">
+								<img src="https://via.placeholder.com/800x400.png/0000FF/FFFFFF?text=-">
+							</div>
+							<div class="col-6">
+								<p lang="es">
+									Los Tiempos de la Escucha es una exposición que nos invita a conectarnos con cuatro colectivos textiles conformados por mujeres que han sufrido la guerra en Colombia y sus sentires y testimonios en torno a la pregunta ¿Qué formas tiene la reconciliación? Se trata de una oportunidad para descubrir sonidos, texturas, colores y tonalidades que entrelazan lenguajes textiles y digitales para acercarnos a las maneras como las mujeres imaginan los caminos y acciones para hacer posible la paz en un país que continúa en guerra. Es una invitación a disponer el cuerpo para la escucha, a dimensionar los tiempos que ello demanda y a reflexionar sobre la potencia que tiene. 
+								</p>
+
+								<p lang="es">
+									Los Tiempos de la Escucha es producto del encuentro entre un equipo de investigación transdisciplinar de Bogotá y Medellín y los grupos de mujeres de Sonsón, Quibdó, Bojayá y Mampuján que durante años han bordado, tejido o cosido sus memorias sobre los daños del conflicto armado e imaginado formas para remendar la vida. El hacer y el saber manual-textil y las exploraciones con prototipos digitales se unieron para dar vida a estas experiencias de escucha que pretenden amplificar las historias de las mujeres y así invitar a dejarse afectar por lo que ellas comparten y enseñan.
+								</p>
+							</div>	
+						</div>
+				   </section>
+
+				   <section class="caminos">
+					<div class="container">
+
+						<div class="col-6" id="bojaya">
+							<h4 class="text-center">Bojayá, Chocó</h4>
+							<h1 class="text-center"> Artesanías <br> Guayacán  </h1>
+							<img src="https://via.placeholder.com/600x300.png/0000FF/FFFFFF?text=-">
+						</div>
+
+						<div class="col-6" id="mampujan">
+							<h4 class="text-center">Mampuján, María la Baja, Bolívar</h4>
+							<h1 class="text-center"> Mujeres tejiendo 
+								sueños  <br> y saberes de paz </h1>
+							<img src="https://via.placeholder.com/600x300.png/0000FF/FFFFFF?text=-">
+						</div>	
+						
+					</div>
+					
+				   </section>
+
+				   <div class="sidebar" id="sidebar_1">
+					<img src="img/svg/logo_espiral.svg">
+					<h2>Intro </h2>
+					</div>
+		
+				</div>
+				
+				<!------ Barra de Mampuján ------>
+                <div id="barra_2" class = "contenido">
 	
-	<!-- estilos -->
-	<link rel="stylesheet" type="text/css" href="./css/estilo-scroll.css">
+                    <section class="infografia">
+						<div class="container">
+							<div class="col-2"></div>
+							<div class="col-10">
+
+								<div class="col-12 titulo">
+									<h4 class="text-center">Mampuján, María la Baja, Bolívar</h4>
+									<h1 class="text-center"> Mujeres tejiendo 
+									sueños  <br> y saberes de paz </h1>
+									<img src="https://via.placeholder.com/600x250.png/0000FF/FFFFFF?text=-">
+								</div>
+
+								<div class="divider"> </div>
+
+								<div class="col-6">
+									<p class="btm">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+
+										Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+									</p>
+
+								</div>
+								<div class="col-6">
+									<img src="https://via.placeholder.com/200x200.png/0000FF/FFFFFF?text=-">
+								</div>
+
+								<div class="divider"> </div>
+
+								<div class="col-6">
+									<p class="btm">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+										<br>
+										<br>
+										Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+									</p>
+
+									<img src="https://via.placeholder.com/300x180.png/0000FF/FFFFFF?text=-">
+
+									<p class="btm">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+
+									</p>
+
+								</div>
+								<div class="col-6">
+									<img src="https://via.placeholder.com/300x200.png/0000FF/FFFFFF?text=-">
+
+									<p>
+										Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+										<br>
+										<br>
+										Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+										<br>
+										<br>
+										Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+									</p>
+								</div>
+
+								<div class="divider"> </div>
+
+								<div class="col-12 btm">
+									<p class="cita">
+										Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.
+									</p>
+								</div>
+
+							</div>
+						</div>
+						
+					</section>
+
+					<section class="video">
+						<div class="player">
+							<div style="padding:56.25% 0 0 0;position:relative;">
+
+								<iframe src="https://player.vimeo.com/video/107354409?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+								</iframe>
+								
+							</div>
+								<script src="https://player.vimeo.com/api/player.js"></script>
+						  </div>
+						
+					</section>
+
+					<section class="pieza">
+
+						<div class="container">
+							<div class="col-12">
+								<h2 class="text-center">
+									Imagen pieza frontal
+								</h2>
+							</div>
+							<div class="col-8">
+								<img src="https://via.placeholder.com/600x250.png/0000FF/FFFFFF?text=-">
+							</div>
+							<div class="col-4">
+								<h5>
+									Nombre pieza
+									<br>
+									120 x 40 cm
+								</h5>
+								<p>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+									<br>
+									<br>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+									<br>
+									<br>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+								</p>
+								
+							</div>
+
+						</div>
+						
+					</section>
+
+					<section class="pieza">
+
+						<div class="container">
+							<div class="col-12">
+								<h2 class="text-center">
+									Imagen pieza detrás
+								</h2>
+							</div>
+							<div class="col-8">
+								<img src="https://via.placeholder.com/600x250.png/0000FF/FFFFFF?text=-">
+							</div>
+							<div class="col-4">
+								<h5>
+									Nombre pieza
+									<br>
+									120 x 40 cm
+								</h5>
+								<p>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+									<br>
+									<br>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+									<br>
+									<br>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+								</p>
+								
+							</div>
+
+						</div>
+						
+					</section>
+
+					<section class="parches">
+
+						<div class="titulo text-center">
+							Galería de parches <br> y audios
+						</div>
 	
-	<!-- fonts -->
-	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&display=swap" rel="stylesheet"> 
+						<div class="parche"> 
+							<audio> 
+								<source src="audio/test-audio-2.mp3" type="audio/mpeg">
+							</audio>
+						</div>
+	
+						<div class="parche"> 
+							<audio> 
+								<source src="audio/test-audio-2.mp3" type="audio/mpeg">
+							</audio>
+						</div>
+						<div class="parche">
+							<audio> 
+								<source src="audio/test-audio-2.mp3" type="audio/mpeg">
+							</audio> 
+						</div>
+						<div class="parche">
+							<audio> 
+								<source src="audio/test-audio-2.mp3" type="audio/mpeg">
+							</audio>
+						 </div>
+						<div class="parche">
+							<audio> 
+								<source src="audio/test-audio-2.mp3" type="audio/mpeg">
+							</audio>
+						</div>
+	
+					</section>
 
-	<title> Time(s) to listen </title>
+					<div class="sidebar" id="sidebar_2">
+						<img src="img/svg/logo_espiral.svg">
+						<h2>Mampuján </h2>
+					</div>
 
-</head>
-	<body class="home">
+                </div>
+
+			   <!------ Barra de Bojayá ------>
+               <div id="barra_3" class = "contenido">
 		
-		<img src="img/svg/logo_titulo.svg" alt="times to listen">
-		
-		
-		<div class="botones">
-			<a href="es.html"> Entrar </a> 
-			|
-			<a href="es.html"> Enter </a>
-		</div> 
-		
+				<section class="infografia">
+					<div class="container">
+						<div class="col-2"></div>
+						<div class="col-10">
+
+							<div class="col-12 titulo">
+								<h4 class="text-center">Bojayá, Chocó</h4>
+								<h1 class="text-center"> Artesanías Guayacán</h1>
+								<img src="https://via.placeholder.com/600x250.png/0000FF/FFFFFF?text=-">
+							</div>
+
+							<div class="divider"> </div>
+
+							<div class="col-6">
+								<p class="btm">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+								</p>
+
+							</div>
+							<div class="col-6">
+								<img src="https://via.placeholder.com/200x200.png/0000FF/FFFFFF?text=-">
+							</div>
+
+							<div class="divider"> </div>
+
+							<div class="col-6">
+								<p class="btm">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+									<br>
+									<br>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+								</p>
+
+								<img src="https://via.placeholder.com/300x180.png/0000FF/FFFFFF?text=-">
+
+								<p class="btm">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+
+								</p>
+
+							</div>
+							<div class="col-6">
+								<img src="https://via.placeholder.com/300x200.png/0000FF/FFFFFF?text=-">
+
+								<p>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+									<br>
+									<br>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+									<br>
+									<br>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+								</p>
+							</div>
+
+							<div class="divider"> </div>
+
+							<div class="col-12 btm">
+								<p class="cita">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.
+								</p>
+							</div>
+
+						</div>
+					</div>
+					
+				</section>
+
+				<section class="video">
+					<div class="player">
+						<div style="padding:56.25% 0 0 0;position:relative;">
+
+							<iframe src="https://player.vimeo.com/video/107354409?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+							</iframe>
+							
+						</div>
+							<script src="https://player.vimeo.com/api/player.js"></script>
+					  </div>
+					
+				</section>
+
+				<section class="pieza">
+
+					<div class="container">
+						<div class="col-12">
+							<h2 class="text-center">
+								Imagen pieza frontal
+							</h2>
+						</div>
+						<div class="col-8">
+							<img src="https://via.placeholder.com/600x250.png/0000FF/FFFFFF?text=-">
+						</div>
+						<div class="col-4">
+							<h5>
+								Nombre pieza
+								<br>
+								120 x 40 cm
+							</h5>
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+								<br>
+								<br>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+								<br>
+								<br>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+							</p>
+							
+						</div>
+
+					</div>
+					
+				</section>
+
+				<section class="pieza">
+
+					<div class="container">
+						<div class="col-12">
+							<h2 class="text-center">
+								Imagen pieza detrás
+							</h2>
+						</div>
+						<div class="col-8">
+							<img src="https://via.placeholder.com/600x250.png/0000FF/FFFFFF?text=-">
+						</div>
+						<div class="col-4">
+							<h5>
+								Nombre pieza
+								<br>
+								120 x 40 cm
+							</h5>
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+								<br>
+								<br>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+								<br>
+								<br>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+							</p>
+							
+						</div>
+
+					</div>
+					
+				</section>
+
+				<section class="parches">
+
+					<div class="titulo text-center">
+						Galería de parches <br> y audios
+					</div>
+
+					<div class="parche"> 
+						<audio> 
+							<source src="audio/test-audio-2.mp3" type="audio/mpeg">
+						</audio>
+					</div>
+
+					<div class="parche"> 
+						<audio> 
+							<source src="audio/test-audio-2.mp3" type="audio/mpeg">
+						</audio>
+					</div>
+					<div class="parche">
+						<audio> 
+							<source src="audio/test-audio-2.mp3" type="audio/mpeg">
+						</audio> 
+					</div>
+					<div class="parche">
+						<audio> 
+							<source src="audio/test-audio-2.mp3" type="audio/mpeg">
+						</audio>
+					 </div>
+					<div class="parche">
+						<audio> 
+							<source src="audio/test-audio-2.mp3" type="audio/mpeg">
+						</audio>
+					</div>
+
+				</section>
+
+				<div class="sidebar" id="sidebar_3">
+					<img src="img/svg/logo_espiral.svg">
+					<h2>Bojayá </h2>
+				</div>
+
+				</div>
+				
+            	<!-- Barra de hacer -->
+		        <div id="barra_4" class = "contenido">
+					
+
+                    <section>
+						
+					</section>
+
+					<section>
+						
+					</section>
+
+					<div class="sidebar" id="sidebar_4">
+						<img src="img/svg/logo_espiral.svg">
+						<h2> Hacer </h2>
+					</div>
+                </div>
+        </div>
+
+        <!-- Scripts-->
+		<script type="text/javascript" src="./js/scroll.js"> </script>
+		<script type="text/javascript" src="./js/player.js"> </script>
+		<script type="text/javascript" src="./js/translate.js"> </script>
+        
 	</body>
 </html>
