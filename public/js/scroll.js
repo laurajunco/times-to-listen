@@ -11,16 +11,13 @@ var $sidebar3 = $('#sidebar_3');
 var $barra4 = $('#barra_4');
 var $sidebar4 = $('#sidebar_4');
 
-var pos = 0;
-var id = 1;
+var id = 0;
 var $selected;
 
 // Iniciar en la seccion 1
 seleccionarBarra(id);
 
-
-// Pasar de el umbral a la intro
-console.log('es');	
+// Pasar del umbral a la intro
 $('#es-select').click(function() {
     id = 1;
     seleccionarBarra(id);
@@ -54,43 +51,52 @@ $sidebar4.click(function() {
 
 // Botones para seleccionar camino
 $('#bojaya').click(function() {
-    console.log('bojaya');
     id = 3;
     seleccionarBarra(id);
 });
 
 $('#mampujan').click(function() {
-    console.log('mampujan');
     id = 2;
     seleccionarBarra(id);
 });
 
-
 //Event listener scroll
 $('html').on('mousewheel', function(event) {
     sidebarsOnTop();
-
     var top = $selected.scrollTop();
-    console.log('top', top);
-    console.log('height', height);
-    
-    
-    /*//si termina el scroll pasar a la siguiente (o anterior) sección
-    if( pos > height + tol) {
+    var deltaY = event.deltaY;
+    deltaY = -deltaY;
+
+    if (deltaY > 0 && top >= height) {
         if (id < 4) {
-            id++;
-            seleccionarBarra(id);
+            avanzar();
         }
-        pos = 0;
-    } else if ( pos < 0 - tol) {
-        if ( id > 1 ) {
-            id--;
-            seleccionarBarra(id);
+    } else if (deltaY < 0 && top <= 0) {
+        if (id > 1) {
+            retroceder();
         }
-        pos = height;
-    } */
- 
+    }
 });
+
+/* Función para avanzar sección */
+function avanzar() {
+    var executed = false;
+    if (!executed) {
+        id++;
+        seleccionarBarra(id);
+        executed = true;
+    }
+}
+
+/* Función para retroceder sección*/
+function retroceder() {
+    var executed = false;
+    if (!executed) {
+        id--;
+        seleccionarBarra(id);
+        executed = true;
+    }
+};
 
 /* Función para mantener las barras de menu en 
 la parte de arriba de la pantalla */
@@ -105,8 +111,6 @@ function sidebarsOnTop() {
         $sidebar.css('top', $parent.scrollTop()); 
     });    
 };
-
-
 
 /* funcion para cambiar de sección */
 function seleccionarBarra(i) {
@@ -136,12 +140,9 @@ function seleccionarBarra(i) {
         $barra4.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra4.addClass('siguiente');
 
-       
         height = $barra1.prop("scrollHeight") - $( window ).height();
         $selected = $barra1;
-        console.log('height', height);
         
-
     } else if (i === 2) {
         $barra1.removeClass('hidden');
         $barra1.removeClass('selected').removeClass('siguiente').removeClass('anterior');
@@ -159,10 +160,8 @@ function seleccionarBarra(i) {
         $barra4.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra4.addClass('siguiente');
 
-
         height = $barra2.prop("scrollHeight") - $( window ).height();
         $selected = $barra2;
-        console.log('height', height);
         
     }  else if (i === 3) { 
         $barra1.removeClass('hidden');
@@ -183,7 +182,6 @@ function seleccionarBarra(i) {
 
         height = $barra3.prop("scrollHeight") - $( window ).height();
         $selected = $barra3;
-        console.log('height', height);
 
     } else if (i === 4) {
         $barra1.removeClass('hidden');
@@ -204,10 +202,7 @@ function seleccionarBarra(i) {
 
         height = $barra4.prop("scrollHeight") - $( window ).height();
         $selected = $barra4;
-        console.log('height', height);
     }
 }
 
 })(jQuery, this);
-
-//height = $barra1.innerHeight() + $barra2.innerHeight() + $barra3.innerHeight() + $barra4.innerHeight();
