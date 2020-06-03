@@ -4,7 +4,7 @@
   var $bot = ""
 
 //event listener para clic en parche
-$('.parches .parche').on('click', function() {
+$('.parches .parche').click(function() {
   audio = $(this).find('audio')[0];
   $bot = $(this);
   playPauseAudio();
