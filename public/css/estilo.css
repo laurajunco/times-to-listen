@@ -111,15 +111,7 @@ marquee {
       width: 100%;
       height: 100%;
       background-repeat: repeat;
-      background-size: cover; }
-    #menu section .menu-intro {
-      background-image: url("public/img/svg/patron_intro.svg"); }
-    #menu section .menu-bojaya {
-      background-image: url("public/img/svg/patron_bojaya.svg"); }
-    #menu section .menu-mampujan {
-      background-image: url("public/img/svg/patron_mampujan.svg"); }
-    #menu section .menu-hacer {
-      background-image: url("public/img/svg/patron_hacer.svg"); }
+      object-fit: cover; }
   #menu.abierto {
     width: 100%; }
     #menu.abierto .sidebar {
