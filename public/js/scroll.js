@@ -31,6 +31,13 @@ $('#open-menu').click(function() {
     
 });
 
+$('#close-menu').click(function() {
+
+    $menu.removeClass('cerrado').removeClass('abierto')
+    $menu.addClass('cerrado');
+    
+});
+
 
 //Event listener scroll
 $('html').on('mousewheel', function(event) {
