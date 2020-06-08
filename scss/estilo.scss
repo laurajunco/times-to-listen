@@ -8,7 +8,6 @@ $grotesque: 'Darker Grotesque', sans-serif;
 $poppins: 'Poppins', sans-serif;
 $pixel: 'Mister Pixel', sans-serif;
 
-$left: 60px; 
 
 * {
     box-sizing: border-box;
@@ -86,103 +85,29 @@ h1 {
 
 .contenido {
     overflow-x: hidden;
-    width: calc(100vw - (#{$left}*3)); 
+    width: 100%; 
     height: 100%;  
-    box-shadow: -5px 0px 15px #9b9b9b5d;
     transition: left 0.7s;
     position: absolute;
     top: 0;
     background-color: white;
-}
 
-
-.inicio {
-    width: 100%;
-}
-
-.hidden {
-    left: 105%;
-}
-
-/* ------ BARRA SELECCIONADA ------ */
-.selected {
-    .sidebar {
-        display: none;
-    }
-    
-    &#barra_1 {
+    &.selected {
         left: 0;
     }
-    
-    &#barra_2 {
-        left: $left;
-    }
-    
-    &#barra_3 {
-        left: $left*2;
-    }
-
-    &#barra_4 {
-        left: $left*3;
-    }
-}
-
-/* ------ BARRAS NO SELECCIONADAS ------ */
-.siguiente, .anterior {
-    cursor: pointer;
-    overflow-y: hidden;
 
     &.siguiente {
-        .sidebar {
-            color: $azul;
-        }
+        left: 100%;
     }
 
     &.anterior {
-        .sidebar {
-            color: $rojo;
-        }
-    }
-
-    .video {
-        visibility: hidden;
-    }
-}
-
-/* ------ BARRAS SIGUIENTES ------ */
-.siguiente {
-    &#barra_2 {
-        left: calc(100vw - (#{$left}*3));
-    }
-    
-    &#barra_3 {
-        left: calc(100vw - (#{$left}*2));
-    }
-    
-    &#barra_4 {
-        left: calc(100vw - #{$left});
-    }
-}
-
-/* ------ BARRAS ANTERIORES ------ */
-.anterior {
- 
-    &#barra_1 {
         left: 0;
     }
-    
-    &#barra_2 {
-        left: $left;
-    }
-    
-    &#barra_3 {
-        left: $left*2;
-    }
 }
+
 
 section {
     min-height: 100%;
-    background-attachment: fixed;
     display: flex;
 }
 
