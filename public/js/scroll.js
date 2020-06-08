@@ -9,6 +9,11 @@ var $barra5 = $('#barra_5');
 var $barra6 = $('#barra_6');
 var $menu = $('#menu');
 
+var $irIntro =$('#ir-intro');
+var $irBojaya =$('#ir-bojaya');
+var $irMampujan =$('#ir-mampujan');
+var $irHacer =$('#ir-hacer');
+
 var id = 1; // Iniciar en la seccion 1
 var $selected;
 seleccionarBarra(id);
@@ -25,17 +30,41 @@ $('#en-select').click(function() {
 });
 
 $('#open-menu').click(function() {
-
     $menu.removeClass('cerrado').removeClass('abierto')
     $menu.addClass('abierto');
-    
 });
 
 $('#close-menu').click(function() {
-
     $menu.removeClass('cerrado').removeClass('abierto')
-    $menu.addClass('cerrado');
-    
+    $menu.addClass('cerrado');  
+});
+
+$('#ir-intro').click(function() {
+    $menu.removeClass('cerrado').removeClass('abierto')
+    $menu.addClass('cerrado');  
+    id = 2;
+    seleccionarBarra(id);
+});
+
+$('#ir-bojaya').click(function() {
+    $menu.removeClass('cerrado').removeClass('abierto')
+    $menu.addClass('cerrado');  
+    id = 3;
+    seleccionarBarra(id);
+});
+
+$('#ir-mampujan').click(function() {
+    $menu.removeClass('cerrado').removeClass('abierto')
+    $menu.addClass('cerrado');  
+    id = 4;
+    seleccionarBarra(id);
+});
+
+$('#ir-hacer').click(function() {
+    $menu.removeClass('cerrado').removeClass('abierto')
+    $menu.addClass('cerrado');  
+    id = 5;
+    seleccionarBarra(id);
 });
 
 
