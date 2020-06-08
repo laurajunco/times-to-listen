@@ -40,28 +40,42 @@ h1 {
 .btm {
   margin-bottom: 5vh; }
 
+marquee {
+  height: 42px; }
+  marquee p {
+    margin: 0;
+    line-height: 42px; }
+
 /* -------- HOME -------- */
 .home {
-  height: 100vh;
-  max-width: 1000px;
-  margin: auto;
+  min-height: 100%;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  padding: 20px; }
-  .home .botones {
-    margin-top: 2em;
-    text-align: center;
-    color: #2727e5;
-    font-family: "Darker Grotesque", sans-serif;
-    font-weight: 700;
-    font-size: 30px; }
-    .home .botones a {
-      text-decoration: none;
+  justify-content: space-between; }
+  .home marquee {
+    background-color: #fc4141;
+    color: white; }
+  .home .img-logo {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px; }
+    .home .img-logo .botones {
+      margin-top: 2em;
+      text-align: center;
       color: #2727e5;
-      cursor: pointer; }
-      .home .botones a:hover {
-        color: #fc4141; }
+      font-family: "Darker Grotesque", sans-serif;
+      font-weight: 700;
+      font-size: 30px; }
+      .home .img-logo .botones a {
+        text-decoration: none;
+        color: #2727e5;
+        cursor: pointer; }
+        .home .img-logo .botones a:hover {
+          color: #fc4141; }
 
 #menu {
   position: absolute;
@@ -116,14 +130,17 @@ h1 {
   overflow-x: hidden;
   width: 100%;
   height: 100%;
-  transition: left 0.7s;
+  transition: left 1s;
   position: absolute;
   top: 0;
-  background-color: white; }
+  background-color: white;
+  -webkit-box-shadow: -4px 0px 4px 0px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: -4px 0px 4px 0px rgba(0, 0, 0, 0.09);
+  box-shadow: -4px 0px 4px 0px rgba(0, 0, 0, 0.09); }
   .contenido.selected {
     left: 0; }
   .contenido.siguiente {
-    left: 100%; }
+    left: 105%; }
   .contenido.anterior {
     left: 0; }
 
