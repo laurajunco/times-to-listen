@@ -8,6 +8,7 @@ $grotesque: 'Darker Grotesque', sans-serif;
 $poppins: 'Poppins', sans-serif;
 $pixel: 'Mister Pixel', sans-serif;
 
+$menu-width: 30px;
 
 * {
     box-sizing: border-box;
@@ -22,6 +23,10 @@ html, body{
     font-family: $poppins;
     color: $azul;
     font-size: 16px;
+}
+
+body {
+    position: relative;
 }
 
 h4 {
@@ -77,6 +82,18 @@ h1 {
             }
         }
     }
+}
+
+#menu {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: $menu-width;
+    right: 0;
+    background-color: lightcoral;
+        h1 {
+            margin: 0;
+        }
 }
 
 #content    {
