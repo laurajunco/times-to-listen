@@ -108,7 +108,6 @@ function retroceder() {
 
 /* funcion para cambiar de sección */
 function seleccionarBarra(i) {
-    console.log(id);
 
     if (i === 1) {
         
