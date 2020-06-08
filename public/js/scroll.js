@@ -7,6 +7,7 @@ var $barra3 = $('#barra_3');
 var $barra4 = $('#barra_4');
 var $barra5 = $('#barra_5');
 var $barra6 = $('#barra_6');
+var $menu = $('#menu');
 
 var id = 1; // Iniciar en la seccion 1
 var $selected;
@@ -21,6 +22,13 @@ $('#es-select').click(function() {
 $('#en-select').click(function() {
     id = 2;
     seleccionarBarra(id);
+});
+
+$('#open-menu').click(function() {
+
+    $menu.removeClass('cerrado').removeClass('abierto')
+    $menu.addClass('abierto');
+    
 });
 
 

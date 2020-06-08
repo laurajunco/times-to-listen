@@ -109,67 +109,84 @@ marquee {
     position: absolute;
     top: 0;
     height: 100%;
-    width: $menu-width;
     right: 0;
-    background-color: lightcoral;
+    transition: width 1s;
+    background-color: white;
+
+    -webkit-box-shadow: -4px 0px 4px 0px rgba(0,0,0,0.09);
+    -moz-box-shadow: -4px 0px 4px 0px rgba(0,0,0,0.09);
+    box-shadow: -4px 0px 4px 0px rgba(0,0,0,0.09);
+
 
     h1 {
         margin: 0;
     }
 
-    .sidebar {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: $menu-width;
-        height: 100%;
-        background-color: white;
-    
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 5vh 0;
+    &.abierto {
+        width: 100%;
 
-        -webkit-box-shadow: -4px 0px 4px 0px rgba(0,0,0,0.09);
-        -moz-box-shadow: -4px 0px 4px 0px rgba(0,0,0,0.09);
-        box-shadow: -4px 0px 4px 0px rgba(0,0,0,0.09);
-
-        .texto-menu {
-            display: flex;
-            flex-direction: column;
-
-            h2 {
-                transform: translate(10% , -50%) rotate(90deg);
-                font-family: $grotesque;
-                font-size: 18px;
-                font-weight: 600;
-                margin: 0;
-                color: $rojo;
-
-                a {
-                    cursor: pointer;
-                    text-decoration: none;
-
-                    &:hover {
-                        color: $azul;
-                    }
-                }
-
-                &.idioma {
-                    display: flex;
-                    a {
-                        padding: 0 4px;
-                    }
-                }
-            }
-        
-            img {
-                height: 12px;
-                margin-bottom: 25px;
-            }
-
+        .sidebar {
+            display: none;
         }
     }
+
+    &.cerrado {
+        width: $menu-width;
+
+        .sidebar {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: $menu-width;
+            height: 100%;
+            background-color: white;
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 5vh 0;
+    
+            .texto-menu {
+                display: flex;
+                flex-direction: column;
+    
+                h2 {
+                    transform: translate(10% , -50%) rotate(90deg);
+                    font-family: $grotesque;
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin: 0;
+                    color: $rojo;
+    
+                    a {
+                        cursor: pointer;
+                        text-decoration: none;
+    
+                        &:hover {
+                            color: $azul;
+                        }
+                    }
+    
+                    &.idioma {
+                        display: flex;
+                        a {
+                            padding: 0 4px;
+                        }
+                    }
+                }
+            
+                img {
+                    height: 12px;
+                    margin-bottom: 25px;
+                }
+    
+            }
+        }
+
+    }
+
+
+    
 }
 
 #content    {
