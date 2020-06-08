@@ -113,13 +113,13 @@ marquee {
       background-repeat: repeat;
       background-size: cover; }
     #menu section .menu-intro {
-      background-image: url("/img/svg/patron_intro.svg"); }
+      background-image: url("public/img/svg/patron_intro.svg"); }
     #menu section .menu-bojaya {
-      background-image: url("/img/svg/patron_bojaya.svg"); }
+      background-image: url("public/img/svg/patron_bojaya.svg"); }
     #menu section .menu-mampujan {
-      background-image: url("/img/svg/patron_mampujan.svg"); }
+      background-image: url("public/img/svg/patron_mampujan.svg"); }
     #menu section .menu-hacer {
-      background-image: url("/img/svg/patron_hacer.svg"); }
+      background-image: url("public/img/svg/patron_hacer.svg"); }
   #menu.abierto {
     width: 100%; }
     #menu.abierto .sidebar {
