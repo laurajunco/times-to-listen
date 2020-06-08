@@ -95,16 +95,16 @@ h1 {
         font-size: 18px;
         font-weight: 600;
         margin: 0;
-        color: red; }
+        color: #fc4141; }
+        #menu .sidebar .texto-menu h2 a {
+          cursor: pointer;
+          text-decoration: none; }
+          #menu .sidebar .texto-menu h2 a:hover {
+            color: #2727e5; }
         #menu .sidebar .texto-menu h2.idioma {
           display: flex; }
           #menu .sidebar .texto-menu h2.idioma a {
-            padding: 0 4px;
-            cursor: pointer;
-            text-decoration: none;
-            color: #fc4141; }
-            #menu .sidebar .texto-menu h2.idioma a:hover {
-              color: #2727e5; }
+            padding: 0 4px; }
       #menu .sidebar .texto-menu img {
         height: 12px;
         margin-bottom: 25px; }

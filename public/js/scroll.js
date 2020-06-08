@@ -8,10 +8,8 @@ var $barra4 = $('#barra_4');
 var $barra5 = $('#barra_5');
 var $barra6 = $('#barra_6');
 
-var id = 1;
+var id = 1; // Iniciar en la seccion 1
 var $selected;
-
-// Iniciar en la seccion 1
 seleccionarBarra(id);
 
 // Pasar del umbral a la intro
@@ -33,11 +31,11 @@ $('html').on('mousewheel', function(event) {
     deltaY = -deltaY;
 
     if (deltaY > 0 && top >= height) {
-        if (id < 6) {
+        if (id < 6 && id != 1) {
             avanzar();
         }
     } else if (deltaY < 0 && top <= 0) {
-        if (id > 1) {
+        if (id > 2) {
             retroceder();
         }
     }
@@ -47,9 +45,9 @@ $('html').on('mousewheel', function(event) {
 function avanzar() {
     var executed = false;
     if (!executed) {
+        executed = true;
         id++;
         seleccionarBarra(id);
-        executed = true;
     }
 }
 
