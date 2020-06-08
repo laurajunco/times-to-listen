@@ -5,7 +5,7 @@
 
 Clonar repositorio:
 ```bash
-git clone https://github.com/laurajunco/momentos-de-escucha-virtual.git
+git clone https://github.com/laurajunco/time-s-to-listen.git
 ```
 
 Instalar las dependencias:

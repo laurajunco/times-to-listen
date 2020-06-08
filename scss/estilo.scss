@@ -8,7 +8,7 @@ $grotesque: 'Darker Grotesque', sans-serif;
 $poppins: 'Poppins', sans-serif;
 $pixel: 'Mister Pixel', sans-serif;
 
-$left: 60px; 
+$menu-width: 30px;
 
 * {
     box-sizing: border-box;
@@ -23,6 +23,10 @@ html, body{
     font-family: $poppins;
     color: $azul;
     font-size: 16px;
+}
+
+body {
+    position: relative;
 }
 
 h4 {
@@ -51,33 +55,185 @@ h1 {
     margin-bottom: 5vh;
 }
 
+marquee {
+    height: 42px;
+    p {
+        margin: 0;
+        line-height: 42px;
+    }
+}
+
 /* -------- HOME -------- */
 .home {
-    height: 100vh;
-    max-width: 1000px;
-    margin: auto;
+    min-height: 100%;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    padding: 20px;
+    justify-content: space-between;
 
-    .botones {
-        margin-top: 2em;
-        text-align: center;
-        color: $azul;
-        font-family: $grotesque;
-        font-weight: 700;
-        font-size: 30px;
+    marquee {
+        background-color: $rojo;
+        color: white;
+    }
+        
+    .img-logo {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+    
 
-        a {
-            text-decoration: none;
+        .botones {
+            margin-top: 2em;
+            text-align: center;
             color: $azul;
-            cursor: pointer;
-            &:hover {
-                color: $rojo;
+            font-family: $grotesque;
+            font-weight: 700;
+            font-size: 30px;
+
+            a {
+                text-decoration: none;
+                color: $azul;
+                cursor: pointer;
+                &:hover {
+                    color: $rojo;
+                }
             }
         }
     }
+}
+
+#menu {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    right: 0;
+    transition: width 1s;
+    background-color: white;
+    box-shadow: -4px 0px 4px 0px rgba(0,0,0,0.09);
+    overflow-y: hidden;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .cerrar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 80px;
+        width: 70px;
+        padding: 20px;
+        cursor: pointer;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    section {
+        flex-basis: 100%;
+        box-shadow: -8px 0px 13px 0px rgba(0,0,0,0.09);
+        cursor: pointer;
+
+        h1 {
+            padding: 80px 20px;
+            height: 20%;
+            background-color: white;
+        }
+
+        .bg-img {
+            width:100%;
+            height: 100%;
+            background-repeat: repeat;
+            background-size: cover;
+        }
+
+        .menu-intro {
+            background-image: url('/img/svg/patron_intro.svg');
+        }
+
+        .menu-bojaya {
+            background-image: url('/img/svg/patron_bojaya.svg');
+        }
+
+        .menu-mampujan {
+            background-image: url('/img/svg/patron_mampujan.svg');
+        }
+
+        .menu-hacer {
+            background-image: url('/img/svg/patron_hacer.svg');
+        }
+    }
+
+    &.abierto {
+        width: 100%;
+
+        .sidebar {
+            left: -5%;
+        }
+        
+    }
+
+    &.cerrado {
+        width: $menu-width;
+
+        .cerrar {
+            display: none;
+        }
+    }
+
+    .sidebar {
+        position: absolute;
+        top: 0;
+        left:0;
+        width: $menu-width;
+        height: 100%;
+        background-color: white;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5vh 0;
+
+        .texto-menu {
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                transform: translate(10% , -50%) rotate(90deg);
+                font-family: $grotesque;
+                font-size: 18px;
+                font-weight: 600;
+                margin: 0;
+                color: $rojo;
+
+                a {
+                    cursor: pointer;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $azul;
+                    }
+                }
+
+                &.idioma {
+                    display: flex;
+                    a {
+                        padding: 0 4px;
+                    }
+                }
+            }
+        
+            img {
+                height: 12px;
+                margin-bottom: 25px;
+            }
+
+        }
+    }   
 }
 
 #content    {
@@ -86,103 +242,33 @@ h1 {
 
 .contenido {
     overflow-x: hidden;
-    width: calc(100vw - (#{$left}*3)); 
+    width: 100%; 
     height: 100%;  
-    box-shadow: -5px 0px 15px #9b9b9b5d;
-    transition: left 0.7s;
+    transition: left 0.5s;
     position: absolute;
     top: 0;
     background-color: white;
-}
 
+    -webkit-box-shadow: -4px 0px 4px 0px rgba(0,0,0,0.09);
+    -moz-box-shadow: -4px 0px 4px 0px rgba(0,0,0,0.09);
+    box-shadow: -4px 0px 4px 0px rgba(0,0,0,0.09);
 
-.inicio {
-    width: 100%;
-}
-
-.hidden {
-    left: 105%;
-}
-
-/* ------ BARRA SELECCIONADA ------ */
-.selected {
-    .sidebar {
-        display: none;
-    }
-    
-    &#barra_1 {
+    &.selected {
         left: 0;
     }
-    
-    &#barra_2 {
-        left: $left;
-    }
-    
-    &#barra_3 {
-        left: $left*2;
-    }
-
-    &#barra_4 {
-        left: $left*3;
-    }
-}
-
-/* ------ BARRAS NO SELECCIONADAS ------ */
-.siguiente, .anterior {
-    cursor: pointer;
-    overflow-y: hidden;
 
     &.siguiente {
-        .sidebar {
-            color: $azul;
-        }
+        left: 105%;
     }
 
     &.anterior {
-        .sidebar {
-            color: $rojo;
-        }
-    }
-
-    .video {
-        visibility: hidden;
-    }
-}
-
-/* ------ BARRAS SIGUIENTES ------ */
-.siguiente {
-    &#barra_2 {
-        left: calc(100vw - (#{$left}*3));
-    }
-    
-    &#barra_3 {
-        left: calc(100vw - (#{$left}*2));
-    }
-    
-    &#barra_4 {
-        left: calc(100vw - #{$left});
-    }
-}
-
-/* ------ BARRAS ANTERIORES ------ */
-.anterior {
- 
-    &#barra_1 {
         left: 0;
     }
-    
-    &#barra_2 {
-        left: $left;
-    }
-    
-    &#barra_3 {
-        left: $left*2;
-    }
 }
 
-section {
+
+#content section {
     min-height: 100%;
-    background-attachment: fixed;
     display: flex;
 }
 
@@ -366,35 +452,6 @@ section {
         }
     }
 }
-
-
-
-
-
-
-/*---- BARRAS LATERALES ---- */
-    .sidebar {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 60px;
-        height: 100%;
-        background-color: white;
-        padding: 20px 10px;
-    
-        display: flex;
-        flex-direction: column;
-
-        h2 {
-        transform: rotate(90deg);
-        font-family: $grotesque;
-        font-weight: 600;
-        }
-
-        img {
-            height: 40px;
-        }
-    }
 
 /* ------ QUITAR BARRAS DE SCROLL ------ */
 ::-webkit-scrollbar {

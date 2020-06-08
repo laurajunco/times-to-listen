@@ -1,78 +1,85 @@
 (function ($, root, undefined) {
 
 // Variables 
-var $barra0 = $('#barra_0');
 var $barra1 = $('#barra_1');
-var $sidebar1 = $('#sidebar_1');
 var $barra2 = $('#barra_2');
-var $sidebar2 = $('#sidebar_2');
 var $barra3 = $('#barra_3');
-var $sidebar3 = $('#sidebar_3');
 var $barra4 = $('#barra_4');
-var $sidebar4 = $('#sidebar_4');
+var $barra5 = $('#barra_5');
+var $barra6 = $('#barra_6');
+var $menu = $('#menu');
 
-var id = 0;
+var $irIntro =$('#ir-intro');
+var $irBojaya =$('#ir-bojaya');
+var $irMampujan =$('#ir-mampujan');
+var $irHacer =$('#ir-hacer');
+
+var id = 1; // Iniciar en la seccion 1
 var $selected;
-
-// Iniciar en la seccion 1
 seleccionarBarra(id);
 
 // Pasar del umbral a la intro
 $('#es-select').click(function() {
-    id = 1;
+    id = 2;
     seleccionarBarra(id);
 });
 
 $('#en-select').click(function() {
-    id = 1;
-    seleccionarBarra(id);
-});
-
-// Event listeners para cambiar de sección
-$sidebar1.click(function() {
-    id = 1;
-    seleccionarBarra(id);
-});
-
-$sidebar2.click(function() {
     id = 2;
     seleccionarBarra(id);
 });
 
-$sidebar3.click(function() {
+$('#open-menu').click(function() {
+    $menu.removeClass('cerrado').removeClass('abierto')
+    $menu.addClass('abierto');
+});
+
+$('#close-menu').click(function() {
+    $menu.removeClass('cerrado').removeClass('abierto')
+    $menu.addClass('cerrado');  
+});
+
+$('#ir-intro').click(function() {
+    $menu.removeClass('cerrado').removeClass('abierto')
+    $menu.addClass('cerrado');  
+    id = 2;
+    seleccionarBarra(id);
+});
+
+$('#ir-bojaya').click(function() {
+    $menu.removeClass('cerrado').removeClass('abierto')
+    $menu.addClass('cerrado');  
     id = 3;
     seleccionarBarra(id);
 });
 
-$sidebar4.click(function() {
+$('#ir-mampujan').click(function() {
+    $menu.removeClass('cerrado').removeClass('abierto')
+    $menu.addClass('cerrado');  
     id = 4;
     seleccionarBarra(id);
 });
 
-// Botones para seleccionar camino
-$('#bojaya').click(function() {
-    id = 3;
+$('#ir-hacer').click(function() {
+    $menu.removeClass('cerrado').removeClass('abierto')
+    $menu.addClass('cerrado');  
+    id = 5;
     seleccionarBarra(id);
 });
 
-$('#mampujan').click(function() {
-    id = 2;
-    seleccionarBarra(id);
-});
 
 //Event listener scroll
 $('html').on('mousewheel', function(event) {
-    sidebarsOnTop();
     var top = $selected.scrollTop();
     var deltaY = event.deltaY;
     deltaY = -deltaY;
 
     if (deltaY > 0 && top >= height) {
-        if (id < 4) {
+        if (id < 6 && id != 1) {
             avanzar();
         }
     } else if (deltaY < 0 && top <= 0) {
-        if (id > 1) {
+        if (id > 2) {
             retroceder();
         }
     }
@@ -82,9 +89,9 @@ $('html').on('mousewheel', function(event) {
 function avanzar() {
     var executed = false;
     if (!executed) {
+        executed = true;
         id++;
         seleccionarBarra(id);
-        executed = true;
     }
 }
 
@@ -98,110 +105,143 @@ function retroceder() {
     }
 };
 
-/* Función para mantener las barras de menu en 
-la parte de arriba de la pantalla */
-function sidebarsOnTop() {
-
-    //iterador
-    $(".sidebar").each(function() {
-
-        var $sidebar = $(this); //seleccionar esta barra
-        var $parent = $sidebar.parent(); //seleccionar a su padre
-        //la propiedad de top siempre va a ser igual al scrollTop del padre
-        $sidebar.css('top', $parent.scrollTop()); 
-    });    
-};
 
 /* funcion para cambiar de sección */
 function seleccionarBarra(i) {
-    sidebarsOnTop();
-    
-    if (i === 0) {
-        /* esconde todas las barras excepto la primera */
-        $barra1.addClass('hidden');
-        $barra2.addClass('hidden');
-        $barra3.addClass('hidden');
-        $barra4.addClass('hidden');
+    console.log(id);
+
+    if (i === 1) {
         
-    } else if (i === 1) {
-        $barra1.removeClass('hidden');
         $barra1.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra1.addClass('selected');
 
-        $barra2.removeClass('hidden');
         $barra2.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra2.addClass('siguiente');
         
-        $barra3.removeClass('hidden');
         $barra3.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra3.addClass('siguiente');
 
-        $barra4.removeClass('hidden');
         $barra4.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra4.addClass('siguiente');
+
+        $barra5.removeClass('selected').removeClass('siguiente').removeClass('anterior');
+        $barra5.addClass('siguiente');
+
+        $barra6.removeClass('selected').removeClass('siguiente').removeClass('anterior');
+        $barra6.addClass('siguiente');
 
         height = $barra1.prop("scrollHeight") - $( window ).height();
         $selected = $barra1;
         
     } else if (i === 2) {
-        $barra1.removeClass('hidden');
         $barra1.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra1.addClass('anterior');
 
-        $barra2.removeClass('hidden');
         $barra2.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra2.addClass('selected');
-
-        $barra3.removeClass('hidden');
+        
         $barra3.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra3.addClass('siguiente');
 
-        $barra4.removeClass('hidden');
         $barra4.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra4.addClass('siguiente');
+
+        $barra5.removeClass('selected').removeClass('siguiente').removeClass('anterior');
+        $barra5.addClass('siguiente');
+
+        $barra6.removeClass('selected').removeClass('siguiente').removeClass('anterior');
+        $barra6.addClass('siguiente');
 
         height = $barra2.prop("scrollHeight") - $( window ).height();
         $selected = $barra2;
         
     }  else if (i === 3) { 
-        $barra1.removeClass('hidden');
         $barra1.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra1.addClass('anterior');
 
-        $barra2.removeClass('hidden');
         $barra2.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra2.addClass('anterior');
-
-        $barra3.removeClass('hidden');
+        
         $barra3.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra3.addClass('selected');
 
-        $barra4.removeClass('hidden');
         $barra4.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra4.addClass('siguiente');
+
+        $barra5.removeClass('selected').removeClass('siguiente').removeClass('anterior');
+        $barra5.addClass('siguiente');
+
+        $barra6.removeClass('selected').removeClass('siguiente').removeClass('anterior');
+        $barra6.addClass('siguiente');
 
         height = $barra3.prop("scrollHeight") - $( window ).height();
         $selected = $barra3;
 
     } else if (i === 4) {
-        $barra1.removeClass('hidden');
         $barra1.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra1.addClass('anterior');
 
-        $barra2.removeClass('hidden');
         $barra2.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra2.addClass('anterior');
-
-        $barra3.removeClass('hidden');
+        
         $barra3.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra3.addClass('anterior');
 
-        $barra4.removeClass('hidden');
         $barra4.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra4.addClass('selected');
 
+        $barra5.removeClass('selected').removeClass('siguiente').removeClass('anterior');
+        $barra5.addClass('siguiente');
+
+        $barra6.removeClass('selected').removeClass('siguiente').removeClass('anterior');
+        $barra6.addClass('siguiente');
+
         height = $barra4.prop("scrollHeight") - $( window ).height();
         $selected = $barra4;
+
+    } else if (i === 5) {
+        $barra1.removeClass('selected').removeClass('siguiente').removeClass('anterior');
+        $barra1.addClass('anterior');
+
+        $barra2.removeClass('selected').removeClass('siguiente').removeClass('anterior');
+        $barra2.addClass('anterior');
+        
+        $barra3.removeClass('selected').removeClass('siguiente').removeClass('anterior');
+        $barra3.addClass('anterior');
+
+        $barra4.removeClass('selected').removeClass('siguiente').removeClass('anterior');
+        $barra4.addClass('anterior');
+
+        $barra5.removeClass('selected').removeClass('siguiente').removeClass('anterior');
+        $barra5.addClass('selected');
+
+        $barra6.removeClass('selected').removeClass('siguiente').removeClass('anterior');
+        $barra6.addClass('siguiente');
+
+        height = $barra5.prop("scrollHeight") - $( window ).height();
+        $selected = $barra5;
+
+    } else if (i === 6) {
+        $barra1.removeClass('selected').removeClass('siguiente').removeClass('anterior');
+        $barra1.addClass('anterior');
+
+        $barra2.removeClass('selected').removeClass('siguiente').removeClass('anterior');
+        $barra2.addClass('anterior');
+        
+        $barra3.removeClass('selected').removeClass('siguiente').removeClass('anterior');
+        $barra3.addClass('anterior');
+
+        $barra4.removeClass('selected').removeClass('siguiente').removeClass('anterior');
+        $barra4.addClass('anterior');
+
+        $barra5.removeClass('selected').removeClass('siguiente').removeClass('anterior');
+        $barra5.addClass('anterior');
+
+        $barra6.removeClass('selected').removeClass('siguiente').removeClass('anterior');
+        $barra6.addClass('selected');
+
+        height = $barra6.prop("scrollHeight") - $( window ).height();
+        $selected = $barra6;
     }
 }
 

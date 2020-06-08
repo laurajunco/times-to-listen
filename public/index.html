@@ -27,24 +27,32 @@
 
 	<body>
 		<div id="content">
-				<div id="barra_0" class ="contenido inicio">
+				<!-- Barra de escoger idioma -->
+				<div id="barra_1" class ="contenido inicio">
 					<section class="home">
-		
-						<img src="img/svg/logo_titulo.svg" alt="times to listen">
-						
-						
-						<div class="botones">
-							<a id="es-select"> Entrar </a> 
-							|
-							<a id="en-select"> Enter </a>
-						</div> 
-						
+						<marquee class="top">
+							<p>
+								Te invitamos a usar audífonos para una mejor experiencia
+							</p>							
+						</marquee>
+
+						<div class=img-logo>
+							<img src="img/svg/logo_titulo.svg" alt="times to listen">
+							<div class="botones">
+								<a id="es-select"> Entrar </a> 
+								|
+								<a id="en-select"> Enter </a>
+							</div> 
+						</div>
+
+						<marquee class="bottom" align="middle">
+							<p> Te invitamos a usar audífonos para una mejor experiencia </p>
+						</marquee>
 					</section>
-					
 				</div>
 
 				<!-- Barra de introducción -->
-               <div id="barra_1" class = "contenido">
+               <div id="barra_2" class = "contenido">
 				   
                    <section class=intro-expo>
 					   <div class="container">
@@ -63,35 +71,10 @@
 						</div>
 				   </section>
 
-				   <section class="caminos">
-					<div class="container">
-
-						<div class="col-6" id="bojaya">
-							<h4 class="text-center">Bojayá, Chocó</h4>
-							<h1 class="text-center"> Artesanías <br> Guayacán  </h1>
-							<img src="https://via.placeholder.com/600x300.png/0000FF/FFFFFF?text=-">
-						</div>
-
-						<div class="col-6" id="mampujan">
-							<h4 class="text-center">Mampuján, María la Baja, Bolívar</h4>
-							<h1 class="text-center"> Mujeres tejiendo 
-								sueños  <br> y saberes de paz </h1>
-							<img src="https://via.placeholder.com/600x300.png/0000FF/FFFFFF?text=-">
-						</div>	
-						
-					</div>
-					
-				   </section>
-
-				   <div class="sidebar" id="sidebar_1">
-					<img src="img/svg/logo_espiral.svg">
-					<h2>Intro </h2>
-					</div>
-		
 				</div>
 				
 				<!------ Barra de Mampuján ------>
-                <div id="barra_2" class = "contenido">
+                <div id="barra_3" class = "contenido">
 	
                     <section class="infografia">
 						<div class="container">
@@ -278,15 +261,10 @@
 	
 					</section>
 
-					<div class="sidebar" id="sidebar_2">
-						<img src="img/svg/logo_espiral.svg">
-						<h2>Mampuján </h2>
-					</div>
-
                 </div>
 
 			   <!------ Barra de Bojayá ------>
-               <div id="barra_3" class = "contenido">
+               <div id="barra_4" class = "contenido">
 		
 				<section class="infografia">
 					<div class="container">
@@ -472,15 +450,10 @@
 
 				</section>
 
-				<div class="sidebar" id="sidebar_3">
-					<img src="img/svg/logo_espiral.svg">
-					<h2>Bojayá </h2>
-				</div>
-
 				</div>
 				
             	<!-- Barra de hacer -->
-		        <div id="barra_4" class = "contenido">
+		        <div id="barra_5" class = "contenido">
 					
                     <section>
 						hacer
@@ -490,12 +463,55 @@
 						hacer
 					</section>
 
-					<div class="sidebar" id="sidebar_4">
-						<img src="img/svg/logo_espiral.svg">
-						<h2> Hacer </h2>
-					</div>
-                </div>
-        </div>
+				</div>
+				
+				<!-- Créditos -->
+				<div id="barra_6" class = "contenido">
+					<section>
+						Créditos
+					</section>
+				</div>
+		</div>
+		<div id="menu" class="cerrado">
+			<section id="ir-intro">
+				<h1> Intro </h1>
+				<div class="bg-img menu-intro"> </div>
+			</section>
+
+			<section id="ir-bojaya">
+				<h1> Artesanias Guayacán </h1>
+				<div class="bg-img menu-bojaya"> </div>
+			</section>
+
+			<section id="ir-mampujan">
+				<h1> Mujeres tejiendo sueños y sabores de paz </h1>
+				<div class="bg-img menu-mampujan"> </div>
+			</section>
+
+			<section id="ir-hacer">
+				<h1> Momento del hacer </h1>
+				<div class="bg-img menu-hacer"> </div>
+			</section>
+
+			<div class="cerrar" id="close-menu">
+				<img src="img/svg/cerrar.svg">
+			</div>
+
+			<div class="sidebar" id="sidebar_menu">
+				<div class="texto-menu" id="open-menu">
+					<img src="img/svg/flecha_roja.svg">
+					<h2> <a> MENÚ </a> </h2>
+				</div>
+
+				<div class="texto-menu">
+					<img src="img/svg/doble_roja.svg">
+					<h2 class="idioma"> 
+						<a id="en-select-menu"> EN </a>
+						|
+						<a id="es-select-menu"> ES </a>
+				</div>
+			</div>
+		</div>
 
         <!-- Scripts-->
 		<script type="text/javascript" src="./js/scroll.js"> </script>
