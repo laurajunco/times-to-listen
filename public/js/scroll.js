@@ -16,12 +16,12 @@ seleccionarBarra(id);
 
 // Pasar del umbral a la intro
 $('#es-select').click(function() {
-    id = 1;
+    id = 2;
     seleccionarBarra(id);
 });
 
 $('#en-select').click(function() {
-    id = 1;
+    id = 2;
     seleccionarBarra(id);
 });
 
@@ -66,8 +66,8 @@ function retroceder() {
 
 /* funcion para cambiar de sección */
 function seleccionarBarra(i) {
+    console.log(id);
 
-    
     if (i === 1) {
         
         $barra1.removeClass('selected').removeClass('siguiente').removeClass('anterior');

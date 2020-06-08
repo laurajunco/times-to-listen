@@ -72,6 +72,42 @@ h1 {
   background-color: lightcoral; }
   #menu h1 {
     margin: 0; }
+  #menu .sidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5vh 0;
+    -webkit-box-shadow: -4px 0px 4px 0px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: -4px 0px 4px 0px rgba(0, 0, 0, 0.09);
+    box-shadow: -4px 0px 4px 0px rgba(0, 0, 0, 0.09); }
+    #menu .sidebar .texto-menu {
+      display: flex;
+      flex-direction: column; }
+      #menu .sidebar .texto-menu h2 {
+        transform: translate(10%, -50%) rotate(90deg);
+        font-family: "Darker Grotesque", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0;
+        color: red; }
+        #menu .sidebar .texto-menu h2.idioma {
+          display: flex; }
+          #menu .sidebar .texto-menu h2.idioma a {
+            padding: 0 4px;
+            cursor: pointer;
+            text-decoration: none;
+            color: #fc4141; }
+            #menu .sidebar .texto-menu h2.idioma a:hover {
+              color: #2727e5; }
+      #menu .sidebar .texto-menu img {
+        height: 12px;
+        margin-bottom: 25px; }
 
 #content {
   height: 100vh; }
@@ -91,7 +127,7 @@ h1 {
   .contenido.anterior {
     left: 0; }
 
-section {
+#content section {
   min-height: 100%;
   display: flex; }
 
@@ -218,24 +254,6 @@ section {
       left: 40vw;
       height: 14vh;
       width: 14vh; }
-
-/*---- BARRAS LATERALES ---- */
-.sidebar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60px;
-  height: 100%;
-  background-color: white;
-  padding: 20px 10px;
-  display: flex;
-  flex-direction: column; }
-  .sidebar h2 {
-    transform: rotate(90deg);
-    font-family: "Darker Grotesque", sans-serif;
-    font-weight: 600; }
-  .sidebar img {
-    height: 40px; }
 
 /* ------ QUITAR BARRAS DE SCROLL ------ */
 ::-webkit-scrollbar {
