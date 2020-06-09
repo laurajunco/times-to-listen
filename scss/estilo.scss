@@ -131,6 +131,11 @@ marquee {
 mark {
  background-color: $limon;
  color: $azul;
+
+ &.bg-morado {
+    background-color: $morado;
+    color: white;
+ }
 }
 
 /* -------- HOME -------- */
@@ -384,7 +389,6 @@ mark {
     img {
         width: 100%;
         height: auto;
-        margin-bottom: 1em;
     }
 
     p {
@@ -504,11 +508,30 @@ mark {
             width: 70%
         }
     }
+
+    .texto-interaccion {
+        margin: 0;
+        padding: 20px 0;
+        color: black;
+        font-size: 22px;
+        font-family: $grotesque;
+        font-weight: 600;
+        border-bottom: 2px solid $morado;
+        border-top: 2px solid $morado;
+
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+             column-count: 2;
+  
+     -webkit-column-gap: 10px;
+        -moz-column-gap: 10px;
+             column-gap: 10px;
+        
+    }
 }
 
 /* ---- PARCHES ----- */
 .parches {
-    background-color: $azul;
     position: relative;
 
     .titulo {
