@@ -19,9 +19,10 @@ body {
   position: relative; }
 
 h4 {
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  font-weight: 700; }
+  font-family: "terminal_grotesque", sans-serif;
+  font-size: 14px;
+  margin: 0;
+  font-weight: normal; }
 
 h5 {
   font-family: "terminal_grotesque", sans-serif;
@@ -33,6 +34,11 @@ h1 {
   font-family: "terminal_grotesque", sans-serif;
   font-weight: normal;
   font-size: 36px; }
+  h1.megatitulo {
+    text-transform: uppercase;
+    font-size: 150px;
+    -webkit-font-smoothing: none;
+    margin-top: 30px; }
 
 .text-center {
   text-align: center; }
@@ -71,9 +77,15 @@ marquee {
 .text-amarillo {
   color: #ffc733; }
 
+.text-blanco {
+  color: white; }
+
 .terminal {
   font-family: "terminal_grotesque", sans-serif;
   font-weight: normal; }
+
+.bg-morado {
+  background-color: #9466ff; }
 
 mark {
   background-color: #fff555;
@@ -288,14 +300,18 @@ mark {
     height: 100%; }
 
 /* --- PIEZA ---- */
-.pieza .container {
-  flex-wrap: wrap; }
+.pieza .cuadro-titulo {
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white; }
+  .pieza .cuadro-titulo h4 {
+    line-height: 20px;
+    letter-spacing: 0.3px; }
 
-.pieza .col-12 {
-  justify-content: center; }
-
-.pieza p {
-  font-size: 18px; }
+.pieza .megatitulo {
+  text-align: center; }
 
 /* ---- PARCHES ----- */
 .parches {
