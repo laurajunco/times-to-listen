@@ -12,7 +12,7 @@ html, body {
   overflow-x: hidden;
   scrollbar-width: none;
   font-family: "Poppins", sans-serif;
-  color: #2727e5;
+  color: #2727dc;
   font-size: 16px; }
 
 body {
@@ -24,15 +24,15 @@ h4 {
   font-weight: 700; }
 
 h5 {
-  font-family: "Mister Pixel", sans-serif;
+  font-family: "terminal_grotesque", sans-serif;
   font-size: 20px;
   line-height: 1.5;
   margin-top: 0; }
 
 h1 {
-  font-family: "Mister Pixel", sans-serif;
-  font-size: 38px;
-  -webkit-font-smoothing: none; }
+  font-family: "terminal_grotesque", sans-serif;
+  font-weight: normal;
+  font-size: 36px; }
 
 .text-center {
   text-align: center; }
@@ -45,6 +45,23 @@ marquee {
   marquee p {
     margin: 0;
     line-height: 42px; }
+
+.text-morado {
+  color: #9466ff; }
+
+.text-morado-linea {
+  color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #9466ff; }
+
+.text-azul {
+  color: #2727dc; }
+
+.text-rojo {
+  color: #fc4141; }
+
+.text-amarillo {
+  color: #ffc733; }
 
 /* -------- HOME -------- */
 .home {
@@ -66,13 +83,13 @@ marquee {
     .home .img-logo .botones {
       margin-top: 2em;
       text-align: center;
-      color: #2727e5;
+      color: #2727dc;
       font-family: "Darker Grotesque", sans-serif;
       font-weight: 700;
       font-size: 30px; }
       .home .img-logo .botones a {
         text-decoration: none;
-        color: #2727e5;
+        color: #2727dc;
         cursor: pointer; }
         .home .img-logo .botones a:hover {
           color: #fc4141; }
@@ -98,16 +115,17 @@ marquee {
     padding: 20px;
     cursor: pointer; }
   #menu h1 {
-    margin: 0; }
+    margin: 0;
+    text-transform: uppercase; }
   #menu section {
     flex-basis: 100%;
     box-shadow: -8px 0px 13px 0px rgba(0, 0, 0, 0.09);
     cursor: pointer; }
     #menu section h1 {
       padding: 80px 20px;
-      height: 20%;
+      height: 25%;
       background-color: white; }
-    #menu section .bg-img {
+    #menu section .bg-img img {
       width: 100%;
       height: 100%;
       object-fit: cover; }
@@ -144,7 +162,7 @@ marquee {
           cursor: pointer;
           text-decoration: none; }
           #menu .sidebar .texto-menu h2 a:hover {
-            color: #2727e5; }
+            color: #2727dc; }
         #menu .sidebar .texto-menu h2.idioma {
           display: flex; }
           #menu .sidebar .texto-menu h2.idioma a {
@@ -261,7 +279,7 @@ marquee {
 
 /* ---- PARCHES ----- */
 .parches {
-  background-color: #2727e5;
+  background-color: #2727dc;
   position: relative; }
   .parches .titulo {
     font-size: 3vw;
@@ -275,7 +293,7 @@ marquee {
     position: absolute;
     cursor: pointer; }
     .parches .parche.playing {
-      background-color: #fedb31; }
+      background-color: #ffc733; }
     .parches .parche:nth-child(1n) {
       top: 60vh;
       left: 10vw;
@@ -314,6 +332,8 @@ body {
 
 /* ------ TIPOGRAFÍAS ------ */
 @font-face {
-  font-family: 'Mister Pixel';
+  font-family: 'terminal_grotesque';
+  src: url("terminal-grotesque-webfont.eot");
+  src: url("terminal-grotesque-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/terminal-grotesque-webfont.woff2") format("woff2"), url("../fonts/terminal-grotesque-webfont.woff") format("woff"), url("../fonts/terminal-grotesque-webfont.ttf") format("truetype"), url("../fonts/terminal-grotesque-webfont.svg#terminal_grotesqueregular") format("svg");
   font-weight: normal;
-  src: url("../fonts/pixel.woff") format("woff"); }
+  font-style: normal; }
