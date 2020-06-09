@@ -47,7 +47,12 @@ marquee {
     margin: 0;
     line-height: 42px;
     text-transform: uppercase;
-    letter-spacing: 1.5px; }
+    letter-spacing: 1.5px;
+    color: white; }
+  marquee.rojo {
+    background-color: #fc4141; }
+  marquee.azul {
+    background-color: #2727dc; }
 
 .text-morado {
   color: #9466ff; }
@@ -76,9 +81,6 @@ marquee {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
-  .home marquee {
-    background-color: #fc4141;
-    color: white; }
   .home .img-logo {
     width: 100%;
     max-width: 1200px;
@@ -217,20 +219,15 @@ marquee {
     width: 16.66%;
     padding: 10px; }
   .container .col-10 {
-    display: flex;
-    flex-wrap: wrap;
     width: 83.33%;
     padding: 10px; }
   .container .col-12 {
-    display: flex;
     width: 100%;
     padding: 10px; }
   .container .col-8 {
     width: 66.6%;
     padding: 10px; }
   .container .col-4 {
-    display: flex;
-    flex-direction: column;
     width: 33.3%;
     padding: 10px; }
   .container .divider {
@@ -249,11 +246,15 @@ marquee {
     margin-top: 0; }
 
 /* ------- INTRODUCCIÓN -------- */
-.intro-expo p {
-  font-size: 20px; }
-
-.intro-expo img {
-  margin-top: 8px; }
+.intro-expo {
+  flex-direction: column;
+  display: flex; }
+  .intro-expo marquee {
+    background-color: #2727dc; }
+  .intro-expo p {
+    font-size: 20px; }
+  .intro-expo img {
+    margin-top: 8px; }
 
 .caminos {
   display: flex; }

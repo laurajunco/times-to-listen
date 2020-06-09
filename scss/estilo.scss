@@ -66,6 +66,15 @@ marquee {
         line-height: 42px;
         text-transform: uppercase;
         letter-spacing: 1.5px;
+        color: white;
+    }
+
+    &.rojo {
+        background-color: $rojo;
+    }
+
+    &.azul {
+        background-color: $azul;
     }
 }
 
@@ -104,11 +113,6 @@ marquee {
     flex-direction: column;
     justify-content: space-between;
 
-    marquee {
-        background-color: $rojo;
-        color: white;
-    }
-        
     .img-logo {
         width: 100%;
         max-width: 1200px;
@@ -313,14 +317,11 @@ marquee {
     }
 
     .col-10 {
-        display: flex;
-        flex-wrap: wrap;
         width: 83.33%;
         padding: 10px;
     }
 
     .col-12 {
-        display: flex;
         width: 100%;
         padding: 10px;
     }
@@ -331,8 +332,6 @@ marquee {
     }
 
     .col-4 {
-        display: flex;
-        flex-direction: column;
         width: 33.3%;
         padding: 10px;
     }
@@ -361,6 +360,12 @@ marquee {
 
 /* ------- INTRODUCCIÓN -------- */
 .intro-expo {
+    flex-direction: column;
+    display: flex;
+
+    marquee {
+        background-color: $azul;
+    }
     
     p {
         font-size: 20px;
