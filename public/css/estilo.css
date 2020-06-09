@@ -38,13 +38,20 @@ h1 {
     text-transform: uppercase;
     font-size: 150px;
     -webkit-font-smoothing: none;
-    margin-top: 30px; }
+    margin-top: 30px;
+    margin-bottom: 5vh; }
 
 .text-center {
   text-align: center; }
 
 .btm {
   margin-bottom: 5vh; }
+
+.top {
+  margin-top: 10vh; }
+
+.half-top {
+  margin-top: 5vh; }
 
 marquee {
   height: 42px; }
@@ -65,7 +72,7 @@ marquee {
 
 .text-morado-linea {
   color: white;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #9466ff; }
 
 .text-azul {
@@ -226,10 +233,15 @@ mark {
   display: flex;
   flex-direction: column; }
 
+.flex-row {
+  display: flex;
+  flex-direction: row; }
+
 .container {
   width: 100%;
   max-width: 1400px;
   padding: 20px;
+  padding-right: 50px;
   margin: auto auto;
   display: flex; }
   .container .col-6 {
@@ -294,7 +306,7 @@ mark {
 
 /* --- VIDEO ----*/
 .video {
-  min-height: auto; }
+  min-height: auto !important; }
   .video .player {
     width: 100%;
     height: 100%; }
@@ -311,7 +323,34 @@ mark {
     letter-spacing: 0.3px; }
 
 .pieza .megatitulo {
-  text-align: center; }
+  text-align: center;
+  -webkit-text-stroke-width: 2px; }
+
+.pieza .descripcion-pieza {
+  border-bottom: 2px solid #9466ff; }
+  .pieza .descripcion-pieza .ficha-tecnica {
+    width: 30%;
+    border-right: 2px solid #9466ff;
+    justify-content: flex-end; }
+    .pieza .descripcion-pieza .ficha-tecnica h1 {
+      padding: 15px 0;
+      text-transform: uppercase;
+      margin: 0; }
+      .pieza .descripcion-pieza .ficha-tecnica h1.titulo {
+        border-bottom: 2px solid #9466ff; }
+      .pieza .descripcion-pieza .ficha-tecnica h1.medidas {
+        border-bottom: 2px solid #9466ff;
+        -webkit-font-smoothing: none; }
+      .pieza .descripcion-pieza .ficha-tecnica h1.anio {
+        -webkit-font-smoothing: none; }
+  .pieza .descripcion-pieza .texto-descripcion {
+    margin: 0;
+    padding: 0 0 15px 15px;
+    color: black;
+    font-size: 22px;
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 600;
+    width: 70%; }
 
 /* ---- PARCHES ----- */
 .parches {

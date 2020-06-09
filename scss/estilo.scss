@@ -55,6 +55,7 @@ h1 {
         font-size: 150px;
         -webkit-font-smoothing: none;
         margin-top: 30px;
+        margin-bottom: 5vh;
     }
 }
 .text-center {
@@ -63,6 +64,13 @@ h1 {
 
 .btm {
     margin-bottom: 5vh;
+}
+
+.top {
+    margin-top: 10vh;
+}
+.half-top {
+    margin-top: 5vh;
 }
 
 marquee {
@@ -92,7 +100,7 @@ marquee {
 
 .text-morado-linea {
     color: white;
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: $morado;
 }
 
@@ -322,10 +330,16 @@ mark {
     display:flex;
     flex-direction: column;
 }
+
+.flex-row {
+    display:flex;
+    flex-direction: row;
+}
 .container {
     width: 100%;
     max-width: 1400px;
     padding: 20px;
+    padding-right: $menu-width + 20px;
     margin: auto auto;
     display: flex;
 
@@ -424,7 +438,7 @@ mark {
 
 /* --- VIDEO ----*/
 .video {
-    min-height: auto;
+    min-height: auto !important;
     
     .player {
         width: 100%;
@@ -449,6 +463,46 @@ mark {
 
     .megatitulo {
         text-align: center;
+        -webkit-text-stroke-width: 2px;
+    }
+
+    .descripcion-pieza {
+        border-bottom: 2px solid $morado;
+
+        .ficha-tecnica {
+            width: 30%;
+            border-right: 2px solid $morado;
+            justify-content: flex-end;
+
+            h1 {
+                padding: 15px 0;
+                text-transform: uppercase;
+                margin: 0;
+
+                &.titulo {
+                    border-bottom: 2px solid $morado;
+                }
+
+                &.medidas {
+                    border-bottom: 2px solid $morado;
+                    -webkit-font-smoothing: none;
+                }
+
+                &.anio {
+                    -webkit-font-smoothing: none;
+                }
+            }
+        }
+
+        .texto-descripcion {
+            margin: 0;
+            padding: 0 0 15px 15px;
+            color: black;
+            font-size: 22px;
+            font-family: $grotesque;
+            font-weight: 600;
+            width: 70%
+        }
     }
 }
 
