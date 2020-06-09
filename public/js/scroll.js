@@ -110,6 +110,7 @@ function retroceder() {
 function seleccionarBarra(i) {
 
     if (i === 1) {
+        $menu.hide();
         
         $barra1.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra1.addClass('selected');
@@ -133,6 +134,8 @@ function seleccionarBarra(i) {
         $selected = $barra1;
         
     } else if (i === 2) {
+        $menu.show();
+
         $barra1.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra1.addClass('anterior');
 

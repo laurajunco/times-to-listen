@@ -59,9 +59,13 @@ h1 {
 
 marquee {
     height: 42px;
+
     p {
+        font-size: 20px;
         margin: 0;
         line-height: 42px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
     }
 }
 
@@ -85,6 +89,11 @@ marquee {
 
 .text-amarillo {
     color: $amarillo;
+}
+
+.terminal {
+    font-family: $terminal;
+    font-weight: normal;
 }
 
 

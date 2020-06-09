@@ -43,8 +43,11 @@ h1 {
 marquee {
   height: 42px; }
   marquee p {
+    font-size: 20px;
     margin: 0;
-    line-height: 42px; }
+    line-height: 42px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px; }
 
 .text-morado {
   color: #9466ff; }
@@ -62,6 +65,10 @@ marquee {
 
 .text-amarillo {
   color: #ffc733; }
+
+.terminal {
+  font-family: "terminal_grotesque", sans-serif;
+  font-weight: normal; }
 
 /* -------- HOME -------- */
 .home {
