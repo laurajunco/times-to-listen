@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* -------- VARIABLES --------- */
-@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 * {
   box-sizing: border-box;
@@ -74,6 +74,10 @@ marquee {
 .terminal {
   font-family: "terminal_grotesque", sans-serif;
   font-weight: normal; }
+
+mark {
+  background-color: #fff555;
+  color: #2727dc; }
 
 /* -------- HOME -------- */
 .home {
@@ -206,6 +210,10 @@ marquee {
   display: flex; }
 
 /*-- contenidos --*/
+.flex-column {
+  display: flex;
+  flex-direction: column; }
+
 .container {
   width: 100%;
   max-width: 1400px;
@@ -251,13 +259,17 @@ marquee {
   display: flex; }
   .intro-expo marquee {
     background-color: #2727dc; }
-  .intro-expo p {
-    font-size: 20px; }
-  .intro-expo img {
-    margin-top: 8px; }
-
-.caminos {
-  display: flex; }
+  .intro-expo h2 {
+    font-size: 30px;
+    line-height: 1.8;
+    max-width: 800px; }
+  .intro-expo p.texto {
+    font-size: 22px;
+    color: black;
+    max-width: 630px;
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 600;
+    margin-top: 1em; }
 
 /* ---infografia---- */
 .infografia .titulo {
