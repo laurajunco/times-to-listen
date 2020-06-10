@@ -652,10 +652,10 @@ mark {
             flex-direction: column;
             justify-content: center;
             display: flex;
-            overflow: hidden;
+            overflow-x: scroll;
             height: 60px;
 
-            .marquee {
+            marquee {
                 color: white;
                 text-transform: uppercase;
                 height: 60px;
@@ -663,6 +663,7 @@ mark {
                 p {
                     font-size: 50px;
                     line-height: 60px;
+                    width: fit-content;
                 }
                 
             }

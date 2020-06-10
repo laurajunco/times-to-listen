@@ -460,15 +460,16 @@ mark {
     flex-direction: column;
     justify-content: center;
     display: flex;
-    overflow: hidden;
+    overflow-x: scroll;
     height: 60px; }
-    .parches .parche-container .transcripcion .marquee {
+    .parches .parche-container .transcripcion marquee {
       color: white;
       text-transform: uppercase;
       height: 60px; }
-      .parches .parche-container .transcripcion .marquee p {
+      .parches .parche-container .transcripcion marquee p {
         font-size: 50px;
-        line-height: 60px; }
+        line-height: 60px;
+        width: fit-content; }
 
 /* ------ QUITAR BARRAS DE SCROLL ------ */
 ::-webkit-scrollbar {
