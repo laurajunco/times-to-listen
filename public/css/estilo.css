@@ -60,12 +60,17 @@ marquee {
     margin: 0;
     line-height: 42px;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: white; }
+    letter-spacing: 1.5px; }
   marquee.rojo {
-    background-color: #fc4141; }
+    background-color: #fc4141;
+    color: white; }
   marquee.azul {
-    background-color: #2727dc; }
+    background-color: #2727dc;
+    color: white; }
+  marquee.morado {
+    background-color: white;
+    color: #9466ff;
+    border: 1px solid #9466ff; }
 
 .text-morado {
   color: #9466ff; }
@@ -74,6 +79,14 @@ marquee {
   color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #9466ff; }
+
+.text-negro-linea {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black; }
+
+.text-negro {
+  color: black; }
 
 .text-azul {
   color: #2727dc; }
@@ -240,6 +253,9 @@ mark {
   display: flex;
   flex-direction: row; }
 
+.flex-wrap {
+  flex-wrap: wrap; }
+
 .container {
   width: 100%;
   max-width: 1400px;
@@ -263,8 +279,7 @@ mark {
     width: 66.6%;
     padding: 10px; }
   .container .col-4 {
-    width: 33.3%;
-    padding: 10px; }
+    width: 33.3%; }
   .container .divider {
     width: 100%;
     border-bottom: solid 1px blue;
@@ -371,46 +386,73 @@ mark {
   column-gap: 10px; }
 
 /* ---- PARCHES ----- */
-.parches {
-  position: relative; }
-  .parches .titulo {
-    font-size: 3vw;
-    color: white;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%; }
-  .parches .parche {
-    background-color: white;
-    position: absolute;
-    cursor: pointer; }
-    .parches .parche.playing {
-      background-color: #ffc733; }
-    .parches .parche:nth-child(1n) {
-      top: 60vh;
-      left: 10vw;
-      height: 10vh;
-      width: 10vh; }
-    .parches .parche:nth-child(2n) {
-      top: 5vh;
-      left: 40vw;
-      height: 12vh;
-      width: 12vh; }
-    .parches .parche:nth-child(3n) {
-      top: 21vh;
-      left: 13vw;
-      height: 18vh;
-      width: 18vh; }
-    .parches .parche:nth-child(4n) {
-      top: 56vh;
-      left: 70vw;
-      height: 20vh;
-      width: 20vh; }
-    .parches .parche:nth-child(5n) {
-      top: 80vh;
-      left: 40vw;
-      height: 14vh;
-      width: 14vh; }
+.parches .intro-parches {
+  padding: 30px; }
+  .parches .intro-parches h1 {
+    line-height: 0.8;
+    margin-bottom: 20px;
+    margin-top: 0; }
+  .parches .intro-parches p {
+    margin: 0;
+    padding: 20px 0;
+    color: black;
+    font-size: 18px;
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.5;
+    max-width: 650px; }
+
+.parches .parche {
+  padding: 35px; }
+
+.parches .parche-container {
+  border: solid 2px black;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; }
+  .parches .parche-container .img-parche {
+    padding: 10px;
+    border-bottom: black 2px solid; }
+  .parches .parche-container .des-parches {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: black;
+    text-transform: uppercase;
+    position: relative; }
+    .parches .parche-container .des-parches .play {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      cursor: pointer; }
+    .parches .parche-container .des-parches .bordado-por {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px;
+      border-bottom: black 2px solid;
+      flex-grow: 1; }
+    .parches .parche-container .des-parches .pais {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px;
+      flex-grow: 1; }
+    .parches .parche-container .des-parches h6 {
+      margin: 3px 0;
+      font-family: "Darker Grotesque", sans-serif;
+      font-size: 15px; }
+    .parches .parche-container .des-parches h2 {
+      margin: 0;
+      font-family: "terminal_grotesque", sans-serif;
+      font-weight: normal;
+      font-size: 36px;
+      letter-spacing: 2px; }
 
 /* ------ QUITAR BARRAS DE SCROLL ------ */
 ::-webkit-scrollbar {

@@ -82,15 +82,22 @@ marquee {
         line-height: 42px;
         text-transform: uppercase;
         letter-spacing: 1.5px;
-        color: white;
     }
 
     &.rojo {
         background-color: $rojo;
+        color: white;
     }
 
     &.azul {
         background-color: $azul;
+        color: white;
+    }
+
+    &.morado {
+        background-color: white;
+        color: $morado;
+        border: 1px solid $morado;
     }
 }
 
@@ -102,6 +109,16 @@ marquee {
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: $morado;
+}
+
+.text-negro-linea {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.text-negro {
+    color: black;
 }
 
 .text-azul {
@@ -340,6 +357,10 @@ mark {
     display:flex;
     flex-direction: row;
 }
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
 .container {
     width: 100%;
     max-width: 1400px;
@@ -375,8 +396,8 @@ mark {
 
     .col-4 {
         width: 33.3%;
-        padding: 10px;
     }
+
 
     .divider {
         width: 100%;
@@ -532,61 +553,97 @@ mark {
 
 /* ---- PARCHES ----- */
 .parches {
-    position: relative;
+    //position: relative;
 
-    .titulo {
-        font-size: 3vw;
-        color: white;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        top: 50%;
-        left: 50%
+    .intro-parches {
+        padding: 30px;
+        
+        h1 {
+            line-height: 0.8;
+            margin-bottom: 20px;
+            margin-top: 0;
+        }
+
+        p {
+            margin: 0;
+            padding: 20px 0;
+            color: black;
+            font-size: 18px;
+            font-family: $grotesque;
+            font-weight: 600;
+            text-transform: uppercase;
+            line-height: 1.5;
+            max-width: 650px;
+        }
     }
 
     .parche {
-        background-color: white;
-        position: absolute;
-        cursor: pointer;
+        padding: 35px;
+    }
 
-        &.playing {
-            background-color: $amarillo;
-        }
-        
-        &:nth-child(1n) {
-            top: 60vh;
-            left: 10vw;
-            height: 10vh;
-            width: 10vh;
-        }
+    .parche-container {
+        border: solid 2px black;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
 
-        &:nth-child(2n) { 
-            top: 5vh;
-            left: 40vw;
-            height: 12vh;
-            width: 12vh;
+        .img-parche {
+            padding: 10px;
+            border-bottom: black 2px solid;
         }
 
-        &:nth-child(3n) {
-            top: 21vh;
-            left: 13vw;
-            height: 18vh;
-            width: 18vh;
-        }
+        .des-parches {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            color: black;
+            text-transform: uppercase;
+            position: relative;
 
-        &:nth-child(4n) {
-            top: 56vh;
-            left: 70vw;
-            height: 20vh;
-            width: 20vh;
-        }
+            .play {
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                cursor: pointer;
+            }
 
-        &:nth-child(5n) {
-            top: 80vh;
-            left: 40vw;
-            height: 14vh;
-            width: 14vh;
+            .bordado-por {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 10px;
+                border-bottom: black 2px solid;
+                flex-grow: 1;
+            }
+
+            .pais {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 10px;
+                flex-grow: 1;
+            }
+
+            h6 {
+                margin: 3px 0;
+                font-family: $grotesque;
+                font-size: 15px;
+            }
+
+            h2 {
+                margin: 0;
+                font-family: $terminal;
+                font-weight: normal;
+                font-size: 36px;
+                letter-spacing: 2px;
+            }
         }
     }
+
 }
 
 /* ------ QUITAR BARRAS DE SCROLL ------ */
