@@ -9,7 +9,7 @@ var $barra5 = $('#barra_5');
 var $barra6 = $('#barra_6');
 var $menu = $('#menu');
 
-var id = 1; // Iniciar en la seccion 1
+var id = 3; // Iniciar en la seccion 1
 var $selected;
 seleccionarBarra(id);
 
@@ -62,7 +62,6 @@ $('#ir-hacer').click(function() {
     seleccionarBarra(id);
 });
 
-
 //Event listener scroll
 $('html').on('mousewheel', function(event) {
     var top = $selected.scrollTop();
@@ -99,7 +98,6 @@ function retroceder() {
         executed = true;
     }
 };
-
 
 /* funcion para cambiar de sección */
 function seleccionarBarra(i) {
