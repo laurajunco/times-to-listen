@@ -122,6 +122,9 @@ marquee {
 .bg-amarillo {
   background-color: #ffc733; }
 
+.bg-azul {
+  background-color: #2727dc; }
+
 mark {
   background-color: #fff555;
   color: #2727dc; }
@@ -495,6 +498,84 @@ mark {
       font-size: 22px;
       line-height: 1.2;
       color: white; }
+
+/* -------- CREDITOS -------- */
+.creditos {
+  height: 100%;
+  width: 100%;
+  flex-direction: row; }
+  .creditos .azul {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px; }
+    .creditos .azul h1 {
+      height: 15%;
+      color: white; }
+    .creditos .azul .agradecimientos {
+      font-family: "Darker Grotesque", sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: white;
+      line-height: 1.5;
+      margin-bottom: 3vh; }
+  .creditos .blanco {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; }
+    .creditos .blanco h1 {
+      height: 15%;
+      padding: 20px; }
+    .creditos .blanco .credito {
+      padding: 20px;
+      border-bottom: 1px solid black;
+      text-transform: uppercase; }
+      .creditos .blanco .credito h5 {
+        font-family: "Darker Grotesque", sans-serif;
+        margin: 5px 0;
+        font-size: 15px; }
+      .creditos .blanco .credito p {
+        margin: 0;
+        font-family: "Darker Grotesque", sans-serif;
+        color: black;
+        font-size: 15px; }
+    .creditos .blanco .social {
+      display: flex;
+      flex-direction: row;
+      min-height: 10%;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 0; }
+      .creditos .blanco .social .boton {
+        font-size: 34px;
+        font-family: "terminal_grotesque", sans-serif;
+        text-align: center;
+        border-right: 1px solid black;
+        flex-grow: 1;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        cursor: pointer; }
+        .creditos .blanco .social .boton:hover {
+          color: white;
+          background-color: #2727dc; }
+    .creditos .blanco .logos {
+      display: flex;
+      margin-top: 10px; }
+      .creditos .blanco .logos img {
+        height: 40px;
+        margin: 0 10px; }
+      .creditos .blanco .logos.small img {
+        height: 25px;
+        margin: 0 10px; }
 
 /* ------ QUITAR BARRAS DE SCROLL ------ */
 ::-webkit-scrollbar {
