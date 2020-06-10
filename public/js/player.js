@@ -44,6 +44,7 @@ $('.parches .parche').click(function() {
   function pauseAudio() {
     $bot.removeClass('playing').removeClass('paused');
     $bot.addClass('paused');
+    audio.currentTime = 0;
     audio.pause();
     $trans.hide();
     $playColor.hide();
