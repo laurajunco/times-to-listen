@@ -74,6 +74,10 @@ marquee {
     background-color: white;
     color: #9466ff;
     border: 1px solid #9466ff; }
+  marquee.amarillo {
+    background-color: white;
+    color: #ffc733;
+    border: 1px solid #ffc733; }
 
 .text-morado {
   color: #9466ff; }
@@ -82,6 +86,11 @@ marquee {
   color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #9466ff; }
+
+.text-amarillo-linea {
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffc733; }
 
 .text-negro-linea {
   color: transparent;
@@ -109,6 +118,9 @@ marquee {
 
 .bg-morado {
   background-color: #9466ff; }
+
+.bg-amarillo {
+  background-color: #ffc733; }
 
 mark {
   background-color: #fff555;
@@ -348,6 +360,13 @@ mark {
 
 .pieza .descripcion-pieza {
   border-bottom: 2px solid #9466ff; }
+  .pieza .descripcion-pieza.amarillo {
+    border-color: #ffc733; }
+    .pieza .descripcion-pieza.amarillo .ficha-tecnica {
+      border-color: #ffc733; }
+      .pieza .descripcion-pieza.amarillo .ficha-tecnica .medidas,
+      .pieza .descripcion-pieza.amarillo .ficha-tecnica .titulo {
+        border-color: #ffc733; }
   .pieza .descripcion-pieza .ficha-tecnica {
     width: 30%;
     border-right: 2px solid #9466ff;
@@ -387,6 +406,8 @@ mark {
   -webkit-column-gap: 10px;
   -moz-column-gap: 10px;
   column-gap: 10px; }
+  .pieza .texto-interaccion.amarillo {
+    border-color: #ffc733; }
 
 /* ---- PARCHES ----- */
 .parches .intro-parches {

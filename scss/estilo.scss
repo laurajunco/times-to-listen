@@ -103,6 +103,12 @@ marquee {
         color: $morado;
         border: 1px solid $morado;
     }
+
+    &.amarillo {
+        background-color: white;
+        color: $amarillo;
+        border: 1px solid $amarillo;
+    }
 }
 
 .text-morado {
@@ -114,6 +120,13 @@ marquee {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: $morado;
 }
+
+.text-amarillo-linea {
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $amarillo;
+}
+
 
 .text-negro-linea {
     color: transparent;
@@ -147,6 +160,9 @@ marquee {
 
 .bg-morado {
     background-color: $morado;
+}
+.bg-amarillo {
+    background-color: $amarillo;
 }
 
 mark {
@@ -498,6 +514,20 @@ mark {
     .descripcion-pieza {
         border-bottom: 2px solid $morado;
 
+        &.amarillo {
+            border-color: $amarillo;
+
+            .ficha-tecnica {
+                border-color: $amarillo;
+
+                .medidas,
+                .titulo {
+                    border-color: $amarillo;
+                }
+            }
+
+        }
+
         .ficha-tecnica {
             width: 30%;
             border-right: 2px solid $morado;
@@ -546,11 +576,16 @@ mark {
 
         -webkit-column-count: 2;
         -moz-column-count: 2;
-             column-count: 2;
-  
-     -webkit-column-gap: 10px;
+        column-count: 2;
+
+        -webkit-column-gap: 10px;
         -moz-column-gap: 10px;
-             column-gap: 10px;
+        column-gap: 10px;
+
+        &.amarillo {
+            border-color: $amarillo;
+        }
+        
         
     }
 }
