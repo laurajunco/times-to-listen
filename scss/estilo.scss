@@ -557,7 +557,7 @@ mark {
 
     .intro-parches {
         padding: 30px;
-        
+
         h1 {
             line-height: 0.8;
             margin-bottom: 20px;
@@ -587,6 +587,8 @@ mark {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        height: 100%;
+
 
         .img-parche {
             padding: 10px;
@@ -600,6 +602,7 @@ mark {
             justify-content: space-evenly;
             color: black;
             text-transform: uppercase;
+
             position: relative;
 
             .play {
@@ -640,6 +643,28 @@ mark {
                 font-weight: normal;
                 font-size: 36px;
                 letter-spacing: 2px;
+            }
+        }
+
+        .transcripcion {
+            background-color: black;
+            flex-grow: 1;
+            flex-direction: column;
+            justify-content: center;
+            display: flex;
+            overflow: hidden;
+            height: 60px;
+
+            .marquee {
+                color: white;
+                text-transform: uppercase;
+                height: 60px;
+
+                p {
+                    font-size: 50px;
+                    line-height: 60px;
+                }
+                
             }
         }
     }
