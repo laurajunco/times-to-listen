@@ -1,16 +1,20 @@
 {
-	//TEXTO BIENVENIDA A LA WEB
     "Este es un espacio textil digital testimonial. Disponte a escuchar y a conectarte con los sentidos de la reconciliación que aquí residen. Hay muchas maneras de recorrer estos caminos. Podrás irte por atajos pero tendrás que tomarte el tiempo de escuchar. Una lectura lineal te dará una idea general de este territorio, irás encontrando conexiones en la medida de que te dejes tocar por las historias bordadas."
 	:"This is a testimonial digital textile space. Get ready to listen and connect with the senses of reconciliation that reside here. There are many ways to experience and travel these paths. You can take shortcuts, but you must take the time to listen.A linear reading will give you a general idea of this territory, the connections will reveal themselves as you allow yourself to be touched by the embroidered stories. ",
 
 
-    //TEXTO EXPOSICIÓN
+   
 	"Los Tiempos de la Escucha es una exposición que nos invita a conectarnos con dos colectivos textiles conformados por mujeres que han sufrido la guerra en Colombia, sus sentires y testimonios en torno a la pregunta ¿Qué formas tiene la reconciliación? Se trata de una oportunidad para descubrir sonidos, texturas, colores y tonalidades que entrelazan lenguajes textiles y digitales para acercarnos a las maneras como las mujeres imaginan los caminos y acciones para hacer posible la paz en un país que continúa en guerra. Es una invitación a disponer el cuerpo para la escucha, a dimensionar los tiempos que ello demanda y a reflexionar sobre la potencia que tiene. Los Tiempos de la Escucha nació del encuentro entre un equipo de investigación transdisciplinar de Bogotá y Medellín y los grupos de mujeres de Sonsón, Quibdó, Bojayá y Mampuján que durante años han bordado, tejido o cosido sus memorias sobre los daños del conflicto armado e imaginado formas para remendar la vida. El hacer textil artesanal y las exploraciones digitales dieron vida a esta exhibición con la que se busca amplificar las historias de las mujeres y así invitar a dejarse afectar por lo que ellas comparten y enseñan."
 	:"The Time(s) to Listen is an exhibition that invites us to connect with two textile collectives made up of women who have suffered the experiences of the war in Colombia, along with their feelings and testimonies regarding the question; what shapes can reconciliation take? It is an opportunity to discover whispers , textures, colors and nuances that interweave textile and digital languages, to understand the ways in which the women imagine the paths and actions required to make peace possible in a country that is still at war. It is an invitation to prepare the body for listening, to measure the times that this demands and to reflect upon the power it has. The Time(s) to Listen was brought to life by the union between a transdisciplinary research team from Bogotá and Medellín, and the women's collectives of Sonsón, Quibdó, Bojayá and Mampuján, who have for years embroidered, woven or sewn their memories about the damage caused by the armed conflict and imagined ways to mend life. The hand-crafted textiles and digital explorations came together to bring life to this exhibition, which in turn seeks to amplify the women’s stories and thereby invite us to be touched by what they share and teach. ",
 	
- 
+	
 
-    //INTRO A LA PIEZA BOJAYÁ
+	"Guayacán Artesanías es un colectivo de mujeres afro e indígenas de Bellavista, cabecera municipal de Bojayá, que a finales de los ochenta inicia como Comunidad Eclesial de Base (CEB) apoyado por las Hermanas Agustinas Misioneras y el padre Jorge Luis Mazo. Oficios como el bordado, el tejido y la panadería las fueron convirtiendo en un grupo que mediante los haceres textiles y artesanales oponen resistencia a los efectos de la guerra en sus territorios."
+	:"Guayacán Crafts (Guayacán Artesanías) is a collective of Afro and indigenous women from Bellavista, the municipal capital of Bojayá, which at the end of the 1980s started out as a Grassroots Ecclesiastic Community (CEB) supported by the Sisters of the Augustinian Missionary and Father Jorge Luis Mazo. Craft practices such as embroidery, knitting, crochet and baking gradually turned the women into a group who could resist the effects of the war on their territories through textile and craft practices.",
+ 
+ 	"Pieza emblemática_ Nuestras víctimas, 2 de mayo de 2002, Bellavista – Bojayá, Chocó. Haciendo historia, bordando memoria. (2003). Telón con los nombres bordados de las víctimas mortales de la masacre del 2 de mayo de 2002 acompañados con flores, animales, botes y oficios propios de la región. Construido por las mujeres con apoyo de las Hermanas Agustinas Misioneras y el grupo Artesanías Choibá de la ciudad de Quibdó. Se expone cada año en la conmemoración de la masacre para recordar y denunciar las responsabilidades. En el proceso de exhumación de los muertos ha sido una pieza fundamental que ha servido como documento para la memoria de los familiares. Tiene una extensión de 6 m. por 2.5 m.  Técnica textil: Bordado, costura y pintado sobre tela"
+ 	:"Emblematic piece_ Our victims, 2nd May 2002, Bellavista – Bojayá, Chocó. Making history, embroidering memory, (2003). Tapestry embroidered with the names of the fatalities of the massacre of May 2, 2002 accompanied with flowers, animals, boats and trades typical of the region. Elaborated by the women with the support of the Augustinian Missionary Sisters and the Choibá Crafts group from the city of Quibdó. It is exhibited every year during the commemoration of the massacre in order to remember and denounce those responsible. It has played a fundamental role in the process of the exhumation of the dead by serving as a document of remembrance for the relatives. It measures 6 m. by 2.5 m.  Textile technique: Embroidery, sewing and painting on canvas.",
+
 
     "ARTESANIAS GUAYACÁN | BOJAYÁ, CHOCÓ_"
     :"GUAYACÁN CRAFTS  | BOJAYÁ, CHOCÓ_ ",
@@ -18,32 +22,30 @@
     "ENSAMBLE DE VOCES"
     : "VOICE ASSEMBLY",
 
-    //FICHA INFORMATIVA TEXTIL BOJAYA
-    	//TÍTULO
+   
     "Telón de la Reconciliación"
     : "Reconciliation Hand-embroidered cloth",
-    	//DIMENSIONES
+    
     	"166X65CM"
     	:"166X65CM",
-    	//AÑO
+    
     	"2019"
     	:"2019",
 
-    	//TEXTO DESCRIPTIVO
+   
 	"Este Telón de la Reconciliación es una pieza elaborada por las mujeres de Artesanías Guayacán en mayo de 2019. Es una tela de fondo amarillo que contiene escenas e imágenes cotidianas de la vida en el río Atrato que las mujeres bordaron como representación de los sentidos que asocian a la palabra reconciliación. La elaboración consistió, primero, en una composición colectiva en el que cada una de las integrantes del grupo aportaba su idea para que Daisy Chana Picama, una de las integrantes indígenas y la más joven del grupo, la dibujara. A partir de cantos y versos, recuerdos del río y de chirimías, imágenes de matas de plátano, cultivos de arroz y sauco, las mujeres construyeron un paisaje atrateño que fue pasando por las manos de todas para, puntada a puntada, dar vida a las formas de la reconciliación que las sostienen y fortalecen."
 	:" This Reconciliation Hand-embroidered cloth is a piece made by the women of the Artesanías Guayacán collective in May 2019. It is a fabric with yellow background that contains depictions of scenes and images of the daily life along the Atrato river, which the women embroidered as a representation of the feelings they associate with the word reconciliation. The development consisted, first, in a collective composition in which each member of the group contributed their idea so that Daisy Chana Picama, one of the indigenous members and the youngest of the group, could draw it. Using songs and verses, memories of the river and of <i>chirimías </i> (traditional songs), images of plantain trees, rice and elderberry crops, the women created an Atrato-like landscape, which had passed through everyone’s hands in order to, stitch by stitch, bring life to the shapes of reconciliation that sustains and strengthens them.",
 
-	//TÍTULO GALERÍA DE PARCHES
+	
 
 	"GALERIA DE PARCHES Y AUDIOS_"
 	:"PATCH AND AUDIO GALLERY_",
 
-	//DESCRIPCIÓN PEQUEÑAS
 
 	"ESTOS PARCHES FUERON BORDADOS POR DIFERENTES PERSONAS COMO RESPUESTA AL TELÓN SOBRE LA RECONCILIACIÓN DE LAS MUJERES DEL COLECTIVO ARTESANIAS GUAYACÁN Y GUARDAN MENSAJES SONOROS"
 	:"THESE PATCHES WERE EMBROIDERED BY DIFFERENT PEOPLE AS A RESPONSE TO THE TAPESTRY OF RECONCILIATION OF THE WOMEN OF THE GUAYACAN CRAFTS COLLECTIVE AND THEY CONTAIN SOUND MESSAGES",
 
-	//PARCHES
+	
 
 	"Matholo_ Su historia y la forma en la que se han conectado con las mujeres de las otras comunidades, me recordó a un manzano particular. Algún día escuché sobre este árbol, donde un hombre tomaba ramas de diferentes variedades de manzanas para luego unirlas a su árbol familiar. Desde ese momento, cientos de variedades de manzanas diferentes estaban creciendo juntas en este único árbol. En este bordado, los diferentes colores representan las diferentes ramas del árbol que vienen de lugares diferentes, así como ustedes. Donde el árbol podría estar roto, en su lugar se encuentra una rama de un color diferente. Algo que alguna vez fue separado ahora está vinculado. Pero más que eso, una amplia variedad de diferentes manzanas están creciendo juntas, conectadas para siempre, manteniéndose fuertes y desprendiendo frutos. Así es como las veo a ustedes y a lo que han venido haciendo. "
 	:"Matholo_ Your story and how you have connected with the ladies across the other groups reminded me of this apple tree. It’s a tree that I once heard about, where a man was taking branches from different varieties of apple and grafting them together into his family tree, and now hundreds of different varieties of apple grow together on this single tree. On this embroidery, all of the different colors represent a different branch of the tree that has come from a different place, just like you. Where the tree could be broken, instead there is a different colored branch, something that was once separate and is now linked, but, more than that, several different varieties of apple grow together, connected forever, standing strong and bearing fruit. This is how I see you and what you have been doing. ",
@@ -71,7 +73,14 @@
 
 
 
-	//INTRO A LA PIEZA MAMPUJÁN
+	
+	"Mujeres Tejiendo Sueños y Sabores de Paz Mampuján es un grupo de tejedoras que desde el 2004, cuatro años después de ser desplazadas forzosamente de sus veredas en el municipio de María La Baja en la región de los Montes de María, se organizaron para documentar textilmente lo ocurrido lo que les ayudó a procesarlo, reclamar justicia y contribuir a la construir paz."
+	:"Women Weaving Dreams and Flavours of Peace Mampuján is a textile collective who since 2004, four years after being forcibly displaced from their villages in the municipality of María La Baja in the region of Montes de María, have not stopped sewing to claim and build peace.",
+
+	"Desplazamiento: Mampuján día de llanto (2004)_ Este tapiz fue la primera pieza construida por el colectivo. En el se ilustran los hechos ocurridos durante el desplazamiento del 10 de Marzo del 2000, se ven escenas de violencia hacia la población por parte de los paramilitares. A pesar del dolor y las lágrimas, con este primer tapiz, las mujeres de Mampuján empezaron a contar su historia y así se dieron cuenta de que “la única forma de sanarse era recordar: tratar las memorias, narrarlas, machucarlas y volverlas a construir hasta que ya no dolieran más” (Anadolu, 2018). Técnica: Tela sobre tela o aplique, una técnica que utiliza figuras hechas de retazos de tela sobre tela.":
+	"Displacement: Mampuján day of crying (2004)_ This tapestry was the first piece created by the collective. It illustrates the events that took place during the March 10, 2000 displacement, and depicts scenes of violence against the population by the paramilitaries. In spite of the pain and tears, with this first tapestry, the women of Mampuján began to tell their story and thus realised that &quot;the only way to heal themselves was to remember: to deal with the memories, to narrate them, to crush them and to rebuild them until they no longer hurt&quot; (Anadolu, 2018). Technique: Appliqué or ‘fabric on fabric’, a technique that uses shapes cut from scraps of fabric sewnin layers.",
+	
+	
 
     "TEJEDORAS DE SUEÑOS Y SABORES DE PAZ | MAMPUJÁN, BOLIVAR_"
     :"WOMEN WEAVING DREAMS AND FLAVOURS OF PEACE | BOJAYÁ, CHOCÓ_",
@@ -79,41 +88,41 @@
     "CAPAS DE RELATOS"
     : "LAYERED STORIES",
 
- 	//FICHA INFORMATIVA TEXTIL BOJAYA
-    	//TÍTULO
+ 	
+    	¡
     "La olla de la reconciliación"
     : "The pot of reconciliation",
-    	//DIMENSIONES
+    
     	"166X65CM"
     	:"166X65CM",
-    	//AÑO
+    
     	"2019"
     	:"2019",
 
-    	//TEXTO DESCRIPTIVO
     	"Cerca de 20 integrantes del grupo de Tejedoras de Sueños y Sabores de Paz habitantes del municipio de María Baja, se reúnen en una tarde de mayo de 2019 en la iglesia evangélica del barrio el Recreo para responder juntas: ¿Qué forma tiene la reconciliación? Entre ellas surge una conversación sobre los sabores, olores, sonidos y las texturas que puede tener esa palabra. Hay risas y anécdotas, recetas de turrones, café y mondongo, sabores dulces, amargos, salados que evocan comidas apetecidas en la región. La añoranza de la música y el baile se hacen presente, así como los sonidos que traen noticias y son presagios. Las ideas y los dibujos que se comparten inspiran la construcción del tapiz. Poco a poco, surge la forma de una olla y del fuego que representa el proceso lento de la cocción ¿Qué sabores y sueños de reconciliación estarán preparando las mujeres?"
     	:"About 20 members of the group Tejedoras de Sueños y Sabores de Paz, inhabitants of the municipality of  María Baja, meet one afternoon in May 2019 at the evangelical church in the neighborhood of el Recreo to collectively answer: What shape does reconciliation have? A conversation arises between them about the flavours, smells, sounds and textures that this word could hold. There’s laughter and anecdotes, recipes for <i>turrón</i> (nougat), coffee and <i>mondongo</i> (tripe soup), sweet, bitter and salty flavours that evoke the idea of foods favored in the region. The longing for music and dance becomes present, as well as the sounds that bring news and become omens. The ideas and drawings that are shared inspire the creation of the patchwork. Little by little, the shapes of a pot and the fire that represents the slow process of cooking arise. What flavours and dreams of reconciliation could the women be preparing?",
     
-    //TÍTULO GALERÍA DE PARCHES
+
 
 	"GALERIA DE PARCHES Y AUDIOS_"
 	:"PATCH AND AUDIO GALLERY_",
 
-	//DESCRIPCIÓN PEQUEÑAS
+
 
 	"ESTOS PARCHES FUERON BORDADOS POR DIFERENTES PERSONAS COMO RESPUESTA A LA OLLA LA RECONCILIACIÓN DE LAS MUJERES DEL COLECTIVO TEJIENDO SUEÑOS Y SABORES DE PAZ EN MAMPUJÁN Y GUARDAN MENSAJES SONOROS"
 	:"THESE PATCHES WERE EMBROIDERED BY DIFFERENT PEOPLE AS A RESPONSE TO THE POT THE RECONCILIATION OF THE WOMEN OF THE COLLECTIVE WEAVING DREAMS AND FLAVORS OF PEACE IN MAMPUJÁN AND KEEP SOUND MESSAGES",
-	//PARCHES
+	
 
 	"Rosalina_ Bueno, compañeras muy buenos, muy buenos dias contenta de poder compartir con ustedes. Eh, nosotras también hicimos olla, las mujeres tejedoras de mampuján también hicimos una olla porque nos sentimos muy identificado con nuestros enlaces que es con remendando lo nuevo, es una maravilla porque si ustedes se dan de cuenta estos son unos profesores blancos, yo por mi parte soy bastante morena y ahorita en el lugar donde estamos es una maravilla porque aquí hay moreno, hay negro, hay blanco, hay mestizo, aquí habemos todos los colores, pero estamos como el sancocho. ¿Como es el sancocho? está la yuca, está el ñame, está el plátano, está la carne o sea el hueso o sea el pescado, y todos están revueltos en un solo propósito. ¿Y como se termina el sancocho?, disfrutando la bendición, entonces me siento muy satisfecha de compartir con ustedes y de enviarles este hermoso mensaje, mujeres, y sigamos adelante rumbo a la paz, y que Dios nos de oportunidad, de que no solamente nos escuchemos en audio, si no que podamos darnos un abrazo como el que hoy compartimos aquí, con todas estas personas agradecidas con dios, sobre todo y con todos ustedes, Dios bendiga."
 	:"Rosalina_ Alright, everyone, very good, very good morning, I’m glad to be able to share with you. Uh we also made a pot, we, the women weavers of Mampuján, also made a pot, because we feel very identified with our ties, that is, to Mending the new. It’s wonderful, because if you realize, these are white teachers, I, for one, am quite dark and right now where we are it’s wonderful, because here there’s brown, there’s black, there’s white, there’s mestizo, here we have all the colors, but we’re like a <i>sancocho.</i> What is sancocho like? There is yucca, there is yam, there is plantain, there is meat, be it bone or fish, and everything is mixed up under a single purpose. And how do you finish sancocho? Enjoying the blessing, therefore I feel very satisfied sharing with you and sending this beautiful message, women, and let us continue forward towards peace, and may God give us the opportunity, to not only listen to each other through audio, but to be able to give each other a hug, like the one we shared here today, with all these people, thankful to God, above all and with all of you, God bless.  ",
 
-	"Luz Dary_ El fuego puede ser peligroso pero también puede ser la fuerza. La reconciliación es dura, pero todos unidos en un fuego fuerte, ablandamos corazones por muy duros que sean.":"Luz Dary_ Fire can be dangerous but it can also bring strength. Reconciliation is tough but, all of us united in a strong fire, we can soften hearts no matter how tough they are. ",
+	"Luz Dary_ El fuego puede ser peligroso pero también puede ser la fuerza. La reconciliación es dura, pero todos unidos en un fuego fuerte, ablandamos corazones por muy duros que sean."
+	:"Luz Dary_ Fire can be dangerous but it can also bring strength. Reconciliation is tough but, all of us united in a strong fire, we can soften hearts no matter how tough they are. ",
 
 
-	//HACER
+	
 
-	//CRÉDITOS
+
 
 	"CRÉDITOS":"CREDITS",
 
@@ -126,7 +135,7 @@
 	"Financiada por":"Financed by",
 	"Con el apoyo de":"With the support of",
 
-	//AGRADECIMIENTOS
+
 
 	"AGRADECIMIENTOS":"ACKNOWLEDGMENTS ",
 
