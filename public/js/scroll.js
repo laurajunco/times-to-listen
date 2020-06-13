@@ -122,6 +122,7 @@ function seleccionarBarra(i) {
 
         $barra6.removeClass('selected').removeClass('siguiente').removeClass('anterior');
         $barra6.addClass('siguiente');
+        
 
         height = $barra1.prop("scrollHeight") - $( window ).height();
         $selected = $barra1;

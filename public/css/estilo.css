@@ -40,6 +40,9 @@ h1 {
     -webkit-font-smoothing: none;
     margin-top: 30px;
     margin-bottom: 5vh; }
+    @media (min-width: 768px) and (max-width: 1000px) {
+      h1.megatitulo {
+        font-size: 120px; } }
 
 .text-center {
   text-align: center; }
@@ -140,7 +143,7 @@ mark {
   justify-content: space-between; }
   .home .img-logo {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -296,6 +299,9 @@ mark {
   .container .col-8 {
     width: 66.6%;
     padding: 10px; }
+    @media (min-width: 768px) and (max-width: 1000px) {
+      .container .col-8 {
+        width: 100%; } }
   .container .col-4 {
     width: 33.3%; }
   .container .divider {
@@ -393,6 +399,11 @@ mark {
     font-family: "Darker Grotesque", sans-serif;
     font-weight: 600;
     width: 70%; }
+  @media (min-width: 768px) and (max-width: 1000px) {
+    .pieza .descripcion-pieza h1 {
+      font-size: 30px; }
+    .pieza .descripcion-pieza .texto-descripcion {
+      font-size: 18px; } }
 
 .pieza .texto-interaccion {
   margin: 0;
@@ -431,7 +442,11 @@ mark {
     max-width: 650px; }
 
 .parches .parche {
-  padding: 35px; }
+  padding: 35px;
+  cursor: pointer; }
+  @media (min-width: 768px) and (max-width: 1000px) {
+    .parches .parche {
+      padding: 10px; } }
 
 .parches .parche-container {
   border: solid 2px black;
@@ -444,6 +459,9 @@ mark {
   .parches .parche-container .img-parche {
     padding: 10px;
     border-bottom: black 2px solid; }
+    @media (min-width: 768px) and (max-width: 1000px) {
+      .parches .parche-container .img-parche {
+        padding: 5px; } }
   .parches .parche-container .play-negro,
   .parches .parche-container .play-color {
     width: 30px;
@@ -466,22 +484,34 @@ mark {
       padding: 10px;
       border-bottom: black 2px solid;
       flex-grow: 1; }
+      @media (min-width: 768px) and (max-width: 1000px) {
+        .parches .parche-container .des-parches .bordado-por {
+          padding: 5px; } }
     .parches .parche-container .des-parches .pais {
       display: flex;
       flex-direction: column;
       justify-content: center;
       padding: 10px;
       flex-grow: 1; }
+      @media (min-width: 768px) and (max-width: 1000px) {
+        .parches .parche-container .des-parches .pais {
+          padding: 5px; } }
     .parches .parche-container .des-parches h6 {
       margin: 3px 0;
       font-family: "Darker Grotesque", sans-serif;
       font-size: 15px; }
+      @media (min-width: 768px) and (max-width: 1000px) {
+        .parches .parche-container .des-parches h6 {
+          font-size: 12px; } }
     .parches .parche-container .des-parches h2 {
       margin: 0;
       font-family: "terminal_grotesque", sans-serif;
       font-weight: normal;
       font-size: 36px;
       letter-spacing: 2px; }
+      @media (min-width: 768px) and (max-width: 1000px) {
+        .parches .parche-container .des-parches h2 {
+          font-size: 30px; } }
   .parches .parche-container .transcripcion {
     background-color: black;
     overflow-y: scroll;
@@ -492,18 +522,24 @@ mark {
     left: 0;
     padding: 20px;
     padding-right: 40px; }
+    @media (min-width: 768px) and (max-width: 1000px) {
+      .parches .parche-container .transcripcion {
+        padding-right: 15px; } }
     .parches .parche-container .transcripcion p {
       font-family: "Darker Grotesque", sans-serif;
       font-weight: 600;
       font-size: 22px;
       line-height: 1.2;
       color: white; }
+      @media (min-width: 768px) and (max-width: 1000px) {
+        .parches .parche-container .transcripcion p {
+          font-size: 20px; } }
 
 /* -------- CREDITOS -------- */
 .creditos {
-  height: 100%;
   width: 100%;
-  flex-direction: row; }
+  flex-direction: row;
+  background-color: #2727dc; }
   .creditos .azul {
     height: 100%;
     width: 50%;
@@ -512,7 +548,7 @@ mark {
     justify-content: center;
     padding: 40px; }
     .creditos .azul h1 {
-      height: 15%;
+      height: 10%;
       color: white; }
     .creditos .azul .agradecimientos {
       font-family: "Darker Grotesque", sans-serif;
@@ -522,28 +558,39 @@ mark {
       color: white;
       line-height: 1.5;
       margin-bottom: 3vh; }
+      @media (min-width: 768px) and (max-width: 1000px) {
+        .creditos .azul .agradecimientos {
+          font-size: 20px; } }
   .creditos .blanco {
     height: 100%;
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    background-color: white; }
     .creditos .blanco h1 {
-      height: 15%;
+      height: 10%;
       padding: 20px; }
     .creditos .blanco .credito {
       padding: 20px;
+      padding-right: 50px;
       border-bottom: 1px solid black;
       text-transform: uppercase; }
       .creditos .blanco .credito h5 {
         font-family: "Darker Grotesque", sans-serif;
         margin: 5px 0;
         font-size: 15px; }
+        @media (min-width: 768px) and (max-width: 1000px) {
+          .creditos .blanco .credito h5 {
+            font-size: 13px; } }
       .creditos .blanco .credito p {
         margin: 0;
         font-family: "Darker Grotesque", sans-serif;
         color: black;
         font-size: 15px; }
+        @media (min-width: 768px) and (max-width: 1000px) {
+          .creditos .blanco .credito p {
+            font-size: 13px; } }
     .creditos .blanco .social {
       display: flex;
       flex-direction: row;
@@ -552,30 +599,55 @@ mark {
       align-items: center;
       padding: 0; }
       .creditos .blanco .social .boton {
-        font-size: 34px;
+        font-size: 25px;
         font-family: "terminal_grotesque", sans-serif;
         text-align: center;
         border-right: 1px solid black;
         flex-grow: 1;
-        height: 100%;
+        height: 90px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         color: black;
         cursor: pointer; }
+        @media (min-width: 768px) and (max-width: 1000px) {
+          .creditos .blanco .social .boton {
+            font-size: 20px; } }
         .creditos .blanco .social .boton:hover {
           color: white;
           background-color: #2727dc; }
     .creditos .blanco .logos {
       display: flex;
+      flex-wrap: wrap;
       margin-top: 10px; }
       .creditos .blanco .logos img {
         height: 40px;
-        margin: 0 10px; }
+        margin: 10px; }
+        @media (min-width: 768px) and (max-width: 1000px) {
+          .creditos .blanco .logos img {
+            height: 30px; } }
       .creditos .blanco .logos.small img {
         height: 25px;
         margin: 0 10px; }
+
+.only-desktop {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-color: #2727dc;
+  color: #ffc733;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  text-transform: uppercase; }
+  @media (max-width: 800px) {
+    .only-desktop {
+      display: flex; } }
 
 /* ------ QUITAR BARRAS DE SCROLL ------ */
 ::-webkit-scrollbar {
