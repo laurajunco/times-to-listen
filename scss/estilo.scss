@@ -12,6 +12,7 @@ $terminal: 'terminal_grotesque', sans-serif;
 
 $menu-width: 30px;
 
+
 * {
     box-sizing: border-box;
     overscroll-behavior: none;
@@ -56,6 +57,10 @@ h1 {
         -webkit-font-smoothing: none;
         margin-top: 30px;
         margin-bottom: 5vh;
+
+        @media (min-width: 768px) and (max-width: 1000px){
+            font-size: 120px;
+        }
     }
 }
 .text-center {
@@ -188,7 +193,7 @@ mark {
 
     .img-logo {
         width: 100%;
-        max-width: 1200px;
+        max-width: 1000px;
         margin: auto;
         display: flex;
         justify-content: center;
@@ -296,6 +301,8 @@ mark {
         flex-direction: column;
         justify-content: space-between;
         padding: 5vh 0;
+
+        
 
         .texto-menu {
             display: flex;
@@ -416,6 +423,10 @@ mark {
     .col-8 {
         width: 66.6%;
         padding: 10px;
+        @media (min-width: 768px) and (max-width: 1000px){
+            width: 100%;
+        }
+        
     }
 
     .col-4 {
@@ -566,6 +577,16 @@ mark {
             font-weight: 600;
             width: 70%
         }
+
+        @media (min-width: 768px) and (max-width: 1000px){
+            h1 {
+                font-size: 30px;
+            }
+
+            .texto-descripcion {
+                font-size: 18px;
+            }
+        }
     }
 
     .texto-interaccion {
@@ -622,6 +643,11 @@ mark {
 
     .parche {
         padding: 35px;
+        cursor: pointer;
+
+        @media (min-width: 768px) and (max-width: 1000px){
+            padding: 10px;
+        }
     }
 
     .parche-container {
@@ -636,6 +662,9 @@ mark {
         .img-parche {
             padding: 10px;
             border-bottom: black 2px solid;
+            @media (min-width: 768px) and (max-width: 1000px){
+                padding: 5px;
+            }
         }
 
         .play-negro,
@@ -663,6 +692,10 @@ mark {
                 padding: 10px;
                 border-bottom: black 2px solid;
                 flex-grow: 1;
+
+                @media (min-width: 768px) and (max-width: 1000px){
+                    padding: 5px;
+                }
             }
 
             .pais {
@@ -671,12 +704,19 @@ mark {
                 justify-content: center;
                 padding: 10px;
                 flex-grow: 1;
+
+                @media (min-width: 768px) and (max-width: 1000px){
+                    padding: 5px;
+                }
             }
 
             h6 {
                 margin: 3px 0;
                 font-family: $grotesque;
                 font-size: 15px;
+                @media (min-width: 768px) and (max-width: 1000px){
+                    font-size: 12px;
+                }
             }
 
             h2 {
@@ -685,6 +725,10 @@ mark {
                 font-weight: normal;
                 font-size: 36px;
                 letter-spacing: 2px;
+                @media (min-width: 768px) and (max-width: 1000px){
+                    font-size: 30px;
+                }
+                
             }
         }
 
@@ -698,6 +742,9 @@ mark {
             left: 0;
             padding: 20px;
             padding-right: 40px;
+            @media (min-width: 768px) and (max-width: 1000px){
+                padding-right: 15px;
+            }
 
             p {
                 font-family: $grotesque;
@@ -705,6 +752,10 @@ mark {
                 font-size: 22px;
                 line-height: 1.2;
                 color: white;
+
+                @media (min-width: 768px) and (max-width: 1000px){
+                    font-size: 20px;
+                }
             }
 
         }
@@ -714,9 +765,9 @@ mark {
 
 /* -------- CREDITOS -------- */
 .creditos {
-    height: 100%;
     width: 100%;
     flex-direction: row;
+    background-color: $azul;
 
     .azul {
         height: 100%;
@@ -727,7 +778,7 @@ mark {
         padding: 40px;
 
         h1 {
-            height: 15%;
+            height: 10%;
             color: white;
         }
 
@@ -739,6 +790,10 @@ mark {
             color: white;
             line-height: 1.5;
             margin-bottom: 3vh;
+
+            @media (min-width: 768px) and (max-width: 1000px){
+                font-size: 20px;
+            }
         }
     }
 
@@ -748,14 +803,16 @@ mark {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        background-color: white;
 
         h1 {
-            height: 15%;
+            height: 10%;
             padding: 20px;
         }
 
         .credito {
             padding: 20px;
+            padding-right: 20px + $menu-width;
             border-bottom: 1px solid black;
             text-transform: uppercase;
 
@@ -763,6 +820,9 @@ mark {
                 font-family: $grotesque;
                 margin: 5px 0;
                 font-size: 15px;
+                @media (min-width: 768px) and (max-width: 1000px){
+                    font-size: 13px;
+                }
             }
 
             p {
@@ -770,7 +830,9 @@ mark {
                 font-family: $grotesque;
                 color: black;
                 font-size: 15px;
-
+                @media (min-width: 768px) and (max-width: 1000px){
+                    font-size: 13px;
+                }
             }
         }
 
@@ -783,18 +845,22 @@ mark {
             padding: 0;
 
             .boton {
-                font-size: 34px;
+                font-size: 25px;
                 font-family: $terminal;
                 text-align: center;
                 border-right: 1px solid black;
                 flex-grow: 1;
-                height: 100%;
+                height: 90px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 color: black;
                 cursor: pointer;
+
+                @media (min-width: 768px) and (max-width: 1000px){
+                    font-size: 20px;
+                }
 
                 &:hover {
                     color: white;
@@ -806,11 +872,15 @@ mark {
 
         .logos {
             display: flex;
+            flex-wrap: wrap;
             margin-top: 10px;
 
             img {
                 height: 40px;
-                margin: 0 10px;
+                margin: 10px;
+                @media (min-width: 768px) and (max-width: 1000px){
+                    height: 30px;
+                }
             }
 
             &.small {
