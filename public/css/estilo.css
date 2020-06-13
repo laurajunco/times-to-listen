@@ -631,6 +631,24 @@ mark {
         height: 25px;
         margin: 0 10px; }
 
+.only-desktop {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-color: #2727dc;
+  color: #ffc733;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  text-transform: uppercase; }
+  @media (max-width: 800px) {
+    .only-desktop {
+      display: flex; } }
+
 /* ------ QUITAR BARRAS DE SCROLL ------ */
 ::-webkit-scrollbar {
   display: none; }
