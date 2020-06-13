@@ -905,8 +905,15 @@ mark {
     color: $amarillo;
     height: 100vh;
     width: 100vw;
+    padding: 20px;
     text-align: center;
     text-transform: uppercase;
+    
+
+    h1 {
+        font-size: 20px !important;
+        color: $amarillo
+    }
 
     @media (max-width: 800px) {
         display: flex;
