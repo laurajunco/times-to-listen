@@ -1,0 +1,16 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+div.scrollabletextbox {
+    height:100px;
+    width:300px;
+    font-family: Verdana, serif;
+    font-size: 82%;
+    overflow:scroll;
+}
+
