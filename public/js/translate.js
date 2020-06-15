@@ -13,6 +13,8 @@ $(document).ready(function () {
         $('.m-info-espanol').hide();
         $('.b-info-ingles').show();
         $('.m-info-ingles').show();
+       
+       idioma = "eng";
    });
 
     //cambiar a ingles
@@ -23,6 +25,8 @@ $(document).ready(function () {
         $('.m-info-espanol').hide();
         $('.b-info-ingles').show();
         $('.m-info-ingles').show();
+        
+        idioma = "eng";
     });
 
    //cambiar a español
@@ -32,6 +36,8 @@ $(document).ready(function () {
         $('.m-info-espanol').show();
         $('.b-info-ingles').hide();
         $('.m-info-ingles').hide();
+       
+       idioma = "esp";
    });
 
    $('#es-select-menu').click(function() {
@@ -40,6 +46,8 @@ $(document).ready(function () {
         $('.m-info-espanol').show();
         $('.b-info-ingles').hide();
         $('.m-info-ingles').hide();
+       
+       idioma = "esp";
    });
 
 });
