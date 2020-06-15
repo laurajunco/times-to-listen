@@ -103,6 +103,11 @@ marquee {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black; }
 
+.text-blanco-linea {
+color: transparent;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: white; }
+
 .text-negro {
   color: black; }
 
@@ -307,6 +312,9 @@ mark {
         width: 100%; } }
   .container .col-4 {
     width: 33.3%; }
+  .container .col-5 {
+    width: 40%;
+    padding: 10px; }
   .container .divider {
     width: 100%;
     border-bottom: solid 1px blue;
@@ -537,6 +545,158 @@ mark {
       @media (min-width: 768px) and (max-width: 1000px) {
         .parches .parche-container .transcripcion p {
           font-size: 20px; } }
+
+/*--------- HACER ----------- */
+
+#background-hacer{
+  background-image: url(../img/svg/background_hacer.svg);
+  background-position: center bottom;
+  background-size: 100%;
+}
+
+#titulo-hacer{
+  align-self: center;
+  line-height: 120px;
+}
+
+#intro-hacer h1{
+  font-weight: 600;
+  font-family: "Darker grotesque";
+  font-size: 40px;
+}
+
+#intro-hacer{
+  margin: 10vh 0 20vh 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hacer.cuadro-titulo{
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white; 
+}
+
+.hacer.cuadro-titulo h4 {
+  line-height: 20px;
+  letter-spacing: 0.3px; 
+}
+
+.container .col-6.lista-materiales {
+  width: 50%;
+  padding: 3vw; 
+}
+
+#instrucciones-hacer{
+  justify-content: space-between;
+  margin: 8vh 0 8hv 0;
+}
+
+#materiales-hacer{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+div.lista-materiales>div{
+  border: 3px solid;
+  height: 100%;
+}
+
+div.lista-materiales>div>h1{
+  margin: 0;
+  padding: 30px;
+  text-transform: uppercase;
+  background-color: #2727dc;
+}
+
+#materiales{
+  margin: 20px;
+}
+
+#materiales p{
+  transition: 0.1s;
+}
+
+#materiales p:hover{
+  cursor: pointer;
+  color: #FFBE33;
+  transition: 0.1s;
+}
+
+#materiales>p{
+  margin:3px;
+}
+
+#patron-calcar{
+  padding: 15vh 0 15vh 0;
+  margin: 5vh 0 10vh 0;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+}
+
+#patron-calcar h1{
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#paso-a-paso{
+  margin: 0 -2vw;
+}
+
+.paso{
+  margin: 2vh 2vw;
+}
+
+.paso img{
+  object-fit: cover;
+  width: 100%
+}
+
+.paso h1{
+  border-bottom: 2px solid;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.paso p{
+}
+
+#hashtags{
+  padding: 10vh 0 10vh 0;
+  margin: 10vh 0 10vh 0;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+}
+
+#hashtags h1{
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#ejemplos-hacer{
+  justify-content: center;
+  margin: 1vh 10vw 10vh 10vw;
+}
+
+#ejemplos-hacer img{
+ padding: 0.8vw;
+}
+
+#footer-hacer {
+  background-color: #FFBE33;
+}
+
+#footer-hacer img{
+  object-fit: cover;
+  width: 100%
+}
 
 /* -------- CREDITOS -------- */
 .creditos {
