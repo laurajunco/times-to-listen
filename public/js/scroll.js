@@ -24,7 +24,7 @@ $('#en-select').click(function() {
     seleccionarBarra(id);
 });
 
-$('#open-menu, #sidebar_menu').click(function() {
+$('#open-menu').click(function() {
     $menu.removeClass('cerrado').removeClass('abierto')
     $menu.addClass('abierto');
 });
