@@ -565,12 +565,34 @@ mark {
   font-size: 40px; }
 
 #intro-hacer {
-  margin: 10vh 0 20vh 0;
   align-items: center;
   justify-content: space-between; }
 
+.datos-hacer h2 {
+  font-weight: normal;
+  font-family: "Darker grotesque";
+  font-size: 22px; }
+
+.datos-hacer {
+  margin: 0 0 7.5vh 0;
+  align-items: center;
+  justify-content: space-between; }
+
+.datos-hacer a {
+  text-decoration: none; }
+
+#fin-datos-hacer {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding: 5vh 10vw;
+  margin-bottom: 15vh; }
+
+#fin-datos-hacer h2 {
+  text-align: center; }
+
 .hacer.cuadro-titulo {
-  width: 100%;
+  width: 100vw;
+  align-self: center;
   height: 20px;
   text-align: center;
   text-transform: uppercase;
