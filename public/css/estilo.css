@@ -60,33 +60,50 @@ h1 {
 .half-top {
   margin-top: 5vh; }
 
-marquee {
-  height: 42px; }
-  marquee.big {
+.marquee {
+  height: 42px;
+  position: relative;
+  overflow: hidden; }
+  .marquee .marquee__inner {
+    width: fit-content;
+    display: flex;
+    position: relative; }
+  .marquee p {
+    white-space: nowrap;
+    animation: marquee 120s linear infinite;
+    -webkit-animation: marquee 120s linear infinite;
+    -moz-animation: marquee 30s linear infinite; }
+  .marquee.big {
     height: 55px; }
-    marquee.big p {
+    .marquee.big p {
       font-size: 30px;
       line-height: 55px; }
-  marquee p {
+  .marquee p {
     font-size: 20px;
     margin: 0;
     line-height: 42px;
     text-transform: uppercase;
     letter-spacing: 1.5px; }
-  marquee.rojo {
+  .marquee.rojo {
     background-color: #fc4141;
     color: white; }
-  marquee.azul {
+  .marquee.azul {
     background-color: #2727dc;
     color: white; }
-  marquee.morado {
+  .marquee.morado {
     background-color: white;
     color: #9466ff;
     border: 1px solid #9466ff; }
-  marquee.amarillo {
+  .marquee.amarillo {
     background-color: white;
     color: #ffc733;
     border: 1px solid #ffc733; }
+
+@keyframes marquee {
+  from {
+    margin-left: 15%; }
+  to {
+    margin-left: -120%; } }
 
 .text-morado {
   color: #9466ff; }

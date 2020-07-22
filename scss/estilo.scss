@@ -86,9 +86,24 @@ h1 {
     margin-top: 5vh;
 }
 
-marquee {
+.marquee {
     height: 42px;
+    position: relative;
+    overflow: hidden;
 
+    .marquee__inner {
+        width: fit-content;
+        display: flex;
+        position: relative;
+    }
+
+    p {
+        white-space:nowrap;
+        animation: marquee 120s linear infinite;
+        -webkit-animation: marquee 120s linear infinite;
+        -moz-animation: marquee 30s linear infinite;
+    }
+    
     &.big {
         height: 55px;
 
@@ -128,6 +143,12 @@ marquee {
         border: 1px solid $amarillo;
     }
 }
+
+@keyframes marquee {
+    from{margin-left : 15%;}
+      to{margin-left: -120%;}
+  } 
+
 
 .text-morado {
     color: $morado;
