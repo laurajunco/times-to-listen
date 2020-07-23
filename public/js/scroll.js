@@ -14,49 +14,49 @@ var $selected;
 seleccionarBarra(id);
 
 // Pasar del umbral a la intro
-$('#es-select').on("click", function() {
-    console.log("es");
+$barra1.on('click', '#es-select', function() {
+    console.log("en");
     id = 2;
     seleccionarBarra(id);
 });
 
-$('#en-select').on("click", function() {
+$barra1.on("click", '#en-select', function() {
     id = 2;
     seleccionarBarra(id);
 });
 
-$('#open-menu').on("click", function() {
+$menu.on("click", '#open-menu', function() {
     $menu.removeClass('cerrado').removeClass('abierto')
     $menu.addClass('abierto');
 });
 
-$('#close-menu').on("click", function() {
+$menu.on("click", '#close-menu', function() {
     $menu.removeClass('cerrado').removeClass('abierto')
     $menu.addClass('cerrado');  
 });
 
-$('#ir-intro').on("click", function() {
+$menu.on("click", '#ir-intro', function() {
     $menu.removeClass('cerrado').removeClass('abierto')
     $menu.addClass('cerrado');  
     id = 2;
     seleccionarBarra(id);
 });
 
-$('#ir-bojaya').on("click", function() {
+$menu.on('#ir-bojaya').on("click", '#ir-bojaya', function() {
     $menu.removeClass('cerrado').removeClass('abierto')
     $menu.addClass('cerrado');  
     id = 3;
     seleccionarBarra(id);
 });
 
-$('#ir-mampujan').on("click",function() {
+$menu.on('#ir-bojaya').on("click", '#ir-mampujan', function() {
     $menu.removeClass('cerrado').removeClass('abierto')
     $menu.addClass('cerrado');  
     id = 4;
     seleccionarBarra(id);
 });
 
-$('#ir-hacer').on("click", function() {
+$menu.on('#ir-bojaya').on("click", '#ir-hacer', function() {
     $menu.removeClass('cerrado').removeClass('abierto')
     $menu.addClass('cerrado');  
     id = 5;
