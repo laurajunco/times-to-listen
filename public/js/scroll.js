@@ -14,48 +14,49 @@ var $selected;
 seleccionarBarra(id);
 
 // Pasar del umbral a la intro
-$('#es-select').click(function() {
+$('#es-select').on("click", function() {
+    console.log("es");
     id = 2;
     seleccionarBarra(id);
 });
 
-$('#en-select').click(function() {
+$('#en-select').on("click", function() {
     id = 2;
     seleccionarBarra(id);
 });
 
-$('#open-menu').click(function() {
+$('#open-menu').on("click", function() {
     $menu.removeClass('cerrado').removeClass('abierto')
     $menu.addClass('abierto');
 });
 
-$('#close-menu').click(function() {
+$('#close-menu').on("click", function() {
     $menu.removeClass('cerrado').removeClass('abierto')
     $menu.addClass('cerrado');  
 });
 
-$('#ir-intro').click(function() {
+$('#ir-intro').on("click", function() {
     $menu.removeClass('cerrado').removeClass('abierto')
     $menu.addClass('cerrado');  
     id = 2;
     seleccionarBarra(id);
 });
 
-$('#ir-bojaya').click(function() {
+$('#ir-bojaya').on("click", function() {
     $menu.removeClass('cerrado').removeClass('abierto')
     $menu.addClass('cerrado');  
     id = 3;
     seleccionarBarra(id);
 });
 
-$('#ir-mampujan').click(function() {
+$('#ir-mampujan').on("click",function() {
     $menu.removeClass('cerrado').removeClass('abierto')
     $menu.addClass('cerrado');  
     id = 4;
     seleccionarBarra(id);
 });
 
-$('#ir-hacer').click(function() {
+$('#ir-hacer').on("click", function() {
     $menu.removeClass('cerrado').removeClass('abierto')
     $menu.addClass('cerrado');  
     id = 5;

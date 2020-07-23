@@ -55,7 +55,7 @@ getBojaya.open("GET", "ajax/bojaya.html", true);
 getMampujan.open("GET", "ajax/mampujan.html", true);
 getHacer.open("GET", "ajax/hacer.html", true);
 getCreditos.open("GET", "ajax/creditos.html", true);
-getMenu.open("GET", "ajax/creditos.html", true);
+getMenu.open("GET", "ajax/hacer.html", true);
 
 getUmbral.send();
 getIntro.send();
