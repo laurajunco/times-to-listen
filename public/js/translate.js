@@ -7,7 +7,7 @@ $(document).ready(function () {
     });
 
     //cambiar a ingles
-   $('#en-select').click(function() {
+   $('#en-select').on("click",function() {
         $.sls.setLang("en");
         $('.b-info-espanol').hide();
         $('.m-info-espanol').hide();
@@ -18,7 +18,7 @@ $(document).ready(function () {
    });
 
     //cambiar a ingles
-    $('#en-select-menu').click(function() {
+    $('#en-select-menu').on("click",function() {
         $.sls.setLang("en");
         console.log('ingles');
         $('.b-info-espanol').hide();
@@ -30,7 +30,7 @@ $(document).ready(function () {
     });
 
    //cambiar a español
-   $('#es-select').click(function() {
+   $('#es-select').on("click", function() {
         $.sls.setLang("es");
         $('.b-info-espanol').show();
         $('.m-info-espanol').show();
@@ -40,7 +40,7 @@ $(document).ready(function () {
        idioma = "esp";
    });
 
-   $('#es-select-menu').click(function() {
+   $('#es-select-menu').on("click", function() {
         $.sls.setLang("es");
         $('.b-info-espanol').show();
         $('.m-info-espanol').show();
