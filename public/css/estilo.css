@@ -387,8 +387,50 @@ mark {
   margin-left: 20px; }
 
 .infografia .contexto .col-4 {
-  padding-left: 20px;
-  padding-right: 20px; }
+  padding: 20px; }
+
+.infografia .contexto.morado .border-right {
+  border-right: 2px solid #9466ff; }
+
+.infografia .contexto .mapa {
+  margin-bottom: 20px; }
+
+.infografia .black-title {
+  color: #b092ff;
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.2; }
+
+.infografia .poblacion {
+  margin-left: 20px;
+  text-transform: uppercase;
+  font-family: "terminal_grotesque", sans-serif; }
+  .infografia .poblacion p {
+    margin-bottom: 0; }
+  .infografia .poblacion .border {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px #9466ff solid; }
+  .infografia .poblacion .combined {
+    padding-top: 10px; }
+    .infografia .poblacion .combined .number {
+      font-size: 50px;
+      line-height: 1.1; }
+    .infografia .poblacion .combined .big {
+      font-size: 30px;
+      line-height: 1.1; }
+    .infografia .poblacion .combined .small {
+      font-size: 12px;
+      line-height: 1.1; }
+
+.infografia .economia {
+  text-transform: uppercase;
+  font-family: "terminal_grotesque", sans-serif;
+  margin-bottom: 0; }
+  .infografia .economia .border-bottom {
+    border-bottom: 2px solid #9466ff; }
 
 /* --- VIDEO ----*/
 .video {

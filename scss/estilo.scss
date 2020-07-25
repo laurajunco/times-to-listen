@@ -4,6 +4,7 @@ $azul: #2727dc;
 $amarillo: #ffc733;
 $gris: #e5e5e5;
 $morado: #9466ff;
+$morado-claro: #b092ff;
 $limon: #fff555;
 
 $grotesque: 'Darker Grotesque', sans-serif;
@@ -552,13 +553,73 @@ mark {
     }
 
     .contexto {
+
         .col-4 {
-            padding-left: 20px;
-            padding-right: 20px;
+            padding:20px;
         }
 
-        &.morado{
+        &.morado {
+            .border-right  {
+                border-right: 2px solid $morado;
+            }
+        }
+
+        .mapa {
+            margin-bottom: 20px;
+        }
+    }
+
+    .black-title {
+        color: $morado-claro;
+        font-family: $grotesque;
+        font-weight: 800;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    .poblacion {
+        margin-left: 20px;
+        text-transform: uppercase;
+        font-family: $terminal;
+
+        p {
+            margin-bottom: 0;
+        }
+
+        .border {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 2px $morado solid;
+        }
+
+        .combined {
+            padding-top: 10px;
+
+            .number {
+                font-size: 50px;
+                line-height: 1.1;
+            }
             
+            .big {
+                font-size: 30px;
+                line-height: 1.1;
+            }
+            .small {
+                font-size: 12px;
+                line-height: 1.1;
+            }
+        }
+
+    }
+
+    .economia {
+        text-transform: uppercase;
+        font-family: $terminal;
+        margin-bottom: 0;
+
+        .border-bottom {
+            border-bottom: 2px solid $morado;
         }
     }
 }
