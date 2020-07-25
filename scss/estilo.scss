@@ -553,6 +553,7 @@ mark {
     }
 
     .contexto {
+        font-size: 20px;
 
         .col-4 {
             padding:20px;
@@ -620,6 +621,14 @@ mark {
 
         .border-bottom {
             border-bottom: 2px solid $morado;
+        }
+
+        .big {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-transform: none;
+            font-size: 20px;
+            line-height: 1.2;
         }
     }
 }

@@ -386,14 +386,14 @@ mark {
 .infografia .img-colectivo {
   margin-left: 20px; }
 
-.infografia .contexto .col-4 {
-  padding: 20px; }
-
-.infografia .contexto.morado .border-right {
-  border-right: 2px solid #9466ff; }
-
-.infografia .contexto .mapa {
-  margin-bottom: 20px; }
+.infografia .contexto {
+  font-size: 20px; }
+  .infografia .contexto .col-4 {
+    padding: 20px; }
+  .infografia .contexto.morado .border-right {
+    border-right: 2px solid #9466ff; }
+  .infografia .contexto .mapa {
+    margin-bottom: 20px; }
 
 .infografia .black-title {
   color: #b092ff;
@@ -431,6 +431,12 @@ mark {
   margin-bottom: 0; }
   .infografia .economia .border-bottom {
     border-bottom: 2px solid #9466ff; }
+  .infografia .economia .big {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: none;
+    font-size: 20px;
+    line-height: 1.2; }
 
 /* --- VIDEO ----*/
 .video {
