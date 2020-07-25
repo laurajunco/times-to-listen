@@ -535,8 +535,31 @@ mark {
         }
     }
 
-    .cita {
-        font-size: 30px;
+    .megatitulo {
+        text-align: center;
+        -webkit-text-stroke-width: 2px;
+        font-size: 100px;
+    }
+
+    .small {
+        font-size: 15px;
+        font-family: $grotesque;
+        line-height: 1.1;
+    }
+
+    .img-colectivo {
+        margin-left: 20px;
+    }
+
+    .contexto {
+        .col-4 {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        &.morado{
+            
+        }
     }
 }
 
@@ -550,21 +573,21 @@ mark {
     }
 }
 
+.cuadro-titulo {
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+
+    h4 {
+        line-height: 20px;
+        letter-spacing: 0.3px;
+    }
+}
+
 /* --- PIEZA ---- */
 .pieza {
-    .cuadro-titulo {
-        width: 100%;
-        height: 20px;
-        text-align: center;
-        text-transform: uppercase;
-        color: white;
-
-        h4 {
-            line-height: 20px;
-            letter-spacing: 0.3px;
-        }
-    }
-
     .megatitulo {
         text-align: center;
         -webkit-text-stroke-width: 2px;
@@ -1195,5 +1218,12 @@ body {
     font-family: 'Darker Grotesque';
     src: url('../fonts/DarkerGrotesque-SemiBold.ttf') format('truetype');
     font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Darker Grotesque';
+    src: url('../fonts/DarkerGrotesque-Black.ttf') format('truetype');
+    font-weight: 800;
     font-style: normal;
 }

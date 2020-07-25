@@ -373,8 +373,22 @@ mark {
   .infografia .titulo h1 {
     margin-top: 0; }
 
-.infografia .cita {
-  font-size: 30px; }
+.infografia .megatitulo {
+  text-align: center;
+  -webkit-text-stroke-width: 2px;
+  font-size: 100px; }
+
+.infografia .small {
+  font-size: 15px;
+  font-family: "Darker Grotesque", sans-serif;
+  line-height: 1.1; }
+
+.infografia .img-colectivo {
+  margin-left: 20px; }
+
+.infografia .contexto .col-4 {
+  padding-left: 20px;
+  padding-right: 20px; }
 
 /* --- VIDEO ----*/
 .video {
@@ -383,17 +397,17 @@ mark {
     width: 100%;
     height: 100%; }
 
-/* --- PIEZA ---- */
-.pieza .cuadro-titulo {
+.cuadro-titulo {
   width: 100%;
   height: 20px;
   text-align: center;
   text-transform: uppercase;
   color: white; }
-  .pieza .cuadro-titulo h4 {
+  .cuadro-titulo h4 {
     line-height: 20px;
     letter-spacing: 0.3px; }
 
+/* --- PIEZA ---- */
 .pieza .megatitulo {
   text-align: center;
   -webkit-text-stroke-width: 2px; }
@@ -866,4 +880,10 @@ body {
   font-family: 'Darker Grotesque';
   src: url("../fonts/DarkerGrotesque-SemiBold.ttf") format("truetype");
   font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Darker Grotesque';
+  src: url("../fonts/DarkerGrotesque-Black.ttf") format("truetype");
+  font-weight: 800;
   font-style: normal; }
