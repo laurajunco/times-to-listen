@@ -437,6 +437,17 @@ mark {
     text-transform: none;
     font-size: 20px;
     line-height: 1.2; }
+  .infografia .economia .big-number {
+    font-size: 70px;
+    margin-bottom: 0;
+    margin-right: 10px; }
+  .infografia .economia .suelos {
+    line-height: 1.1;
+    margin-bottom: 0; }
+  .infografia .economia .padding-top {
+    padding-top: 20px; }
+  .infografia .economia .align-items-center {
+    align-items: center; }
 
 /* --- VIDEO ----*/
 .video {
