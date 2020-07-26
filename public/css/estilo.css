@@ -310,7 +310,7 @@ mark {
   max-width: 1400px;
   padding: 20px;
   padding-right: 50px;
-  margin: auto auto;
+  margin: auto;
   display: flex; }
   .container .col-6 {
     width: 50%;
@@ -389,7 +389,7 @@ mark {
 .infografia .contexto {
   font-size: 20px; }
   .infografia .contexto .col-4 {
-    padding: 20px; }
+    padding: 0 20px; }
   .infografia .contexto.morado .border-right {
     border-right: 2px solid #9466ff; }
   .infografia .contexto .mapa {
@@ -448,6 +448,14 @@ mark {
     padding-top: 20px; }
   .infografia .economia .align-items-center {
     align-items: center; }
+
+.infografia .carac {
+  border: 2px solid #9466ff;
+  padding: 40px 20px; }
+  .infografia .carac .titulo p {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto; }
 
 /* --- VIDEO ----*/
 .video {
@@ -904,6 +912,15 @@ div.lista-materiales > div > h1 {
   @media (max-width: 800px) {
     .only-desktop {
       display: flex; } }
+
+/* ------ color de resaltado ------ */
+::selection {
+  background-color: #fff555;
+  color: #2727dc; }
+
+::-webkit-selection {
+  background-color: #fff555;
+  color: #2727dc; }
 
 /* ------ QUITAR BARRAS DE SCROLL ------ */
 ::-webkit-scrollbar {

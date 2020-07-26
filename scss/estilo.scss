@@ -437,7 +437,7 @@ mark {
     max-width: 1400px;
     padding: 20px;
     padding-right: $menu-width + 20px;
-    margin: auto auto;
+    margin: auto;
     display: flex;
 
     .col-6 {
@@ -556,7 +556,7 @@ mark {
         font-size: 20px;
 
         .col-4 {
-            padding:20px;
+            padding: 0 20px;
         }
 
         &.morado {
@@ -648,6 +648,20 @@ mark {
 
         .align-items-center {
             align-items: center;
+        }
+    }
+
+    .carac {
+        border: 2px solid $morado;
+        padding: 40px 20px;
+
+        .titulo {
+            p {
+                max-width: 1000px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
         }
     }
 }
@@ -1258,6 +1272,18 @@ mark {
     @media (max-width: 800px) {
         display: flex;
     }
+}
+
+/* ------ color de resaltado ------ */
+
+::selection {
+    background-color: $limon;
+    color: $azul;
+}
+
+::-webkit-selection {
+    background-color: $limon;
+    color: $azul;
 }
 
 /* ------ QUITAR BARRAS DE SCROLL ------ */
