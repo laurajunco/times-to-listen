@@ -163,6 +163,9 @@ mark {
     background-color: #9466ff;
     color: white; }
 
+.mayus {
+  text-transform: uppercase; }
+
 /* -------- HOME -------- */
 .home {
   min-height: 100%;
@@ -368,6 +371,9 @@ mark {
     margin-top: 1em; }
 
 /* ---infografia---- */
+.infografia .border-bottom {
+  border-bottom: 2px solid #9466ff; }
+
 .infografia .titulo {
   flex-direction: column; }
   .infografia .titulo h1 {
@@ -429,8 +435,6 @@ mark {
   text-transform: uppercase;
   font-family: "terminal_grotesque", sans-serif;
   margin-bottom: 0; }
-  .infografia .economia .border-bottom {
-    border-bottom: 2px solid #9466ff; }
   .infografia .economia .big {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -456,6 +460,12 @@ mark {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto; }
+  .infografia .carac .actor {
+    margin-top: 14px; }
+    .infografia .carac .actor .title {
+      font-size: 24px; }
+    .infografia .carac .actor p {
+      font-size: 14px; }
 
 /* --- VIDEO ----*/
 .video {

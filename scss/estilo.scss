@@ -224,6 +224,10 @@ mark {
  }
 }
 
+.mayus {
+    text-transform: uppercase;
+}
+
 /* -------- HOME -------- */
 .home {
     min-height: 100%;
@@ -528,6 +532,10 @@ mark {
 
 /* ---infografia---- */
 .infografia {
+    .border-bottom {
+        border-bottom: 2px solid $morado;
+    }
+
     .titulo {
         flex-direction: column;
 
@@ -619,10 +627,6 @@ mark {
         font-family: $terminal;
         margin-bottom: 0;
 
-        .border-bottom {
-            border-bottom: 2px solid $morado;
-        }
-
         .big {
             padding-top: 20px;
             padding-bottom: 20px;
@@ -662,6 +666,18 @@ mark {
                 margin-right: auto;
             }
 
+        }
+
+        .actor {
+            margin-top: 14px;
+            
+            .title {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 14px;
+            }
         }
     }
 }
