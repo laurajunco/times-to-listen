@@ -491,15 +491,6 @@ mark {
         padding: 10px; 
     }
 
-
-    .divider {
-        width: 100%;
-        border-bottom: solid 1px blue;
-        margin-top: 3vh;
-        margin-bottom: 3vh;
-        padding: 10px;
-    }
-
     img {
         width: 100%;
         height: auto;
@@ -541,6 +532,19 @@ mark {
 
 /* ---infografia---- */
 .infografia {
+
+    .big-number {
+        font-size: 70px;
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+
+    .divider {
+        padding: 10px;
+        margin: 20px;
+        border-bottom: solid 2px $morado;
+    }
+    
     .border-bottom {
         border-bottom: 2px solid $morado;
     }
@@ -655,12 +659,6 @@ mark {
             line-height: 1.2;
         }
 
-        .big-number {
-            font-size: 70px;
-            margin-bottom: 0;
-            margin-right: 10px;
-        }
-
         .suelos {
             line-height: 1.1;
             margin-bottom: 0;
@@ -687,7 +685,7 @@ mark {
             }
 
         }
-
+        
         .actor {
             margin-bottom:15px;
             
@@ -699,6 +697,25 @@ mark {
                 font-size: 14px;
             }
         }
+    }
+
+    .estado {
+        align-items: center;
+        padding-top: 20px;
+        
+        .big-number {
+            font-size: 50px;
+            line-height: 0.8;
+        }
+
+        .big {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-transform: none;
+            font-size: 20px;
+            line-height: 1.2;
+        }
+        
     }
 }
 

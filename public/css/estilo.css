@@ -342,12 +342,6 @@ mark {
   .container .col-5 {
     width: 40%;
     padding: 10px; }
-  .container .divider {
-    width: 100%;
-    border-bottom: solid 1px blue;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
-    padding: 10px; }
   .container img {
     width: 100%;
     height: auto; }
@@ -375,6 +369,16 @@ mark {
     margin-top: 1em; }
 
 /* ---infografia---- */
+.infografia .big-number {
+  font-size: 70px;
+  margin-bottom: 0;
+  margin-right: 10px; }
+
+.infografia .divider {
+  padding: 10px;
+  margin: 20px;
+  border-bottom: solid 2px #9466ff; }
+
 .infografia .border-bottom {
   border-bottom: 2px solid #9466ff; }
 
@@ -454,10 +458,6 @@ mark {
     text-transform: none;
     font-size: 20px;
     line-height: 1.2; }
-  .infografia .economia .big-number {
-    font-size: 70px;
-    margin-bottom: 0;
-    margin-right: 10px; }
   .infografia .economia .suelos {
     line-height: 1.1;
     margin-bottom: 0; }
@@ -479,6 +479,19 @@ mark {
       font-size: 24px; }
     .infografia .carac .actor p {
       font-size: 14px; }
+
+.infografia .estado {
+  align-items: center;
+  padding-top: 20px; }
+  .infografia .estado .big-number {
+    font-size: 50px;
+    line-height: 0.8; }
+  .infografia .estado .big {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: none;
+    font-size: 20px;
+    line-height: 1.2; }
 
 /* --- VIDEO ----*/
 .video {
