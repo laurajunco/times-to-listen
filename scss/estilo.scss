@@ -726,6 +726,11 @@ mark {
 
     .hito {
 
+        &.img {
+            justify-content: flex-end;
+            margin-bottom: 20px;
+        }
+
         &:focus {
             outline: none;
         }

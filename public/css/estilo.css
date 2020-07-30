@@ -504,6 +504,9 @@ mark {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
+    .linea-tiempo .hito.img {
+      justify-content: flex-end;
+      margin-bottom: 20px; }
     .linea-tiempo .hito:focus {
       outline: none; }
     .linea-tiempo .hito:nth-child(4n) {
