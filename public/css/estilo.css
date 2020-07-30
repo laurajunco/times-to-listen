@@ -493,6 +493,24 @@ mark {
     font-size: 20px;
     line-height: 1.2; }
 
+/* --- LIENA DE TIEMPO ----*/
+.linea-tiempo .hito {
+  font-size: 15px;
+  height: 250px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.slick-slide {
+  margin-left: 30px; }
+
+.slick-list {
+  margin-left: -30px; }
+
+.lick-arrow {
+  display: none !important; }
+
 /* --- VIDEO ----*/
 .video {
   min-height: auto !important; }
