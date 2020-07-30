@@ -9,7 +9,7 @@ var $barra5 = $('#barra_5');
 var $barra6 = $('#barra_6');
 var $menu = $('#menu');
 
-var id = 3; // Iniciar en la seccion 1
+var id = 1; // Iniciar en la seccion 1
 var $selected;
 seleccionarBarra(id);
 
