@@ -4,6 +4,7 @@ $azul: #2727dc;
 $amarillo: #ffc733;
 $gris: #e5e5e5;
 $morado: #9466ff;
+$morado-oscuro: #7945ff;
 $morado-claro: #b092ff;
 $limon: #fff555;
 
@@ -477,18 +478,17 @@ mark {
         width: 33.3%;
     }
 
+    .col-30-p {
+        width: 30%;
+    }
+
+    .col-40-p {
+        width: 40%;
+    }
+
     .col-5 {
         width: 40%;
         padding: 10px; 
-    }
-
-
-    .divider {
-        width: 100%;
-        border-bottom: solid 1px blue;
-        margin-top: 3vh;
-        margin-bottom: 3vh;
-        padding: 10px;
     }
 
     img {
@@ -532,8 +532,25 @@ mark {
 
 /* ---infografia---- */
 .infografia {
+
+    .big-number {
+        font-size: 70px;
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+
+    .divider {
+        padding: 10px;
+        margin: 20px;
+        border-bottom: solid 2px $morado;
+    }
+    
     .border-bottom {
         border-bottom: 2px solid $morado;
+    }
+
+    .mod {
+        font-size: 15px;
     }
 
     .titulo {
@@ -563,7 +580,7 @@ mark {
     .contexto {
         font-size: 20px;
 
-        .col-4 {
+        .col-4, .col-30-p, .col-40-p {
             padding: 0 20px;
         }
 
@@ -583,8 +600,16 @@ mark {
         font-family: $grotesque;
         font-weight: 800;
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1.2;
+    }
+
+    .black-text {
+        color: $morado-oscuro;
+        font-family: $grotesque;
+        font-weight: 800;
+        font-size: 19px;
+        line-height: 1.3;
     }
 
     .poblacion {
@@ -625,7 +650,6 @@ mark {
     .economia {
         text-transform: uppercase;
         font-family: $terminal;
-        margin-bottom: 0;
 
         .big {
             padding-top: 20px;
@@ -633,12 +657,6 @@ mark {
             text-transform: none;
             font-size: 20px;
             line-height: 1.2;
-        }
-
-        .big-number {
-            font-size: 70px;
-            margin-bottom: 0;
-            margin-right: 10px;
         }
 
         .suelos {
@@ -657,7 +675,7 @@ mark {
 
     .carac {
         border: 2px solid $morado;
-        padding: 40px 20px;
+        padding: 40px 0;
 
         .titulo {
             p {
@@ -667,9 +685,9 @@ mark {
             }
 
         }
-
+        
         .actor {
-            margin-top: 14px;
+            margin-bottom:15px;
             
             .title {
                 font-size: 24px;
@@ -680,7 +698,111 @@ mark {
             }
         }
     }
+
+    .estado {
+        align-items: center;
+        padding-top: 20px;
+        
+        .big-number {
+            font-size: 50px;
+            line-height: 0.8;
+        }
+
+        .big {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-transform: none;
+            font-size: 20px;
+            line-height: 1.2;
+        }
+        
+    }
 }
+
+/* --- LIENA DE TIEMPO ----*/
+
+.linea-tiempo {
+    display: flex;
+
+    .hito {
+
+        &.img {
+            justify-content: flex-end;
+            margin-bottom: 20px;
+        }
+
+        &:focus {
+            outline: none;
+        }
+        outline: none;
+        font-size: 14px;
+        position: relative;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &:nth-child(4n) {
+            height: 300px;
+        }
+        &:nth-child(2n) {
+            height: 280px;
+        }
+        &:nth-child(3n) {
+            height: 320px;
+        }
+
+        .bottom {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 2;
+
+            .line {
+                border-left: 2px solid $morado;
+                flex-grow: 2;
+            }
+
+            .fecha {
+                font-size: 13px;
+                color: $morado-oscuro;
+                
+            }
+        }
+    }
+
+    &.arriba {
+        .slick-track {
+            display: flex;
+            align-items: flex-end;
+        }  
+    }
+
+    &.abajo {
+        .slick-track {
+            display: flex;
+            align-items: flex-start;
+        }     
+
+        .fecha {
+            margin-top: 1em;
+        }
+    }
+}
+
+// override slick
+.slick-slide {
+    margin-left: 30px;
+}
+
+.slick-list {
+    margin-left: -30px;
+}
+
+.slick-arrow {
+    display: none !important;
+}
+
+
 
 /* --- VIDEO ----*/
 .video {
