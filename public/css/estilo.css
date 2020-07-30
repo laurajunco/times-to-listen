@@ -494,13 +494,42 @@ mark {
     line-height: 1.2; }
 
 /* --- LIENA DE TIEMPO ----*/
-.linea-tiempo .hito {
-  font-size: 15px;
-  height: 250px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
+.linea-tiempo {
+  display: flex; }
+  .linea-tiempo .hito {
+    outline: none;
+    font-size: 14px;
+    position: relative;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .linea-tiempo .hito:focus {
+      outline: none; }
+    .linea-tiempo .hito:nth-child(4n) {
+      height: 300px; }
+    .linea-tiempo .hito:nth-child(2n) {
+      height: 280px; }
+    .linea-tiempo .hito:nth-child(3n) {
+      height: 320px; }
+    .linea-tiempo .hito .bottom {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 2; }
+      .linea-tiempo .hito .bottom .line {
+        border-left: 2px solid #9466ff;
+        flex-grow: 2; }
+      .linea-tiempo .hito .bottom .fecha {
+        font-size: 13px;
+        color: #7945ff; }
+  .linea-tiempo.arriba .slick-track {
+    display: flex;
+    align-items: flex-end; }
+  .linea-tiempo.abajo .slick-track {
+    display: flex;
+    align-items: flex-start; }
+  .linea-tiempo.abajo .fecha {
+    margin-top: 1em; }
 
 .slick-slide {
   margin-left: 30px; }
@@ -508,7 +537,7 @@ mark {
 .slick-list {
   margin-left: -30px; }
 
-.lick-arrow {
+.slick-arrow {
   display: none !important; }
 
 /* --- VIDEO ----*/

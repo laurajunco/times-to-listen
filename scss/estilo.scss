@@ -722,17 +722,64 @@ mark {
 /* --- LIENA DE TIEMPO ----*/
 
 .linea-tiempo {
+    display: flex;
 
     .hito {
-        font-size: 15px;
-        height: 250px;
+
+        &:focus {
+            outline: none;
+        }
+        outline: none;
+        font-size: 14px;
         position: relative;
+        height: 250px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
-        .bottom {
+        &:nth-child(4n) {
+            height: 300px;
+        }
+        &:nth-child(2n) {
+            height: 280px;
+        }
+        &:nth-child(3n) {
+            height: 320px;
+        }
 
+        .bottom {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 2;
+
+            .line {
+                border-left: 2px solid $morado;
+                flex-grow: 2;
+            }
+
+            .fecha {
+                font-size: 13px;
+                color: $morado-oscuro;
+                
+            }
+        }
+    }
+
+    &.arriba {
+        .slick-track {
+            display: flex;
+            align-items: flex-end;
+        }  
+    }
+
+    &.abajo {
+        .slick-track {
+            display: flex;
+            align-items: flex-start;
+        }     
+
+        .fecha {
+            margin-top: 1em;
         }
     }
 }
@@ -746,9 +793,10 @@ mark {
     margin-left: -30px;
 }
 
-.lick-arrow {
+.slick-arrow {
     display: none !important;
 }
+
 
 
 /* --- VIDEO ----*/
