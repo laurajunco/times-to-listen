@@ -1,20 +1,23 @@
 /* -------- VARIABLES --------- */
 $rojo: #fc4141;
 $azul: #2727dc;
+
+$gris: #e5e5e5;
+$limon: #fff555;
+
 $amarillo: #ffc733;
 $naranja: #ff930a;
-$gris: #e5e5e5;
+$naranja-oscuro: #f06723;
+
 $morado: #9466ff;
 $morado-oscuro: #7945ff;
 $morado-claro: #b092ff;
-$limon: #fff555;
 
 $grotesque: 'Darker Grotesque', sans-serif;
 $poppins: 'Poppins', sans-serif;
 $terminal: 'terminal_grotesque', sans-serif;
 
 $menu-width: 30px;
-
 
 * {
     box-sizing: border-box;
@@ -89,6 +92,10 @@ h1 {
     margin-top: 5vh;
 }
 
+.align-items-center {
+    align-items: center;
+}
+
 .marquee {
     height: 42px;
     position: relative;
@@ -157,10 +164,28 @@ h1 {
     color: $morado;
 }
 
+.text-morado-oscuro {
+    color: $morado-oscuro;
+}
+
+.text-naranja-oscuro {
+    color: $naranja-oscuro;
+}
+
+.text-morado-claro {
+    color: $morado-claro;
+}
+
 .text-morado-linea {
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: $morado;
+}
+
+.text-naranja-oscuro-linea {
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $naranja-oscuro;
 }
 
 .text-blanco-linea {
@@ -170,7 +195,7 @@ h1 {
 
 .text-amarillo-linea {
     color: white;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: $amarillo;
 }
 
@@ -422,7 +447,6 @@ mark {
     }
 }
 
-
 #content section {
     min-height: 100%;
     display: flex;
@@ -508,7 +532,6 @@ mark {
     }
 }
 
-
 /* ------- INTRODUCCIÓN -------- */
 .intro-expo {
     flex-direction: column;
@@ -534,7 +557,6 @@ mark {
     }
 }
 
-
 /* ---infografia---- */
 .infografia {
 
@@ -547,11 +569,39 @@ mark {
     .divider {
         padding: 10px;
         margin: 20px;
-        border-bottom: solid 2px $morado;
+        border-bottom: solid 2px;
+
+        &.morado {
+            border-color: $morado;
+        }
+
+        &.naranja {
+            border-color: $naranja;
+        }
     }
     
     .border-bottom {
-        border-bottom: 2px solid $morado;
+        border-bottom: 2px solid;
+
+        &.morado {
+            border-color: $morado;
+        }
+
+        &.naranja {
+            border-color: $naranja;
+        }
+    }
+
+    .border-top {
+        border-top: 2px solid;
+
+        &.morado {
+            border-color: $morado;
+        }
+
+        &.naranja {
+            border-color: $naranja;
+        }
     }
 
     .mod {
@@ -570,7 +620,11 @@ mark {
         text-align: center;
         font-size: 100px;
 
-        &.text-morado {
+        &.text-morado-linea {
+            -webkit-text-stroke-width: 2px;
+        }
+
+        &.text-naranja-oscuro-linea {
             -webkit-text-stroke-width: 2px;
         }
         
@@ -615,7 +669,6 @@ mark {
     }
 
     .black-title {
-        color: $morado-claro;
         font-family: $grotesque;
         font-weight: 800;
         text-transform: uppercase;
@@ -624,7 +677,6 @@ mark {
     }
 
     .black-text {
-        color: $morado-oscuro;
         font-family: $grotesque;
         font-weight: 800;
         font-size: 19px;
@@ -676,6 +728,13 @@ mark {
             text-transform: none;
             font-size: 20px;
             line-height: 1.2;
+
+            &.bg-amarillo {
+                padding-left: 10px;
+                padding-right: 10px;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+            }
         }
 
         .suelos {
@@ -687,14 +746,20 @@ mark {
             padding-top: 20px;
         }
 
-        .align-items-center {
-            align-items: center;
-        }
     }
 
     .carac {
-        border: 2px solid $morado;
+
+        border: 2px solid;
         padding: 40px 0;
+
+        &.morado {
+            border-color: $morado;
+        }
+
+        &.naranja {
+            border-color: $naranja;
+        }
 
         .titulo {
             p {
@@ -715,6 +780,13 @@ mark {
             p {
                 font-size: 14px;
             }
+        }
+
+        .pad {
+            
+            img {
+            padding: 20px;
+             }
         }
     }
 
@@ -743,6 +815,26 @@ mark {
 .linea-tiempo {
     display: flex;
 
+    &.bojaya {
+        .line {
+            border-left: 2px solid $morado;
+        }
+
+        .fecha {
+            color: $morado-oscuro;
+        }
+    }
+
+    &.mampujan {
+        .line {
+            border-left: 2px solid $naranja;
+        }
+
+        .fecha {
+            color: $naranja;
+        }
+    }
+
     .hito {
 
         &.img {
@@ -750,9 +842,20 @@ mark {
             margin-bottom: 20px;
         }
 
+        &.img-small {
+            justify-content: flex-end;
+            margin-bottom: 20px;
+
+            img{
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+        }
+
         &:focus {
             outline: none;
         }
+
         outline: none;
         font-size: 14px;
         position: relative;
@@ -777,13 +880,12 @@ mark {
             flex-grow: 2;
 
             .line {
-                border-left: 2px solid $morado;
+                border-left: 2px solid;
                 flex-grow: 2;
             }
 
             .fecha {
                 font-size: 13px;
-                color: $morado-oscuro;
                 
             }
         }
@@ -1090,8 +1192,8 @@ mark {
 
 }
 
-/*--------- HACER ----------- */
 
+/*--------- HACER ----------- */
 #background-hacer{
     background-image: url(../img/svg/background_hacer.svg);
     background-position: center bottom;
@@ -1432,7 +1534,6 @@ mark {
 }
 
 /* ------ color de resaltado ------ */
-
 ::selection {
     background-color: $limon;
     color: $azul;
@@ -1455,7 +1556,6 @@ body {
 .contenido {
     scrollbar-width: none;
 }
-
 
 /* ------ TIPOGRAFÍAS ------ */
 
