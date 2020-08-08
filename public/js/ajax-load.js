@@ -16,7 +16,22 @@ $( "#barra_3" ).load( "ajax/bojaya.html" , function() {
         $('.slider').slick('slickPlay')
     });
 })
-$( "#barra_4" ).load( "ajax/mampujan.html")
+$( "#barra_4" ).load( "ajax/mampujan.html", function() {
+    $('.linea-tiempo.mampujan').slick({
+        slidesToShow: 6,
+        speed: 10000,
+        autoplay: true,
+        autoplaySpeed: 0,
+        cssEase: 'linear',
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        infinite: true
+    });
+
+    $('.slider').mouseover(function() {
+        $('.slider').slick('slickPlay')
+    });
+})
 $( "#barra_5" ).load( "ajax/hacer.html")
 $( "#barra_6" ).load( "ajax/creditos.html")
 $( "#menu" ).load( "ajax/menu.html")

@@ -708,6 +708,7 @@ mark {
                 padding-left: 10px;
                 padding-right: 10px;
                 margin-bottom: 20px;
+                text-transform: uppercase;
             }
         }
 
@@ -773,11 +774,41 @@ mark {
 .linea-tiempo {
     display: flex;
 
+    &.bojaya {
+        .line {
+            border-left: 2px solid $morado;
+        }
+
+        .fecha {
+            color: $morado-oscuro;
+        }
+    }
+
+    &.mampujan {
+        .line {
+            border-left: 2px solid $naranja;
+        }
+
+        .fecha {
+            color: $naranja;
+        }
+    }
+
     .hito {
 
         &.img {
             justify-content: flex-end;
             margin-bottom: 20px;
+        }
+
+        &.img-small {
+            justify-content: flex-end;
+            margin-bottom: 20px;
+
+            img{
+                padding-left: 40px;
+                padding-right: 40px;
+            }
         }
 
         &:focus {
@@ -807,13 +838,12 @@ mark {
             flex-grow: 2;
 
             .line {
-                border-left: 2px solid $morado;
+                border-left: 2px solid;
                 flex-grow: 2;
             }
 
             .fecha {
                 font-size: 13px;
-                color: $morado-oscuro;
                 
             }
         }

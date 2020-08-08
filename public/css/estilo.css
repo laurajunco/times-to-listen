@@ -485,7 +485,8 @@ mark {
     .infografia .economia .big.bg-amarillo {
       padding-left: 10px;
       padding-right: 10px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      text-transform: uppercase; }
   .infografia .economia .suelos {
     line-height: 1.1;
     margin-bottom: 0; }
@@ -522,6 +523,14 @@ mark {
 /* --- LIENA DE TIEMPO ----*/
 .linea-tiempo {
   display: flex; }
+  .linea-tiempo.bojaya .line {
+    border-left: 2px solid #9466ff; }
+  .linea-tiempo.bojaya .fecha {
+    color: #7945ff; }
+  .linea-tiempo.mampujan .line {
+    border-left: 2px solid #ff930a; }
+  .linea-tiempo.mampujan .fecha {
+    color: #ff930a; }
   .linea-tiempo .hito {
     outline: none;
     font-size: 14px;
@@ -533,6 +542,12 @@ mark {
     .linea-tiempo .hito.img {
       justify-content: flex-end;
       margin-bottom: 20px; }
+    .linea-tiempo .hito.img-small {
+      justify-content: flex-end;
+      margin-bottom: 20px; }
+      .linea-tiempo .hito.img-small img {
+        padding-left: 40px;
+        padding-right: 40px; }
     .linea-tiempo .hito:focus {
       outline: none; }
     .linea-tiempo .hito:nth-child(4n) {
@@ -546,11 +561,10 @@ mark {
       flex-direction: column;
       flex-grow: 2; }
       .linea-tiempo .hito .bottom .line {
-        border-left: 2px solid #9466ff;
+        border-left: 2px solid;
         flex-grow: 2; }
       .linea-tiempo .hito .bottom .fecha {
-        font-size: 13px;
-        color: #7945ff; }
+        font-size: 13px; }
   .linea-tiempo.arriba .slick-track {
     display: flex;
     align-items: flex-end; }
