@@ -2,6 +2,7 @@
 $rojo: #fc4141;
 $azul: #2727dc;
 $amarillo: #ffc733;
+$naranja: #ff930a;
 $gris: #e5e5e5;
 $morado: #9466ff;
 $morado-oscuro: #7945ff;
@@ -173,7 +174,6 @@ h1 {
     -webkit-text-stroke-color: $amarillo;
 }
 
-
 .text-negro-linea {
     color: transparent;
     -webkit-text-stroke-width: 1px;
@@ -195,6 +195,11 @@ h1 {
 .text-amarillo {
     color: $amarillo;
 }
+
+.text-naranja {
+    color: $naranja;
+}
+
 .text-blanco {
     color: white;
 }
@@ -563,12 +568,16 @@ mark {
 
     .megatitulo {
         text-align: center;
-        -webkit-text-stroke-width: 2px;
         font-size: 100px;
+
+        &.text-morado {
+            -webkit-text-stroke-width: 2px;
+        }
+        
     }
 
     .small {
-        font-size: 15px;
+        font-size: 17px;
         font-family: $grotesque;
         line-height: 1.1;
     }
@@ -584,9 +593,19 @@ mark {
             padding: 0 20px;
         }
 
+        .border-right  {
+            border-right: 2px solid;
+        }
+
         &.morado {
             .border-right  {
-                border-right: 2px solid $morado;
+                border-color: $morado;
+            }
+        }
+
+        &.amarillo {
+            .border-right  {
+                border-color: $naranja;
             }
         }
 

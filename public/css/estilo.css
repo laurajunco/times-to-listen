@@ -140,6 +140,9 @@ h1 {
 .text-amarillo {
   color: #ffc733; }
 
+.text-naranja {
+  color: #ff930a; }
+
 .text-blanco {
   color: white; }
 
@@ -392,11 +395,12 @@ mark {
 
 .infografia .megatitulo {
   text-align: center;
-  -webkit-text-stroke-width: 2px;
   font-size: 100px; }
+  .infografia .megatitulo.text-morado {
+    -webkit-text-stroke-width: 2px; }
 
 .infografia .small {
-  font-size: 15px;
+  font-size: 17px;
   font-family: "Darker Grotesque", sans-serif;
   line-height: 1.1; }
 
@@ -407,8 +411,12 @@ mark {
   font-size: 20px; }
   .infografia .contexto .col-4, .infografia .contexto .col-30-p, .infografia .contexto .col-40-p {
     padding: 0 20px; }
+  .infografia .contexto .border-right {
+    border-right: 2px solid; }
   .infografia .contexto.morado .border-right {
-    border-right: 2px solid #9466ff; }
+    border-color: #9466ff; }
+  .infografia .contexto.amarillo .border-right {
+    border-color: #ff930a; }
   .infografia .contexto .mapa {
     margin-bottom: 20px; }
 

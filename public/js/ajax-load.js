@@ -1,7 +1,7 @@
 $( "#barra_1" ).load( "ajax/umbral.html")
 $( "#barra_2" ).load( "ajax/intro.html")
 $( "#barra_3" ).load( "ajax/bojaya.html" , function() {
-    $('.linea-tiempo').slick({
+    $('.linea-tiempo.bojaya').slick({
         slidesToShow: 6,
         speed: 10000,
         autoplay: true,
