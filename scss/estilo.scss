@@ -164,6 +164,14 @@ h1 {
     color: $morado;
 }
 
+.text-morado-oscuro {
+    color: $morado-oscuro;
+}
+
+.text-naranja-oscuro {
+    color: $naranja-oscuro;
+}
+
 .text-morado-claro {
     color: $morado-claro;
 }
@@ -187,7 +195,7 @@ h1 {
 
 .text-amarillo-linea {
     color: white;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: $amarillo;
 }
 
@@ -561,7 +569,15 @@ mark {
     .divider {
         padding: 10px;
         margin: 20px;
-        border-bottom: solid 2px $morado;
+        border-bottom: solid 2px;
+
+        &.morado {
+            border-color: $morado;
+        }
+
+        &.naranja {
+            border-color: $naranja;
+        }
     }
     
     .border-bottom {
@@ -661,7 +677,6 @@ mark {
     }
 
     .black-text {
-        color: $morado-oscuro;
         font-family: $grotesque;
         font-weight: 800;
         font-size: 19px;
@@ -765,6 +780,13 @@ mark {
             p {
                 font-size: 14px;
             }
+        }
+
+        .pad {
+            
+            img {
+            padding: 20px;
+             }
         }
     }
 

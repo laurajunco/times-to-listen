@@ -111,6 +111,12 @@ h1 {
 .text-morado {
   color: #9466ff; }
 
+.text-morado-oscuro {
+  color: #7945ff; }
+
+.text-naranja-oscuro {
+  color: #f06723; }
+
 .text-morado-claro {
   color: #b092ff; }
 
@@ -131,7 +137,7 @@ h1 {
 
 .text-amarillo-linea {
   color: white;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #ffc733; }
 
 .text-negro-linea {
@@ -391,7 +397,11 @@ mark {
 .infografia .divider {
   padding: 10px;
   margin: 20px;
-  border-bottom: solid 2px #9466ff; }
+  border-bottom: solid 2px; }
+  .infografia .divider.morado {
+    border-color: #9466ff; }
+  .infografia .divider.naranja {
+    border-color: #ff930a; }
 
 .infografia .border-bottom {
   border-bottom: 2px solid; }
@@ -452,7 +462,6 @@ mark {
   line-height: 1.2; }
 
 .infografia .black-text {
-  color: #7945ff;
   font-family: "Darker Grotesque", sans-serif;
   font-weight: 800;
   font-size: 19px;
@@ -517,6 +526,8 @@ mark {
       font-size: 24px; }
     .infografia .carac .actor p {
       font-size: 14px; }
+  .infografia .carac .pad img {
+    padding: 20px; }
 
 .infografia .estado {
   align-items: center;
