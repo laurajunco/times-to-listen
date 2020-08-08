@@ -32,6 +32,8 @@ $( "#barra_4" ).load( "ajax/mampujan.html", function() {
         $('.slider').slick('slickPlay')
     });
 })
-$( "#barra_5" ).load( "ajax/hacer.html")
-$( "#barra_6" ).load( "ajax/creditos.html")
+$( "#barra_5" ).load( "ajax/sonson.html")
+$( "#barra_6" ).load( "ajax/choiba.html")
+$( "#barra_7" ).load( "ajax/hacer.html")
+$( "#barra_8" ).load( "ajax/creditos.html")
 $( "#menu" ).load( "ajax/menu.html")
