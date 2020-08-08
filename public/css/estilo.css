@@ -119,6 +119,11 @@ h1 {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #9466ff; }
 
+.text-naranja-oscuro-linea {
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #f06723; }
+
 .text-blanco-linea {
   color: transparent;
   -webkit-text-stroke-width: 1px;
@@ -415,6 +420,8 @@ mark {
   font-size: 100px; }
   .infografia .megatitulo.text-morado-linea {
     -webkit-text-stroke-width: 2px; }
+  .infografia .megatitulo.text-naranja-oscuro-linea {
+    -webkit-text-stroke-width: 2px; }
 
 .infografia .small {
   font-size: 17px;
@@ -494,8 +501,12 @@ mark {
     padding-top: 20px; }
 
 .infografia .carac {
-  border: 2px solid #9466ff;
+  border: 2px solid;
   padding: 40px 0; }
+  .infografia .carac.morado {
+    border-color: #9466ff; }
+  .infografia .carac.naranja {
+    border-color: #ff930a; }
   .infografia .carac .titulo p {
     max-width: 1000px;
     margin-left: auto;

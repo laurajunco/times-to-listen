@@ -1,20 +1,23 @@
 /* -------- VARIABLES --------- */
 $rojo: #fc4141;
 $azul: #2727dc;
+
+$gris: #e5e5e5;
+$limon: #fff555;
+
 $amarillo: #ffc733;
 $naranja: #ff930a;
-$gris: #e5e5e5;
+$naranja-oscuro: #f06723;
+
 $morado: #9466ff;
 $morado-oscuro: #7945ff;
 $morado-claro: #b092ff;
-$limon: #fff555;
 
 $grotesque: 'Darker Grotesque', sans-serif;
 $poppins: 'Poppins', sans-serif;
 $terminal: 'terminal_grotesque', sans-serif;
 
 $menu-width: 30px;
-
 
 * {
     box-sizing: border-box;
@@ -169,6 +172,12 @@ h1 {
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: $morado;
+}
+
+.text-naranja-oscuro-linea {
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $naranja-oscuro;
 }
 
 .text-blanco-linea {
@@ -430,7 +439,6 @@ mark {
     }
 }
 
-
 #content section {
     min-height: 100%;
     display: flex;
@@ -516,7 +524,6 @@ mark {
     }
 }
 
-
 /* ------- INTRODUCCIÓN -------- */
 .intro-expo {
     flex-direction: column;
@@ -541,7 +548,6 @@ mark {
         margin-top: 1em;
     }
 }
-
 
 /* ---infografia---- */
 .infografia {
@@ -599,6 +605,10 @@ mark {
         font-size: 100px;
 
         &.text-morado-linea {
+            -webkit-text-stroke-width: 2px;
+        }
+
+        &.text-naranja-oscuro-linea {
             -webkit-text-stroke-width: 2px;
         }
         
@@ -724,8 +734,17 @@ mark {
     }
 
     .carac {
-        border: 2px solid $morado;
+
+        border: 2px solid;
         padding: 40px 0;
+
+        &.morado {
+            border-color: $morado;
+        }
+
+        &.naranja {
+            border-color: $naranja;
+        }
 
         .titulo {
             p {
@@ -814,6 +833,7 @@ mark {
         &:focus {
             outline: none;
         }
+
         outline: none;
         font-size: 14px;
         position: relative;
@@ -1150,8 +1170,8 @@ mark {
 
 }
 
-/*--------- HACER ----------- */
 
+/*--------- HACER ----------- */
 #background-hacer{
     background-image: url(../img/svg/background_hacer.svg);
     background-position: center bottom;
@@ -1492,7 +1512,6 @@ mark {
 }
 
 /* ------ color de resaltado ------ */
-
 ::selection {
     background-color: $limon;
     color: $azul;
@@ -1515,7 +1534,6 @@ body {
 .contenido {
     scrollbar-width: none;
 }
-
 
 /* ------ TIPOGRAFÍAS ------ */
 
