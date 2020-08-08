@@ -7,31 +7,35 @@ var $barra3 = $('#barra_3');
 var $barra4 = $('#barra_4');
 var $barra5 = $('#barra_5');
 var $barra6 = $('#barra_6');
-var $barra7 = $('#barra_7'); //creditos
-var $barra8 = $('#barra_8'); //hacer
+var $barra7 = $('#barra_7');
+var $barra8 = $('#barra_8'); 
 var $menu = $('#menu');
 
-var barras = [$barra1, $barra2, $barra3, $barra4, $barra5, $barra6, $barra7, $barra8]
+var barras = [
+    $barra1, 
+    $barra2, 
+    $barra3, 
+    $barra4, 
+    $barra5, 
+    $barra6, 
+    $barra7, 
+    $barra8
+];
 
 var id = 1; // Iniciar en la seccion 1
 var $selected;
-$menu.hide();
+
+$menu.hide(); //ocultar el menu
 seleccionarBarra(id);
 
-// Pasar del umbral a la intro
-$barra1.on('click', '#es-select', function() {
-    console.log("en");
+/* Pasar del menu a la intro */
+$barra1.on('click', '#es-select, #en-select', function() {
     id = 2;
-    seleccionarBarra(id);
     $menu.show();
+    seleccionarBarra(id);
 });
 
-$barra1.on("click", '#en-select', function() {
-    id = 2;
-    seleccionarBarra(id);
-    $menu.show();
-});
-
+/* Abrir y cerrar menu */
 $menu.on("click", '#open-menu', function() {
     $menu.removeClass('cerrado').removeClass('abierto')
     $menu.addClass('abierto');
@@ -42,7 +46,9 @@ $menu.on("click", '#close-menu', function() {
     $menu.addClass('cerrado');  
 });
 
-/*$menu.on("click", '#ir-intro', function() {
+/* Navegación menú */
+/*
+$menu.on("click", '#ir-intro', function() {
     $menu.removeClass('cerrado').removeClass('abierto')
     $menu.addClass('cerrado');  
     id = 2;
@@ -68,10 +74,10 @@ $menu.on("click", '#ir-hacer', function() {
     $menu.addClass('cerrado');  
     id = 7;
     seleccionarBarra(id);
-});*/
+});
+*/
 
-
-//Event listener scroll
+/* Event listener para scroll */
 $('html').on('mousewheel', function(event) {
     var top = $selected.scrollTop();
     var deltaY = event.deltaY;
@@ -88,7 +94,7 @@ $('html').on('mousewheel', function(event) {
     }
 });
 
-/* Función para avanzar sección */
+/* Función para avanzar sección (closure) */
 function avanzar() {
     var executed = false;
     if (!executed) {
@@ -98,7 +104,7 @@ function avanzar() {
     }
 }
 
-/* Función para retroceder sección*/
+/* Función para retroceder sección */
 function retroceder() {
     var executed = false;
     if (!executed) {
@@ -129,7 +135,6 @@ function seleccionarBarra(i) {
             barras[j].addClass('siguiente');
         }
     }
-    
 }
 
 })(jQuery, this);
