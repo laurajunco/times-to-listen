@@ -880,6 +880,16 @@ mark {
         }
     }
 
+    &.sonson {
+        .line {
+            border-left: 2px solid $verde-claro;
+        }
+
+        .fecha {
+            color: $verde-claro;
+        }
+    }
+
     &.mampujan {
         .line {
             border-left: 2px solid $naranja;

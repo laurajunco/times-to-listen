@@ -35,7 +35,22 @@ $( "#barra_4" ).load( "ajax/mampujan.html", function() {
     });
 })
 
-$( "#barra_5" ).load( "ajax/sonson.html")
+$( "#barra_5" ).load( "ajax/sonson.html", function() {
+    $('.linea-tiempo.sonson').slick({
+        slidesToShow: 6,
+        speed: 10000,
+        autoplay: true,
+        autoplaySpeed: 0,
+        cssEase: 'linear',
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        infinite: true
+    });
+
+    $('.slider').mouseover(function() {
+        $('.slider').slick('slickPlay')
+    });
+})
 $( "#barra_6" ).load( "ajax/choiba.html")
 $( "#barra_7" ).load( "ajax/hacer.html")
 $( "#barra_8" ).load( "ajax/creditos.html")
