@@ -13,6 +13,10 @@ $morado: #9466ff;
 $morado-oscuro: #7945ff;
 $morado-claro: #b092ff;
 
+$verde: #0db1cb;
+$verde-oscuro: #0c6186;
+$verde-claro: #66e3eb;
+
 $grotesque: 'Darker Grotesque', sans-serif;
 $poppins: 'Poppins', sans-serif;
 $terminal: 'terminal_grotesque', sans-serif;
@@ -221,6 +225,14 @@ h1 {
     color: $amarillo;
 }
 
+.text-verde-claro {
+    color: $verde-claro;
+}
+
+.text-verde {
+    color: $verde;
+}
+
 .text-naranja {
     color: $naranja;
 }
@@ -234,11 +246,30 @@ h1 {
     font-weight: normal;
 }
 
+.poppins {
+    font-family: $poppins;
+    font-weight: normal;
+}
+
+.grotesque {
+    font-family: $grotesque;
+    font-weight: normal;
+
+    &.bold {
+        font-weight: 700;
+    }
+}
+
 .bg-morado {
     background-color: $morado;
 }
+
 .bg-amarillo {
     background-color: $amarillo;
+}
+
+.bg-verde-claro {
+    background-color: $verde-claro;
 }
 
 .bg-azul {
@@ -258,6 +289,11 @@ mark {
 .mayus {
     text-transform: uppercase;
 }
+
+.lowercase {
+    text-transform: none;
+}
+
 
 /* -------- HOME -------- */
 .home {
@@ -590,6 +626,10 @@ mark {
         &.naranja {
             border-color: $naranja;
         }
+
+        &.verde {
+            border-color: $verde-claro;
+        }
     }
 
     .border-top {
@@ -663,6 +703,12 @@ mark {
             }
         }
 
+        &.verde {
+            .border-right  {
+                border-color: $verde-claro;
+            }
+        }
+
         .mapa {
             margin-bottom: 20px;
         }
@@ -721,6 +767,10 @@ mark {
     .economia {
         text-transform: uppercase;
         font-family: $terminal;
+        
+        .m-btm {
+            margin-bottom: 20px;
+        }
 
         .big {
             padding-top: 20px;
@@ -735,6 +785,11 @@ mark {
                 margin-bottom: 20px;
                 text-transform: uppercase;
             }
+        }
+
+        .grande {
+            font-size: 24px;
+            margin-bottom: 0;
         }
 
         .suelos {
@@ -822,6 +877,16 @@ mark {
 
         .fecha {
             color: $morado-oscuro;
+        }
+    }
+
+    &.sonson {
+        .line {
+            border-left: 2px solid $verde-claro;
+        }
+
+        .fecha {
+            color: $verde-claro;
         }
     }
 

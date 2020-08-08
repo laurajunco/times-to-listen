@@ -157,6 +157,12 @@ h1 {
 .text-amarillo {
   color: #ffc733; }
 
+.text-verde-claro {
+  color: #66e3eb; }
+
+.text-verde {
+  color: #0db1cb; }
+
 .text-naranja {
   color: #ff930a; }
 
@@ -167,11 +173,24 @@ h1 {
   font-family: "terminal_grotesque", sans-serif;
   font-weight: normal; }
 
+.poppins {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal; }
+
+.grotesque {
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: normal; }
+  .grotesque.bold {
+    font-weight: 700; }
+
 .bg-morado {
   background-color: #9466ff; }
 
 .bg-amarillo {
   background-color: #ffc733; }
+
+.bg-verde-claro {
+  background-color: #66e3eb; }
 
 .bg-azul {
   background-color: #2727dc; }
@@ -185,6 +204,9 @@ mark {
 
 .mayus {
   text-transform: uppercase; }
+
+.lowercase {
+  text-transform: none; }
 
 /* -------- HOME -------- */
 .home {
@@ -409,6 +431,8 @@ mark {
     border-color: #9466ff; }
   .infografia .border-bottom.naranja {
     border-color: #ff930a; }
+  .infografia .border-bottom.verde {
+    border-color: #66e3eb; }
 
 .infografia .border-top {
   border-top: 2px solid; }
@@ -451,6 +475,8 @@ mark {
     border-color: #9466ff; }
   .infografia .contexto.amarillo .border-right {
     border-color: #ff930a; }
+  .infografia .contexto.verde .border-right {
+    border-color: #66e3eb; }
   .infografia .contexto .mapa {
     margin-bottom: 20px; }
 
@@ -492,6 +518,8 @@ mark {
 .infografia .economia {
   text-transform: uppercase;
   font-family: "terminal_grotesque", sans-serif; }
+  .infografia .economia .m-btm {
+    margin-bottom: 20px; }
   .infografia .economia .big {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -503,6 +531,9 @@ mark {
       padding-right: 10px;
       margin-bottom: 20px;
       text-transform: uppercase; }
+  .infografia .economia .grande {
+    font-size: 24px;
+    margin-bottom: 0; }
   .infografia .economia .suelos {
     line-height: 1.1;
     margin-bottom: 0; }
@@ -549,6 +580,10 @@ mark {
     border-left: 2px solid #9466ff; }
   .linea-tiempo.bojaya .fecha {
     color: #7945ff; }
+  .linea-tiempo.sonson .line {
+    border-left: 2px solid #66e3eb; }
+  .linea-tiempo.sonson .fecha {
+    color: #66e3eb; }
   .linea-tiempo.mampujan .line {
     border-left: 2px solid #ff930a; }
   .linea-tiempo.mampujan .fecha {
