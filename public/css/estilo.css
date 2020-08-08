@@ -60,6 +60,9 @@ h1 {
 .half-top {
   margin-top: 5vh; }
 
+.align-items-center {
+  align-items: center; }
+
 .marquee {
   height: 42px;
   position: relative;
@@ -107,6 +110,9 @@ h1 {
 
 .text-morado {
   color: #9466ff; }
+
+.text-morado-claro {
+  color: #b092ff; }
 
 .text-morado-linea {
   color: white;
@@ -383,7 +389,18 @@ mark {
   border-bottom: solid 2px #9466ff; }
 
 .infografia .border-bottom {
-  border-bottom: 2px solid #9466ff; }
+  border-bottom: 2px solid; }
+  .infografia .border-bottom.morado {
+    border-color: #9466ff; }
+  .infografia .border-bottom.naranja {
+    border-color: #ff930a; }
+
+.infografia .border-top {
+  border-top: 2px solid; }
+  .infografia .border-top.morado {
+    border-color: #9466ff; }
+  .infografia .border-top.naranja {
+    border-color: #ff930a; }
 
 .infografia .mod {
   font-size: 15px; }
@@ -396,7 +413,7 @@ mark {
 .infografia .megatitulo {
   text-align: center;
   font-size: 100px; }
-  .infografia .megatitulo.text-morado {
+  .infografia .megatitulo.text-morado-linea {
     -webkit-text-stroke-width: 2px; }
 
 .infografia .small {
@@ -421,7 +438,6 @@ mark {
     margin-bottom: 20px; }
 
 .infografia .black-title {
-  color: #b092ff;
   font-family: "Darker Grotesque", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
@@ -466,13 +482,15 @@ mark {
     text-transform: none;
     font-size: 20px;
     line-height: 1.2; }
+    .infografia .economia .big.bg-amarillo {
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-bottom: 20px; }
   .infografia .economia .suelos {
     line-height: 1.1;
     margin-bottom: 0; }
   .infografia .economia .padding-top {
     padding-top: 20px; }
-  .infografia .economia .align-items-center {
-    align-items: center; }
 
 .infografia .carac {
   border: 2px solid #9466ff;

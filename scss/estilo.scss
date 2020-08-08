@@ -89,6 +89,10 @@ h1 {
     margin-top: 5vh;
 }
 
+.align-items-center {
+    align-items: center;
+}
+
 .marquee {
     height: 42px;
     position: relative;
@@ -155,6 +159,10 @@ h1 {
 
 .text-morado {
     color: $morado;
+}
+
+.text-morado-claro {
+    color: $morado-claro;
 }
 
 .text-morado-linea {
@@ -551,7 +559,27 @@ mark {
     }
     
     .border-bottom {
-        border-bottom: 2px solid $morado;
+        border-bottom: 2px solid;
+
+        &.morado {
+            border-color: $morado;
+        }
+
+        &.naranja {
+            border-color: $naranja;
+        }
+    }
+
+    .border-top {
+        border-top: 2px solid;
+
+        &.morado {
+            border-color: $morado;
+        }
+
+        &.naranja {
+            border-color: $naranja;
+        }
     }
 
     .mod {
@@ -570,7 +598,7 @@ mark {
         text-align: center;
         font-size: 100px;
 
-        &.text-morado {
+        &.text-morado-linea {
             -webkit-text-stroke-width: 2px;
         }
         
@@ -615,7 +643,6 @@ mark {
     }
 
     .black-title {
-        color: $morado-claro;
         font-family: $grotesque;
         font-weight: 800;
         text-transform: uppercase;
@@ -676,6 +703,12 @@ mark {
             text-transform: none;
             font-size: 20px;
             line-height: 1.2;
+
+            &.bg-amarillo {
+                padding-left: 10px;
+                padding-right: 10px;
+                margin-bottom: 20px;
+            }
         }
 
         .suelos {
@@ -687,9 +720,6 @@ mark {
             padding-top: 20px;
         }
 
-        .align-items-center {
-            align-items: center;
-        }
     }
 
     .carac {
