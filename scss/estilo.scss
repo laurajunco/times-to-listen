@@ -209,6 +209,11 @@ h1 {
     -webkit-text-stroke-color: black;
 }
 
+.text-verde-claro-linea {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $verde-claro;
+}
 .text-negro {
     color: black;
 }
@@ -614,6 +619,10 @@ mark {
         &.naranja {
             border-color: $naranja;
         }
+
+        &.verde {
+            border-color: $verde-claro;
+        }
     }
     
     .border-bottom {
@@ -665,6 +674,10 @@ mark {
         }
 
         &.text-naranja-oscuro-linea {
+            -webkit-text-stroke-width: 2px;
+        }
+
+        &.text-verde-claro-linea {
             -webkit-text-stroke-width: 2px;
         }
         
@@ -812,6 +825,10 @@ mark {
             border-color: $morado;
         }
 
+        &.verde {
+            border-color: $verde-claro;
+        }
+
         &.naranja {
             border-color: $naranja;
         }
@@ -838,10 +855,7 @@ mark {
         }
 
         .pad {
-            
-            img {
-            padding: 20px;
-             }
+            padding: 30px;
         }
     }
 
