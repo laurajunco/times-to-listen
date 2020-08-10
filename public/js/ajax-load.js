@@ -54,7 +54,7 @@ $( "#barra_5" ).load( "ajax/sonson.html", function() {
 $( "#barra_6" ).load( "ajax/choiba.html", function() {
     $('.linea-tiempo.choiba').slick({
         slidesToShow: 6,
-        speed: 3000,
+        speed: 10000,
         autoplay: true,
         autoplaySpeed: 0,
         cssEase: 'linear',
