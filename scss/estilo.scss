@@ -17,6 +17,10 @@ $verde: #0db1cb;
 $verde-oscuro: #0c6186;
 $verde-claro: #66e3eb;
 
+$rosa: #ff6656;
+$rosa-claro: #ff9193;
+$rosa-oscuro: #d13828;
+
 $grotesque: 'Darker Grotesque', sans-serif;
 $poppins: 'Poppins', sans-serif;
 $terminal: 'terminal_grotesque', sans-serif;
@@ -203,6 +207,12 @@ h1 {
     -webkit-text-stroke-color: $amarillo;
 }
 
+.text-rosa-linea {
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $rosa;
+}
+
 .text-negro-linea {
     color: transparent;
     -webkit-text-stroke-width: 1px;
@@ -217,6 +227,15 @@ h1 {
 .text-negro {
     color: black;
 }
+
+.text-rosa {
+    color: $rosa;
+}
+
+.text-rosa-oscuro {
+    color: $rosa-oscuro;
+}
+
 
 .text-azul {
     color: $azul;
@@ -267,6 +286,10 @@ h1 {
 
 .bg-morado {
     background-color: $morado;
+}
+
+.bg-rosa {
+    background-color: $rosa;
 }
 
 .bg-amarillo {
@@ -673,6 +696,10 @@ mark {
             -webkit-text-stroke-width: 2px;
         }
 
+        &.text-rosa-linea {
+            -webkit-text-stroke-width: 2px;
+        }
+
         &.text-naranja-oscuro-linea {
             -webkit-text-stroke-width: 2px;
         }
@@ -716,6 +743,12 @@ mark {
             }
         }
 
+        &.rosa {
+            .border-right  {
+                border-color: $rosa-oscuro;
+            }
+        }
+
         &.verde {
             .border-right  {
                 border-color: $verde-claro;
@@ -754,7 +787,15 @@ mark {
         .border {
             padding-top: 10px;
             padding-bottom: 10px;
-            border-bottom: 2px $morado solid;
+            border-bottom: 2px solid;
+
+            &.morado {
+                border-color: $morado;
+            }
+
+            &.rosa {
+                border-color: $rosa;
+            }
         }
 
         .combined {
