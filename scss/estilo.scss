@@ -224,12 +224,17 @@ h1 {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: $verde-claro;
 }
+
 .text-negro {
     color: black;
 }
 
 .text-rosa {
     color: $rosa;
+}
+
+.text-rosa-claro {
+    color: $rosa-claro;
 }
 
 .text-rosa-oscuro {
@@ -942,6 +947,16 @@ mark {
 
         .fecha {
             color: $verde-claro;
+        }
+    }
+
+    &.choiba {
+        .line {
+            border-left: 2px solid $rosa;
+        }
+
+        .fecha {
+            color: $rosa;
         }
     }
 
