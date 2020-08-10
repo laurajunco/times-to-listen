@@ -161,6 +161,9 @@ h1 {
 .text-rosa {
   color: #ff6656; }
 
+.text-rosa-claro {
+  color: #ff9193; }
+
 .text-rosa-oscuro {
   color: #d13828; }
 
@@ -441,6 +444,8 @@ mark {
   border-bottom: solid 2px; }
   .infografia .divider.morado {
     border-color: #9466ff; }
+  .infografia .divider.rosa {
+    border-color: #ff9193; }
   .infografia .divider.naranja {
     border-color: #ff930a; }
   .infografia .divider.verde {
@@ -576,6 +581,8 @@ mark {
   padding: 40px 0; }
   .infografia .carac.morado {
     border-color: #9466ff; }
+  .infografia .carac.rosa {
+    border-color: #ff6656; }
   .infografia .carac.verde {
     border-color: #66e3eb; }
   .infografia .carac.naranja {
@@ -617,6 +624,10 @@ mark {
     border-left: 2px solid #66e3eb; }
   .linea-tiempo.sonson .fecha {
     color: #66e3eb; }
+  .linea-tiempo.choiba .line {
+    border-left: 2px solid #ff6656; }
+  .linea-tiempo.choiba .fecha {
+    color: #ff6656; }
   .linea-tiempo.mampujan .line {
     border-left: 2px solid #ff930a; }
   .linea-tiempo.mampujan .fecha {
