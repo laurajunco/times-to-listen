@@ -47,7 +47,7 @@ $menu.on("click", '#close-menu', function() {
 });
 
 /* Navegación menú */
-/*
+
 $menu.on("click", '#ir-intro', function() {
     $menu.removeClass('cerrado').removeClass('abierto')
     $menu.addClass('cerrado');  
@@ -69,13 +69,27 @@ $menu.on("click", '#ir-mampujan', function() {
     seleccionarBarra(id);
 });
 
+$menu.on("click", '#ir-sonson', function() {
+    $menu.removeClass('cerrado').removeClass('abierto')
+    $menu.addClass('cerrado');  
+    id = 5;
+    seleccionarBarra(id);
+});
+
+$menu.on("click", '#ir-choiba', function() {
+    $menu.removeClass('cerrado').removeClass('abierto')
+    $menu.addClass('cerrado');  
+    id = 6;
+    seleccionarBarra(id);
+});
+
 $menu.on("click", '#ir-hacer', function() {
     $menu.removeClass('cerrado').removeClass('abierto')
     $menu.addClass('cerrado');  
     id = 7;
     seleccionarBarra(id);
 });
-*/
+
 
 /* Event listener para scroll */
 $('html').on('mousewheel', function(event) {
