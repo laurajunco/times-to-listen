@@ -145,6 +145,11 @@ h1 {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black; }
 
+.text-verde-claro-linea {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #66e3eb; }
+
 .text-negro {
   color: black; }
 
@@ -424,6 +429,8 @@ mark {
     border-color: #9466ff; }
   .infografia .divider.naranja {
     border-color: #ff930a; }
+  .infografia .divider.verde {
+    border-color: #66e3eb; }
 
 .infografia .border-bottom {
   border-bottom: 2px solid; }
@@ -455,6 +462,8 @@ mark {
   .infografia .megatitulo.text-morado-linea {
     -webkit-text-stroke-width: 2px; }
   .infografia .megatitulo.text-naranja-oscuro-linea {
+    -webkit-text-stroke-width: 2px; }
+  .infografia .megatitulo.text-verde-claro-linea {
     -webkit-text-stroke-width: 2px; }
 
 .infografia .small {
@@ -545,6 +554,8 @@ mark {
   padding: 40px 0; }
   .infografia .carac.morado {
     border-color: #9466ff; }
+  .infografia .carac.verde {
+    border-color: #66e3eb; }
   .infografia .carac.naranja {
     border-color: #ff930a; }
   .infografia .carac .titulo p {
@@ -557,8 +568,8 @@ mark {
       font-size: 24px; }
     .infografia .carac .actor p {
       font-size: 14px; }
-  .infografia .carac .pad img {
-    padding: 20px; }
+  .infografia .carac .pad {
+    padding: 30px; }
 
 .infografia .estado {
   align-items: center;
