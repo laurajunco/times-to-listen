@@ -68,7 +68,6 @@ $( "#barra_6" ).load( "ajax/choiba.html", function() {
     });
 })
 
-
 $( "#barra_7" ).load( "ajax/hacer.html")
 $( "#barra_8" ).load( "ajax/creditos.html")
 $( "#menu" ).load( "ajax/menu.html")
