@@ -22,7 +22,7 @@ var barras = [
     $barra8
 ];
 
-var id = 6; // Iniciar en la seccion 1
+var id = 1; // Iniciar en la seccion 1
 var $selected;
 
 $menu.hide(); //ocultar el menu
