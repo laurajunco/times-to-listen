@@ -257,6 +257,16 @@ mark {
         cursor: pointer; }
         .home .img-logo .botones a:hover {
           color: #fc4141; }
+    .home .img-logo .cargando {
+      margin-top: 2em;
+      text-align: center;
+      color: #2727dc;
+      font-family: "Darker Grotesque", sans-serif;
+      font-weight: 700;
+      font-size: 30px; }
+      .home .img-logo .cargando a {
+        text-decoration: none;
+        color: #2727dc; }
 
 #menu {
   position: absolute;
@@ -448,6 +458,9 @@ mark {
     margin-top: 1em; }
 
 .img-en {
+  display: none; }
+
+.botones {
   display: none; }
 
 /* ---infografia---- */

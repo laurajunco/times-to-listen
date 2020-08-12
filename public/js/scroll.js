@@ -159,10 +159,7 @@ function seleccionarBarra(i) {
         //play-pause timelines
         if (lineas[j]) {
             if (lineas[j].id === i) {
-
                 $(lineas[j].linea).slick('slickPlay');
-                console.log(lineas[j].linea);
-
             } else {
                 $(lineas[j].linea).slick('slickPause');
             }

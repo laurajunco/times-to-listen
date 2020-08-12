@@ -362,6 +362,21 @@ mark {
                 }
             }
         }
+
+        .cargando {
+            margin-top: 2em;
+            text-align: center;
+            color: $azul;
+            font-family: $grotesque;
+            font-weight: 700;
+            font-size: 30px;
+
+            a {
+                text-decoration: none;
+                color: $azul;
+                
+            }
+        }
     }
 }
 
@@ -650,6 +665,9 @@ mark {
 }
 
 .img-en {
+    display: none;
+}
+.botones {
     display: none;
 }
 

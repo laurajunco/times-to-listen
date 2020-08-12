@@ -7,7 +7,7 @@
   var $playColor = "";
 
 //event listener para clic en parche
-$('.parches .parche').on("click",function() {
+$('body').on("click",'.parches .parche', function() {
   audio = $(this).find('audio')[0];
   $bot = $(this);
   $trans = $(this).find('.transcripcion');
