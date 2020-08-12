@@ -397,6 +397,9 @@ mark {
   .container .col-2 {
     width: 16.66%;
     padding: 10px; }
+  .container .col-1 {
+    width: 8.33%;
+    padding: 10px; }
   .container .col-10 {
     width: 83.33%;
     padding: 10px; }
@@ -445,6 +448,13 @@ mark {
     margin-top: 1em; }
 
 /* ---infografia---- */
+.infografia .pieza-emblematica .title {
+  margin: 0; }
+
+.infografia .pieza-emblematica .subtitle {
+  font-size: 16px;
+  line-height: 1.3; }
+
 .infografia .big-number {
   font-size: 70px;
   margin-bottom: 0;
