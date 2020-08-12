@@ -1,8 +1,6 @@
 var contador = 0;
-var ready = false;
-var numBarras = 9;
+var numBarras = 8;
 
-$( "#barra_1" ).load( "ajax/umbral.html", addContador())
 $( "#barra_2" ).load( "ajax/intro.html", addContador())
 
 $( "#barra_3" ).load( "ajax/bojaya.html" , function() {
@@ -65,10 +63,9 @@ $( "#barra_8" ).load( "ajax/creditos.html", addContador());
 $( "#menu" ).load( "ajax/menu.html", addContador());
 
 
-//solo se activa el umbral cuando tood haya cargado
+//solo se activa el umbral cuando todo haya cargado
 function addContador() {
     contador++;
-    
     if(contador === numBarras) {
         $('.cargando').hide();
         $('.botones').show();
