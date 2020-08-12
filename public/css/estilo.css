@@ -447,6 +447,9 @@ mark {
     font-weight: 600;
     margin-top: 1em; }
 
+.img-en {
+  display: none; }
+
 /* ---infografia---- */
 .infografia .pieza-emblematica .title {
   margin: 0; }

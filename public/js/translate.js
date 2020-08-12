@@ -7,29 +7,18 @@ $(document).ready(function () {
     });
 
     //cambiar a ingles
-   $('body').on('click', '#en-select', function() {
+   $('body').on('click', '#en-select, #en-select-menu',  function() {
         $.sls.setLang("en");
-       idioma = "eng";
+        $('.img-es').hide();
+        $('.img-en').show();
    });
 
-    //cambiar a ingles
-    $('body').on('click', '#en-select-menu', function() {
-        $.sls.setLang("en");
-        console.log('ingles');
-        idioma = "eng";
+    //cambiar a españo
+    $('body').on('click', '#es-select-menu, #en-select', function() {
+        $.sls.setLang("es");
+        $('.img-en').hide();
+        $('.img-es').show();
     });
-
-   //cambiar a español
-   $('body').on('click', '#es-select', function() {
-        $.sls.setLang("es");
-       idioma = "esp";
-   });
-
-   $('body').on('click', '#es-select-menu', function() {
-        $.sls.setLang("es");
-     
-       idioma = "esp";
-   });
 
 });
 
