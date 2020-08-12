@@ -22,6 +22,26 @@ var barras = [
     $barra8
 ];
 
+var lineas = [
+    {
+        id: 3,
+        linea:'.linea-tiempo.bojaya'
+    },
+    {
+        id: 4,
+        linea:'.linea-tiempo.mampujan'
+    },
+    {
+        id: 5,
+        linea:'.linea-tiempo.sonson'
+    },
+    {
+        id: 6,
+        linea:'.linea-tiempo.choiba'
+    },
+    
+]
+
 var id = 1; // Iniciar en la seccion 1
 var $selected;
 
@@ -147,6 +167,19 @@ function seleccionarBarra(i) {
         } else if (j+1 > i) {
             barras[j].removeClass('selected').removeClass('siguiente').removeClass('anterior');
             barras[j].addClass('siguiente');
+        }
+
+        //play-pause timelines
+
+        if (lineas[j]) {
+            if (lineas[j].id === i) {
+
+                $(lineas[j].linea).slick('slickPlay');
+                console.log(lineas[j].linea);
+
+            } else {
+                $(lineas[j].linea).slick('slickPause');
+            }
         }
     }
 }
