@@ -270,6 +270,16 @@ mark {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly; }
+  @media (max-width: 800px) {
+    #menu {
+      flex-direction: column; }
+      #menu .bg-img {
+        display: none; }
+      #menu h1 {
+        margin: auto;
+        font-size: 39px;
+        padding: 20px;
+        min-height: auto; } }
   #menu .cerrar {
     position: absolute;
     top: 0;
@@ -283,12 +293,14 @@ mark {
     text-transform: uppercase; }
   #menu section {
     flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
     box-shadow: -8px 0px 13px 0px rgba(0, 0, 0, 0.09);
     cursor: pointer; }
     #menu section h1 {
-      padding: 80px 20px;
-      height: 25%;
-      background-color: white; }
+      margin: 80px 20px 60px 20px;
+      background-color: white;
+      font-size: 35px; }
     #menu section .bg-img img {
       width: 100%;
       height: 100%;

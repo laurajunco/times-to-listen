@@ -379,6 +379,22 @@ mark {
     flex-direction: row;
     justify-content: space-evenly;
 
+    @media (max-width: 800px){
+        flex-direction: column;
+
+        .bg-img {
+            display: none;
+        }
+
+        h1 {
+            margin: auto;
+            font-size: 39px;
+            padding: 20px;
+            min-height: auto;
+        }
+
+     }
+
     .cerrar {
         position: absolute;
         top: 0;
@@ -396,13 +412,15 @@ mark {
 
     section {
         flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
         box-shadow: -8px 0px 13px 0px rgba(0,0,0,0.09);
         cursor: pointer;
 
         h1 {
-            padding: 80px 20px;
-            height: 25%;
+            margin: 80px 20px 60px 20px;
             background-color: white;
+            font-size: 35px;
         }
 
         .bg-img {
