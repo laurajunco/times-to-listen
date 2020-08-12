@@ -57,7 +57,3 @@ $( "#barra_8" ).load( "ajax/creditos.html")
 $( "#menu" ).load( "ajax/menu.html")
 
 
-/*$('.slider').mouseover(function() {
-    $('.slider').slick('slickPlay')
-});*/
-

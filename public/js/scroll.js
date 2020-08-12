@@ -32,7 +32,7 @@ var lineas = [
 var id = 1; // Iniciar en la seccion 1
 var $selected;
 
-//$menu.hide(); //ocultar el menu
+$menu.hide(); //ocultar el menu
 seleccionarBarra(id);
 
 /* Pasar del menu a la intro */
@@ -105,7 +105,7 @@ $('html').on('mousewheel', function(event) {
     deltaY = -deltaY;
 
     if (deltaY > 0 && top >= height) {
-        if (id < 9 && id != 1) {
+        if (id <= barras.length && id != 1) {
             avanzar();
         }
     } else if (deltaY < 0 && top <= 0) {
