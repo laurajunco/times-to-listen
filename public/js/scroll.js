@@ -23,24 +23,11 @@ var barras = [
 ];
 
 var lineas = [
-    {
-        id: 3,
-        linea:'.linea-tiempo.bojaya'
-    },
-    {
-        id: 4,
-        linea:'.linea-tiempo.mampujan'
-    },
-    {
-        id: 5,
-        linea:'.linea-tiempo.sonson'
-    },
-    {
-        id: 6,
-        linea:'.linea-tiempo.choiba'
-    },
-    
-]
+    {id: 3,linea:'.linea-tiempo.bojaya'},
+    {id: 4,linea:'.linea-tiempo.mampujan'},
+    {id: 5,linea:'.linea-tiempo.sonson'},
+    {id: 6,linea:'.linea-tiempo.choiba'}, 
+];
 
 var id = 1; // Iniciar en la seccion 1
 var $selected;
@@ -170,7 +157,6 @@ function seleccionarBarra(i) {
         }
 
         //play-pause timelines
-
         if (lineas[j]) {
             if (lineas[j].id === i) {
 
@@ -183,5 +169,4 @@ function seleccionarBarra(i) {
         }
     }
 }
-
 })(jQuery, this);
