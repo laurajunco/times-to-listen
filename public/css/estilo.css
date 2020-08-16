@@ -63,6 +63,25 @@ h1 {
 .align-items-center {
   align-items: center; }
 
+.flecha-nav {
+  margin: 40px 70px 40px 40px; }
+  .flecha-nav.no-margin {
+    margin: 0; }
+  .flecha-nav.amarillo {
+    background-color: #FFBE33;
+    padding: 40px 70px 40px 40px;
+    margin: 0;
+    height: 100px;
+    overflow: hidden; }
+  .flecha-nav img {
+    width: 65px;
+    cursor: pointer; }
+    .flecha-nav img.anterior {
+      float: left;
+      transform: rotate(180deg); }
+    .flecha-nav img.siguiente {
+      float: right; }
+
 .marquee {
   height: 42px;
   position: relative;
@@ -460,9 +479,6 @@ mark {
     margin-top: 1em; }
 
 .img-en {
-  display: none; }
-
-.botones {
   display: none; }
 
 /* ---infografia---- */

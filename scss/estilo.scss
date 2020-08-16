@@ -104,6 +104,36 @@ h1 {
     align-items: center;
 }
 
+.flecha-nav {
+    margin: 40px 70px 40px 40px;
+
+    &.no-margin {
+        margin: 0;
+    }
+
+    &.amarillo {
+       background-color: #FFBE33;
+       padding: 40px 70px 40px 40px;
+       margin: 0;
+       height: 100px;
+       overflow: hidden;
+    }
+
+    img {
+        width: 65px;
+        cursor: pointer;
+
+        &.anterior {
+            float: left; 
+            transform: rotate(180deg);
+        }
+
+        &.siguiente {
+            float: right;
+        }
+    }
+}
+
 .marquee {
     height: 42px;
     position: relative;
@@ -668,9 +698,6 @@ mark {
 }
 
 .img-en {
-    display: none;
-}
-.botones {
     display: none;
 }
 

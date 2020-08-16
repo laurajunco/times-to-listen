@@ -8,6 +8,11 @@
 
 //event listener para clic en parche
 $('body').on("click",'.parches .parche', function() {
+
+  if($(this)[0] != $bot[0] && $bot != "") {
+    pauseAudio();
+  }
+
   audio = $(this).find('audio')[0];
   $bot = $(this);
   $trans = $(this).find('.transcripcion');
@@ -18,8 +23,7 @@ $('body').on("click",'.parches .parche', function() {
   return false;
 });
 
-
-//Reproducir/pausar audio
+  //Reproducir/pausar audio
   function playPauseAudio() {
     var playing = $bot.hasClass('playing') ? true : false;
     
