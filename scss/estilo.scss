@@ -104,6 +104,24 @@ h1 {
     align-items: center;
 }
 
+.flecha-nav {
+    margin: 40px;
+
+    img {
+        width: 65px;
+        cursor: pointer;
+
+        &.anterior {
+            float: left; 
+            transform: rotate(180deg);
+        }
+
+        &.siguiente {
+            float: right;
+        }
+    }
+}
+
 .marquee {
     height: 42px;
     position: relative;

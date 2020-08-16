@@ -63,6 +63,17 @@ h1 {
 .align-items-center {
   align-items: center; }
 
+.flecha-nav {
+  margin: 40px; }
+  .flecha-nav img {
+    width: 65px;
+    cursor: pointer; }
+    .flecha-nav img.anterior {
+      float: left;
+      transform: rotate(180deg); }
+    .flecha-nav img.siguiente {
+      float: right; }
+
 .marquee {
   height: 42px;
   position: relative;
