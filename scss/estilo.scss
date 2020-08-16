@@ -105,7 +105,19 @@ h1 {
 }
 
 .flecha-nav {
-    margin: 40px;
+    margin: 40px 70px 40px 40px;
+
+    &.no-margin {
+        margin: 0;
+    }
+
+    &.amarillo {
+       background-color: #FFBE33;
+       padding: 40px 70px 40px 40px;
+       margin: 0;
+       height: 100px;
+       overflow: hidden;
+    }
 
     img {
         width: 65px;

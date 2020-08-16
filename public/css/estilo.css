@@ -64,7 +64,15 @@ h1 {
   align-items: center; }
 
 .flecha-nav {
-  margin: 40px; }
+  margin: 40px 70px 40px 40px; }
+  .flecha-nav.no-margin {
+    margin: 0; }
+  .flecha-nav.amarillo {
+    background-color: #FFBE33;
+    padding: 40px 70px 40px 40px;
+    margin: 0;
+    height: 100px;
+    overflow: hidden; }
   .flecha-nav img {
     width: 65px;
     cursor: pointer; }
