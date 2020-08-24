@@ -339,6 +339,10 @@ h1 {
     background-color: $azul;
 }
 
+.border-morado-dashed {
+    border: 2px $morado dashed;
+}
+
 mark {
  background-color: $limon;
  color: $azul;
@@ -1765,6 +1769,41 @@ mark {
     @media (max-width: 800px) {
         display: flex;
     }
+}
+
+/* ------ Estilos scripts interactivos ------ */
+.interactive {
+    
+    .contenedor {
+        position: relative;
+        overflow: hidden;
+
+        img.anverso {
+            object-fit: contain;
+            position: absolute;
+        }
+
+        img.anverso-hidden {
+            object-fit: contain;
+            visibility: hidden;
+            //position: absolute;
+        }
+
+        .rect {
+            height: 130px;
+            width: 130px;
+            cursor: pointer;
+            position: absolute;
+            background-color: rgba(255,255,255,0.2);
+            transform: translate(-50%, -50%);
+
+            &:hover {
+                background-color: rgba(255,255,255,0.3);
+            }
+        }
+    }
+
+    
 }
 
 /* ------ color de resaltado ------ */

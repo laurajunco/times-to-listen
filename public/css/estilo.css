@@ -236,6 +236,9 @@ h1 {
 .bg-azul {
   background-color: #2727dc; }
 
+.border-morado-dashed {
+  border: 2px #9466ff dashed; }
+
 mark {
   background-color: #fff555;
   color: #2727dc; }
@@ -1197,6 +1200,26 @@ div.lista-materiales > div > h1 {
   @media (max-width: 800px) {
     .only-desktop {
       display: flex; } }
+
+/* ------ Estilos scripts interactivos ------ */
+.interactive .contenedor {
+  position: relative;
+  overflow: hidden; }
+  .interactive .contenedor img.anverso {
+    object-fit: contain;
+    position: absolute; }
+  .interactive .contenedor img.anverso-hidden {
+    object-fit: contain;
+    visibility: hidden; }
+  .interactive .contenedor .rect {
+    height: 130px;
+    width: 130px;
+    cursor: pointer;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%); }
+    .interactive .contenedor .rect:hover {
+      background-color: rgba(255, 255, 255, 0.3); }
 
 /* ------ color de resaltado ------ */
 ::selection {
