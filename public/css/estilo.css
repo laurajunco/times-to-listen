@@ -239,6 +239,9 @@ h1 {
 .border-morado-dashed {
   border: 2px #9466ff dashed; }
 
+.border-amarillo-dashed {
+  border: 2px #ffc733 dashed; }
+
 mark {
   background-color: #fff555;
   color: #2727dc; }
@@ -1202,6 +1205,10 @@ div.lista-materiales > div > h1 {
       display: flex; } }
 
 /* ------ Estilos scripts interactivos ------ */
+.interactive .max-800 {
+  max-width: 50%;
+  margin: auto; }
+
 .interactive .contenedor {
   position: relative;
   overflow: hidden; }
@@ -1218,11 +1225,13 @@ div.lista-materiales > div > h1 {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.2);
     transform: translate(-50%, -50%); }
+    .interactive .contenedor .rect.big {
+      height: 200px;
+      width: 200px; }
     .interactive .contenedor .rect:hover {
       background-color: rgba(255, 255, 255, 0.3); }
 
 .interactive .transcripciones {
-  background-color: #9466ff;
   overflow-y: scroll;
   padding: 20px;
   height: auto; }
@@ -1233,6 +1242,8 @@ div.lista-materiales > div > h1 {
     font-size: 22px;
     line-height: 1.2;
     color: white; }
+    .interactive .transcripciones .transcripcion-pieza.text-negro {
+      color: black; }
     @media (min-width: 768px) and (max-width: 1000px) {
       .interactive .transcripciones .transcripcion-pieza {
         font-size: 20px; } }

@@ -343,6 +343,10 @@ h1 {
     border: 2px $morado dashed;
 }
 
+.border-amarillo-dashed {
+    border: 2px $amarillo dashed;
+}
+
 mark {
  background-color: $limon;
  color: $azul;
@@ -1773,6 +1777,11 @@ mark {
 
 /* ------ Estilos scripts interactivos ------ */
 .interactive {
+
+    .max-800 {
+        max-width: 50%;
+        margin: auto;
+    }
     
     .contenedor {
         position: relative;
@@ -1797,6 +1806,11 @@ mark {
             background-color: rgba(255,255,255,0.2);
             transform: translate(-50%, -50%);
 
+            &.big {
+                height: 200px;
+                width: 200px;
+            }
+            
             &:hover {
                 background-color: rgba(255,255,255,0.3);
             }
@@ -1804,7 +1818,6 @@ mark {
     }
 
     .transcripciones {
-        background-color: $morado;
         overflow-y: scroll;
         padding: 20px;
         height: auto;
@@ -1816,6 +1829,10 @@ mark {
             font-size: 22px;
             line-height: 1.2;
             color: white;
+
+            &.text-negro {
+                color:black;
+            }
 
             @media (min-width: 768px) and (max-width: 1000px){
                 font-size: 20px;
