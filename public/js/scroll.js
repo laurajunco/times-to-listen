@@ -29,7 +29,7 @@ var lineas = [
     {id: 6,linea:'.linea-tiempo.choiba'}, 
 ];
 
-var id = 5; // Iniciar en la seccion 1
+var id = 6; // Iniciar en la seccion 1
 var $selected;
 
 //$menu.hide(); //ocultar el menu
