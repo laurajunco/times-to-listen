@@ -1221,6 +1221,22 @@ div.lista-materiales > div > h1 {
     .interactive .contenedor .rect:hover {
       background-color: rgba(255, 255, 255, 0.3); }
 
+.interactive .transcripciones {
+  background-color: #9466ff;
+  overflow-y: scroll;
+  padding: 20px;
+  height: auto; }
+  .interactive .transcripciones .transcripcion-pieza {
+    display: none;
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.2;
+    color: white; }
+    @media (min-width: 768px) and (max-width: 1000px) {
+      .interactive .transcripciones .transcripcion-pieza {
+        font-size: 20px; } }
+
 /* ------ color de resaltado ------ */
 ::selection {
   background-color: #fff555;
