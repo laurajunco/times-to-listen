@@ -11,8 +11,6 @@
         $bot = $(this);
         iden = $(this).attr("trans");
         trans = $("#" + iden);
-
-        console.log(trans);
         trans.show();
         audio.play();
         return false;
