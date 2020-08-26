@@ -116,6 +116,14 @@ h1 {
     background-color: white;
     color: #9466ff;
     border: 1px solid #9466ff; }
+  .marquee.verde {
+    background-color: white;
+    color: #66e3eb;
+    border: 1px solid #66e3eb; }
+  .marquee.rosa {
+    background-color: white;
+    color: #ff6656;
+    border: 1px solid #ff6656; }
   .marquee.amarillo {
     background-color: white;
     color: #ffc733;
@@ -226,6 +234,9 @@ h1 {
 
 .bg-rosa {
   background-color: #ff6656; }
+
+.bg-rosa-claro {
+  background-color: #ff9193; }
 
 .bg-amarillo {
   background-color: #ffc733; }
@@ -779,6 +790,20 @@ mark {
       .pieza .descripcion-pieza.amarillo .ficha-tecnica .medidas,
       .pieza .descripcion-pieza.amarillo .ficha-tecnica .titulo {
         border-color: #ffc733; }
+  .pieza .descripcion-pieza.verde {
+    border-color: #66e3eb; }
+    .pieza .descripcion-pieza.verde .ficha-tecnica {
+      border-color: #66e3eb; }
+      .pieza .descripcion-pieza.verde .ficha-tecnica .medidas,
+      .pieza .descripcion-pieza.verde .ficha-tecnica .titulo {
+        border-color: #66e3eb; }
+  .pieza .descripcion-pieza.rosa {
+    border-color: #ff6656; }
+    .pieza .descripcion-pieza.rosa .ficha-tecnica {
+      border-color: #ff6656; }
+      .pieza .descripcion-pieza.rosa .ficha-tecnica .medidas,
+      .pieza .descripcion-pieza.rosa .ficha-tecnica .titulo {
+        border-color: #ff6656; }
   .pieza .descripcion-pieza .ficha-tecnica {
     width: 30%;
     border-right: 2px solid #9466ff;

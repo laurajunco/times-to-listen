@@ -185,6 +185,18 @@ h1 {
         border: 1px solid $morado;
     }
 
+    &.verde {
+        background-color: white;
+        color: $verde-claro;
+        border: 1px solid $verde-claro;
+    }
+
+    &.rosa {
+        background-color: white;
+        color: $rosa;
+        border: 1px solid $rosa;
+    }
+
     &.amarillo {
         background-color: white;
         color: $amarillo;
@@ -325,6 +337,10 @@ h1 {
 
 .bg-rosa {
     background-color: $rosa;
+}
+
+.bg-rosa-claro {
+    background-color: $rosa-claro;
 }
 
 .bg-amarillo {
@@ -1209,6 +1225,34 @@ mark {
                 .medidas,
                 .titulo {
                     border-color: $amarillo;
+                }
+            }
+
+        }
+
+        &.verde {
+            border-color: $verde-claro;
+
+            .ficha-tecnica {
+                border-color: $verde-claro;
+
+                .medidas,
+                .titulo {
+                    border-color: $verde-claro;
+                }
+            }
+
+        }
+
+        &.rosa {
+            border-color: $rosa;
+
+            .ficha-tecnica {
+                border-color: $rosa;
+
+                .medidas,
+                .titulo {
+                    border-color: $rosa;
                 }
             }
 
