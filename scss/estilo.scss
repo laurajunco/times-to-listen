@@ -359,6 +359,10 @@ h1 {
     border: 2px $morado dashed;
 }
 
+.border-verde-dashed {
+    border: 2px $verde-claro dashed;
+}
+
 .border-amarillo-dashed {
     border: 2px $amarillo dashed;
 }
@@ -1824,6 +1828,11 @@ mark {
 
     .max-800 {
         max-width: 50%;
+        margin: auto;
+    }
+
+    .max-1000 {
+        max-width: 70%;
         margin: auto;
     }
     

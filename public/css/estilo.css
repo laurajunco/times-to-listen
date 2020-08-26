@@ -250,6 +250,9 @@ h1 {
 .border-morado-dashed {
   border: 2px #9466ff dashed; }
 
+.border-verde-dashed {
+  border: 2px #66e3eb dashed; }
+
 .border-amarillo-dashed {
   border: 2px #ffc733 dashed; }
 
@@ -1232,6 +1235,10 @@ div.lista-materiales > div > h1 {
 /* ------ Estilos scripts interactivos ------ */
 .interactive .max-800 {
   max-width: 50%;
+  margin: auto; }
+
+.interactive .max-1000 {
+  max-width: 70%;
   margin: auto; }
 
 .interactive .contenedor {
