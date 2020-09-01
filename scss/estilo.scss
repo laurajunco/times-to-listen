@@ -29,13 +29,13 @@ $menu-width: 30px;
 
 $small-screen: 576px !default;
 $medium-screen: 768px !default;
-$large-screen: 992px !default;
-$extralarge-screen: 1200px !default;
+$large-screen: 1024px !default;
+$extralarge-screen: 1300px !default;
 
 $small-screen-up: 577px !default;
 $medium-screen-up: 767px !default;
-$large-screen-up: 993px !default;
-$extralarge-screen-up: 1201px !default;
+$large-screen-up: 1025px !default;
+$extralarge-screen-up: 1301px !default;
 
 $medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
 $large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
@@ -98,6 +98,10 @@ h1 {
         margin-top: 30px;
         margin-bottom: 5vh;
 
+        @media #{$medium-and-down} { 
+            margin-bottom: 2vh;
+        }
+
         @media (min-width: 768px) and (max-width: 1000px){
             font-size: 120px;
         }
@@ -117,6 +121,10 @@ h1 {
 
 .top {
     margin-top: 10vh;
+
+    @media #{$medium-and-down} { 
+        margin-top: 5vh;
+    }
 }
 .half-top {
     margin-top: 5vh;
@@ -286,41 +294,77 @@ h1 {
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: $morado;
+
+    @media #{$small-and-down} { 
+        -webkit-text-stroke-width: 0;
+        color: $morado
+    }
 }
 
 .text-naranja-oscuro-linea {
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: $naranja-oscuro;
+
+    @media #{$small-and-down} { 
+        -webkit-text-stroke-width: 0;
+        color: $naranja-oscuro
+    }
 }
 
 .text-blanco-linea {
     color: transparent;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white; }
+    -webkit-text-stroke-color: white; 
+
+    @media #{$small-and-down} { 
+        -webkit-text-stroke-width: 0;
+        color: white
+    }
+}
 
 .text-amarillo-linea {
     color: white;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: $amarillo;
+
+    @media #{$small-and-down} { 
+        -webkit-text-stroke-width: 0;
+        color: $amarillo
+    }
 }
 
 .text-rosa-linea {
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: $rosa;
+
+    @media #{$small-and-down} { 
+        -webkit-text-stroke-width: 0;
+        color: $rosa
+    }
 }
 
 .text-negro-linea {
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
+
+    @media #{$small-and-down} { 
+        -webkit-text-stroke-width: 0;
+        color: black
+    }
 }
 
 .text-verde-claro-linea {
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: $verde-claro;
+
+    @media #{$small-and-down} { 
+        -webkit-text-stroke-width: 0;
+        color: $verde-claro
+    }
 }
 
 .text-negro {
@@ -704,6 +748,12 @@ mark {
     margin: auto;
     display: flex;
 
+    @media #{$medium-and-down} { 
+        padding: 10px;
+        padding-right: $menu-width + 10px;
+    }
+
+
     .col-6 {
         width: 50%;
         padding: 10px;
@@ -732,14 +782,22 @@ mark {
     .col-8 {
         width: 66.6%;
         padding: 10px;
-        @media (min-width: 768px) and (max-width: 1200px){
+
+        @media #{$large-and-down} { 
             width: 100%;
+            padding: 5px;
         }
         
     }
 
     .col-4 {
         width: 33.3%;
+
+        &.col-12-md {
+            @media #{$large-and-down} { 
+                width: 100%;
+            }
+        }
     }
 
     .col-30-p {
@@ -764,6 +822,11 @@ mark {
         font-size: 18px;
         line-height: 1.5;
         margin-top: 0;
+
+        @media #{$small-and-down} { 
+            font-size: 14px;
+            line-height: 1.4;
+        }
     }
 }
 
@@ -891,20 +954,44 @@ mark {
         text-align: center;
         font-size: 100px;
 
+        @media #{$medium-only} { 
+            font-size: 60px;
+        }
+
+        @media #{$small-and-down} { 
+            font-size: 40px;
+        }
+        
         &.text-morado-linea {
             -webkit-text-stroke-width: 2px;
+
+            @media #{$small-and-down} { 
+                -webkit-text-stroke-width: 0px;
+            }
         }
 
         &.text-rosa-linea {
             -webkit-text-stroke-width: 2px;
+
+            @media #{$small-and-down} { 
+                -webkit-text-stroke-width: 0px;
+            }
         }
 
         &.text-naranja-oscuro-linea {
             -webkit-text-stroke-width: 2px;
+
+            @media #{$small-and-down} { 
+                -webkit-text-stroke-width: 0px;
+            }
         }
 
         &.text-verde-claro-linea {
             -webkit-text-stroke-width: 2px;
+
+            @media #{$small-and-down} { 
+                -webkit-text-stroke-width: 0px;
+            }
         }
         
     }
@@ -917,6 +1004,9 @@ mark {
 
     .img-colectivo {
         margin-left: 20px;
+        @media #{$large-and-down} { 
+            margin-left: 0;
+        }
     }
 
     .contexto {

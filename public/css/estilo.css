@@ -12,7 +12,7 @@ html, body {
   font-family: "Poppins", sans-serif;
   color: #2727dc;
   font-size: 16px; }
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 1024px) {
     html, body {
       font-size: 20px; } }
 
@@ -41,6 +41,9 @@ h1 {
     -webkit-font-smoothing: none;
     margin-top: 30px;
     margin-bottom: 5vh; }
+    @media only screen and (max-width: 768px) {
+      h1.megatitulo {
+        margin-bottom: 2vh; } }
     @media (min-width: 768px) and (max-width: 1000px) {
       h1.megatitulo {
         font-size: 120px; } }
@@ -56,6 +59,9 @@ h1 {
 
 .top {
   margin-top: 10vh; }
+  @media only screen and (max-width: 768px) {
+    .top {
+      margin-top: 5vh; } }
 
 .half-top {
   margin-top: 5vh; }
@@ -117,13 +123,13 @@ h1 {
     animation: marquee 120s linear infinite;
     -webkit-animation: marquee 120s linear infinite;
     -moz-animation: marquee 30s linear infinite; }
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 1024px) {
     .marquee.big {
       height: 40px; }
       .marquee.big p {
         font-size: 25px;
         line-height: 40px; } }
-  @media only screen and (min-width: 993px) {
+  @media only screen and (min-width: 1025px) {
     .marquee.big {
       height: 55px; }
       .marquee.big p {
@@ -174,36 +180,64 @@ h1 {
   color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #9466ff; }
+  @media only screen and (max-width: 576px) {
+    .text-morado-linea {
+      -webkit-text-stroke-width: 0;
+      color: #9466ff; } }
 
 .text-naranja-oscuro-linea {
   color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #f06723; }
+  @media only screen and (max-width: 576px) {
+    .text-naranja-oscuro-linea {
+      -webkit-text-stroke-width: 0;
+      color: #f06723; } }
 
 .text-blanco-linea {
   color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white; }
+  @media only screen and (max-width: 576px) {
+    .text-blanco-linea {
+      -webkit-text-stroke-width: 0;
+      color: white; } }
 
 .text-amarillo-linea {
   color: white;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #ffc733; }
+  @media only screen and (max-width: 576px) {
+    .text-amarillo-linea {
+      -webkit-text-stroke-width: 0;
+      color: #ffc733; } }
 
 .text-rosa-linea {
   color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #ff6656; }
+  @media only screen and (max-width: 576px) {
+    .text-rosa-linea {
+      -webkit-text-stroke-width: 0;
+      color: #ff6656; } }
 
 .text-negro-linea {
   color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black; }
+  @media only screen and (max-width: 576px) {
+    .text-negro-linea {
+      -webkit-text-stroke-width: 0;
+      color: black; } }
 
 .text-verde-claro-linea {
   color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #66e3eb; }
+  @media only screen and (max-width: 576px) {
+    .text-verde-claro-linea {
+      -webkit-text-stroke-width: 0;
+      color: #66e3eb; } }
 
 .text-negro {
   color: black; }
@@ -472,6 +506,10 @@ mark {
   padding-right: 50px;
   margin: auto;
   display: flex; }
+  @media only screen and (max-width: 768px) {
+    .container {
+      padding: 10px;
+      padding-right: 40px; } }
   .container .col-6 {
     width: 50%;
     padding: 10px; }
@@ -490,11 +528,15 @@ mark {
   .container .col-8 {
     width: 66.6%;
     padding: 10px; }
-    @media (min-width: 768px) and (max-width: 1200px) {
+    @media only screen and (max-width: 1024px) {
       .container .col-8 {
-        width: 100%; } }
+        width: 100%;
+        padding: 5px; } }
   .container .col-4 {
     width: 33.3%; }
+    @media only screen and (max-width: 1024px) {
+      .container .col-4.col-12-md {
+        width: 100%; } }
   .container .col-30-p {
     width: 30%; }
   .container .col-40-p {
@@ -509,6 +551,10 @@ mark {
     font-size: 18px;
     line-height: 1.5;
     margin-top: 0; }
+    @media only screen and (max-width: 576px) {
+      .container p {
+        font-size: 14px;
+        line-height: 1.4; } }
 
 /* ------- INTRODUCCIÓN -------- */
 .intro-expo {
@@ -590,14 +636,32 @@ mark {
 .infografia .megatitulo {
   text-align: center;
   font-size: 100px; }
+  @media only screen and (min-width: 577px) and (max-width: 768px) {
+    .infografia .megatitulo {
+      font-size: 60px; } }
+  @media only screen and (max-width: 576px) {
+    .infografia .megatitulo {
+      font-size: 40px; } }
   .infografia .megatitulo.text-morado-linea {
     -webkit-text-stroke-width: 2px; }
+    @media only screen and (max-width: 576px) {
+      .infografia .megatitulo.text-morado-linea {
+        -webkit-text-stroke-width: 0px; } }
   .infografia .megatitulo.text-rosa-linea {
     -webkit-text-stroke-width: 2px; }
+    @media only screen and (max-width: 576px) {
+      .infografia .megatitulo.text-rosa-linea {
+        -webkit-text-stroke-width: 0px; } }
   .infografia .megatitulo.text-naranja-oscuro-linea {
     -webkit-text-stroke-width: 2px; }
+    @media only screen and (max-width: 576px) {
+      .infografia .megatitulo.text-naranja-oscuro-linea {
+        -webkit-text-stroke-width: 0px; } }
   .infografia .megatitulo.text-verde-claro-linea {
     -webkit-text-stroke-width: 2px; }
+    @media only screen and (max-width: 576px) {
+      .infografia .megatitulo.text-verde-claro-linea {
+        -webkit-text-stroke-width: 0px; } }
 
 .infografia .small {
   font-size: 17px;
@@ -606,6 +670,9 @@ mark {
 
 .infografia .img-colectivo {
   margin-left: 20px; }
+  @media only screen and (max-width: 1024px) {
+    .infografia .img-colectivo {
+      margin-left: 0; } }
 
 .infografia .contexto {
   font-size: 20px; }
