@@ -129,21 +129,29 @@ h1 {
 .flecha-nav {
     margin: 40px 70px 40px 40px;
 
+    @media #{$small-and-down} { 
+        margin: 20px 50px 20px 20px;
+    }
+
     &.no-margin {
         margin: 0;
     }
 
     &.amarillo {
        background-color: #FFBE33;
-       padding: 40px 70px 40px 40px;
        margin: 0;
        height: 100px;
        overflow: hidden;
+
     }
 
     img {
         width: 65px;
         cursor: pointer;
+
+        @media #{$small-and-down} { 
+            width: 40px;
+        }
 
         &.anterior {
             float: left; 
@@ -157,9 +165,31 @@ h1 {
 }
 
 .marquee {
-    height: 42px;
     position: relative;
     overflow: hidden;
+
+    @media #{$medium-and-down} { 
+        height: 32px;
+
+        p {
+            font-size: 15px;
+            margin: 0;
+            line-height: 32px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+    }
+
+    @media #{$large-and-up} { 
+        height: 42px;
+        p {
+            font-size: 20px;
+            margin: 0;
+            line-height: 42px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+    }
 
 
     .marquee__inner {
@@ -176,7 +206,6 @@ h1 {
     }
     
     &.big {
-        height: 55px;
 
         @media #{$large-and-down} { 
             height: 40px;
@@ -187,6 +216,7 @@ h1 {
         }
 
         @media #{$extra-large-and-up} { 
+            height: 55px;
             p {
                 font-size: 30px;
                 line-height: 55px;
@@ -194,13 +224,6 @@ h1 {
         }
     }
 
-    p {
-        font-size: 20px;
-        margin: 0;
-        line-height: 42px;
-        text-transform: uppercase;
-        letter-spacing: 1.5px;
-    }
 
     &.rojo {
         background-color: $rojo;
@@ -757,6 +780,10 @@ mark {
         font-size: 30px;
         line-height: 1.8;
         max-width: 800px;
+
+        @media #{$small-and-down} { 
+            font-size: 20px;
+        }
     }
     
     p.texto {
@@ -766,6 +793,10 @@ mark {
         font-family: $grotesque;
         font-weight: 600;
         margin-top: 1em;
+
+        @media #{$small-and-down} { 
+            font-size: 18px;
+        }
     }
 }
 

@@ -65,17 +65,22 @@ h1 {
 
 .flecha-nav {
   margin: 40px 70px 40px 40px; }
+  @media only screen and (max-width: 576px) {
+    .flecha-nav {
+      margin: 20px 50px 20px 20px; } }
   .flecha-nav.no-margin {
     margin: 0; }
   .flecha-nav.amarillo {
     background-color: #FFBE33;
-    padding: 40px 70px 40px 40px;
     margin: 0;
     height: 100px;
     overflow: hidden; }
   .flecha-nav img {
     width: 65px;
     cursor: pointer; }
+    @media only screen and (max-width: 576px) {
+      .flecha-nav img {
+        width: 40px; } }
     .flecha-nav img.anterior {
       float: left;
       transform: rotate(180deg); }
@@ -83,9 +88,26 @@ h1 {
       float: right; }
 
 .marquee {
-  height: 42px;
   position: relative;
   overflow: hidden; }
+  @media only screen and (max-width: 768px) {
+    .marquee {
+      height: 32px; }
+      .marquee p {
+        font-size: 15px;
+        margin: 0;
+        line-height: 32px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px; } }
+  @media only screen and (min-width: 767px) {
+    .marquee {
+      height: 42px; }
+      .marquee p {
+        font-size: 20px;
+        margin: 0;
+        line-height: 42px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px; } }
   .marquee .marquee__inner {
     width: fit-content;
     display: flex;
@@ -95,24 +117,18 @@ h1 {
     animation: marquee 120s linear infinite;
     -webkit-animation: marquee 120s linear infinite;
     -moz-animation: marquee 30s linear infinite; }
-  .marquee.big {
-    height: 55px; }
-    @media only screen and (max-width: 992px) {
-      .marquee.big {
-        height: 40px; }
-        .marquee.big p {
-          font-size: 25px;
-          line-height: 40px; } }
-    @media only screen and (min-width: 993px) {
+  @media only screen and (max-width: 992px) {
+    .marquee.big {
+      height: 40px; }
+      .marquee.big p {
+        font-size: 25px;
+        line-height: 40px; } }
+  @media only screen and (min-width: 993px) {
+    .marquee.big {
+      height: 55px; }
       .marquee.big p {
         font-size: 30px;
         line-height: 55px; } }
-  .marquee p {
-    font-size: 20px;
-    margin: 0;
-    line-height: 42px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px; }
   .marquee.rojo {
     background-color: #fc4141;
     color: white; }
@@ -504,6 +520,9 @@ mark {
     font-size: 30px;
     line-height: 1.8;
     max-width: 800px; }
+    @media only screen and (max-width: 576px) {
+      .intro-expo h2 {
+        font-size: 20px; } }
   .intro-expo p.texto {
     font-size: 22px;
     color: black;
@@ -511,6 +530,9 @@ mark {
     font-family: "Darker Grotesque", sans-serif;
     font-weight: 600;
     margin-top: 1em; }
+    @media only screen and (max-width: 576px) {
+      .intro-expo p.texto {
+        font-size: 18px; } }
 
 .img-en {
   display: none; }
