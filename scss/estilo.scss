@@ -27,6 +27,28 @@ $terminal: 'terminal_grotesque', sans-serif;
 
 $menu-width: 30px;
 
+$small-screen: 576px !default;
+$medium-screen: 768px !default;
+$large-screen: 1024px !default;
+$extralarge-screen: 1300px !default;
+
+$small-screen-up: 577px !default;
+$medium-screen-up: 767px !default;
+$large-screen-up: 1025px !default;
+$extralarge-screen-up: 1301px !default;
+
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
+$extra-large-and-up: "only screen and (min-width : #{$large-screen-up})" !default;
+
+$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+$large-and-down: "only screen and (max-width : #{$large-screen})" !default;
+$extralarge-and-down: "only screen and (max-width : #{$extralarge-screen})" !default;
+
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+$extra-large-only: "only screen and (min-width : #{$large-screen-up}) and (max-width : #{$extralarge-screen})" !default;
+
 * {
     box-sizing: border-box;
     overscroll-behavior: none;
@@ -41,8 +63,8 @@ html, body{
     color: $azul;
     font-size: 16px;
 
-    @media (max-width: 800px) {
-        pointer-events: none;
+    @media #{$large-and-down} { 
+        font-size: 20px;
     }
 }
 
@@ -76,6 +98,10 @@ h1 {
         margin-top: 30px;
         margin-bottom: 5vh;
 
+        @media #{$medium-and-down} { 
+            margin-bottom: 2vh;
+        }
+
         @media (min-width: 768px) and (max-width: 1000px){
             font-size: 120px;
         }
@@ -95,6 +121,10 @@ h1 {
 
 .top {
     margin-top: 10vh;
+
+    @media #{$medium-and-down} { 
+        margin-top: 5vh;
+    }
 }
 .half-top {
     margin-top: 5vh;
@@ -107,21 +137,29 @@ h1 {
 .flecha-nav {
     margin: 40px 70px 40px 40px;
 
+    @media #{$small-and-down} { 
+        margin: 20px 50px 20px 20px;
+    }
+
     &.no-margin {
         margin: 0;
     }
 
     &.amarillo {
        background-color: #FFBE33;
-       padding: 40px 70px 40px 40px;
        margin: 0;
        height: 100px;
        overflow: hidden;
+
     }
 
     img {
         width: 65px;
         cursor: pointer;
+
+        @media #{$small-and-down} { 
+            width: 40px;
+        }
 
         &.anterior {
             float: left; 
@@ -135,9 +173,32 @@ h1 {
 }
 
 .marquee {
-    height: 42px;
     position: relative;
     overflow: hidden;
+
+    @media #{$medium-and-down} { 
+        height: 32px;
+
+        p {
+            font-size: 15px;
+            margin: 0;
+            line-height: 32px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+    }
+
+    @media #{$large-and-up} { 
+        height: 42px;
+        p {
+            font-size: 20px;
+            margin: 0;
+            line-height: 42px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+    }
+
 
     .marquee__inner {
         width: fit-content;
@@ -153,21 +214,24 @@ h1 {
     }
     
     &.big {
-        height: 55px;
 
-        p {
-            font-size: 30px;
-            line-height: 55px;
+        @media #{$large-and-down} { 
+            height: 40px;
+            p {
+                font-size: 25px;
+                line-height: 40px;
+            }
+        }
+
+        @media #{$extra-large-and-up} { 
+            height: 55px;
+            p {
+                font-size: 30px;
+                line-height: 55px;
+            }
         }
     }
 
-    p {
-        font-size: 20px;
-        margin: 0;
-        line-height: 42px;
-        text-transform: uppercase;
-        letter-spacing: 1.5px;
-    }
 
     &.rojo {
         background-color: $rojo;
@@ -230,41 +294,77 @@ h1 {
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: $morado;
+
+    @media #{$small-and-down} { 
+        -webkit-text-stroke-width: 0;
+        color: $morado
+    }
 }
 
 .text-naranja-oscuro-linea {
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: $naranja-oscuro;
+
+    @media #{$small-and-down} { 
+        -webkit-text-stroke-width: 0;
+        color: $naranja-oscuro
+    }
 }
 
 .text-blanco-linea {
     color: transparent;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white; }
+    -webkit-text-stroke-color: white; 
+
+    @media #{$small-and-down} { 
+        -webkit-text-stroke-width: 0;
+        color: white
+    }
+}
 
 .text-amarillo-linea {
     color: white;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: $amarillo;
+
+    @media #{$small-and-down} { 
+        -webkit-text-stroke-width: 0;
+        color: $amarillo
+    }
 }
 
 .text-rosa-linea {
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: $rosa;
+
+    @media #{$small-and-down} { 
+        -webkit-text-stroke-width: 0;
+        color: $rosa
+    }
 }
 
 .text-negro-linea {
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
+
+    @media #{$small-and-down} { 
+        -webkit-text-stroke-width: 0;
+        color: black
+    }
 }
 
 .text-verde-claro-linea {
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: $verde-claro;
+
+    @media #{$small-and-down} { 
+        -webkit-text-stroke-width: 0;
+        color: $verde-claro
+    }
 }
 
 .text-negro {
@@ -414,6 +514,13 @@ mark {
             font-family: $grotesque;
             font-weight: 700;
             font-size: 30px;
+
+            @media #{$medium-and-down} { 
+                font-size: 20px;
+                font-size: 24px;
+            }
+
+
 
             a {
                 text-decoration: none;
@@ -641,6 +748,12 @@ mark {
     margin: auto;
     display: flex;
 
+    @media #{$medium-and-down} { 
+        padding: 10px;
+        padding-right: $menu-width + 10px;
+    }
+
+
     .col-6 {
         width: 50%;
         padding: 10px;
@@ -669,14 +782,22 @@ mark {
     .col-8 {
         width: 66.6%;
         padding: 10px;
-        @media (min-width: 768px) and (max-width: 1200px){
+
+        @media #{$large-and-down} { 
             width: 100%;
+            padding: 5px;
         }
         
     }
 
     .col-4 {
         width: 33.3%;
+
+        &.col-12-md {
+            @media #{$large-and-down} { 
+                width: 100%;
+            }
+        }
     }
 
     .col-30-p {
@@ -701,6 +822,11 @@ mark {
         font-size: 18px;
         line-height: 1.5;
         margin-top: 0;
+
+        @media #{$small-and-down} { 
+            font-size: 14px;
+            line-height: 1.4;
+        }
     }
 }
 
@@ -717,6 +843,10 @@ mark {
         font-size: 30px;
         line-height: 1.8;
         max-width: 800px;
+
+        @media #{$small-and-down} { 
+            font-size: 20px;
+        }
     }
     
     p.texto {
@@ -726,6 +856,10 @@ mark {
         font-family: $grotesque;
         font-weight: 600;
         margin-top: 1em;
+
+        @media #{$small-and-down} { 
+            font-size: 18px;
+        }
     }
 }
 
@@ -820,20 +954,44 @@ mark {
         text-align: center;
         font-size: 100px;
 
+        @media #{$medium-only} { 
+            font-size: 60px;
+        }
+
+        @media #{$small-and-down} { 
+            font-size: 40px;
+        }
+        
         &.text-morado-linea {
             -webkit-text-stroke-width: 2px;
+
+            @media #{$small-and-down} { 
+                -webkit-text-stroke-width: 0px;
+            }
         }
 
         &.text-rosa-linea {
             -webkit-text-stroke-width: 2px;
+
+            @media #{$small-and-down} { 
+                -webkit-text-stroke-width: 0px;
+            }
         }
 
         &.text-naranja-oscuro-linea {
             -webkit-text-stroke-width: 2px;
+
+            @media #{$small-and-down} { 
+                -webkit-text-stroke-width: 0px;
+            }
         }
 
         &.text-verde-claro-linea {
             -webkit-text-stroke-width: 2px;
+
+            @media #{$small-and-down} { 
+                -webkit-text-stroke-width: 0px;
+            }
         }
         
     }
@@ -846,6 +1004,9 @@ mark {
 
     .img-colectivo {
         margin-left: 20px;
+        @media #{$large-and-down} { 
+            margin-left: 0;
+        }
     }
 
     .contexto {
@@ -1800,7 +1961,7 @@ mark {
     }
 }
 
-.only-desktop {
+/*.only-desktop {
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -1825,7 +1986,7 @@ mark {
     @media (max-width: 800px) {
         display: flex;
     }
-}
+}*/
 
 /* ------ Estilos scripts interactivos ------ */
 .interactive {
