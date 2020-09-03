@@ -16,7 +16,7 @@ $( "#barra_3" ).load( "ajax/bojaya.html" , function() {
             breakpoint: 1024,
             settings: {
                 slidesToShow: 4,
-                speed: 10000,
+                speed: 8000,
                 autoplay: false,
                 autoplaySpeed: 0,
                 cssEase: 'linear',
@@ -29,7 +29,7 @@ $( "#barra_3" ).load( "ajax/bojaya.html" , function() {
             breakpoint: 700,
             settings: {
                 slidesToShow: 2,
-                speed: 10000,
+                speed: 8000,
                 autoplay: false,
                 autoplaySpeed: 0,
                 cssEase: 'linear',
@@ -57,7 +57,7 @@ $( "#barra_4" ).load( "ajax/mampujan.html", function() {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 4,
-                    speed: 10000,
+                    speed: 8000,
                     autoplay: false,
                     autoplaySpeed: 0,
                     cssEase: 'linear',
@@ -70,7 +70,7 @@ $( "#barra_4" ).load( "ajax/mampujan.html", function() {
                 breakpoint: 700,
                 settings: {
                     slidesToShow: 2,
-                    speed: 10000,
+                    speed: 8000,
                     autoplay: false,
                     autoplaySpeed: 0,
                     cssEase: 'linear',
@@ -98,7 +98,7 @@ $( "#barra_5" ).load( "ajax/sonson.html", function() {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 4,
-                    speed: 10000,
+                    speed: 8000,
                     autoplay: false,
                     autoplaySpeed: 0,
                     cssEase: 'linear',
@@ -111,7 +111,7 @@ $( "#barra_5" ).load( "ajax/sonson.html", function() {
                 breakpoint: 700,
                 settings: {
                     slidesToShow: 2,
-                    speed: 10000,
+                    speed: 8000,
                     autoplay: false,
                     autoplaySpeed: 0,
                     cssEase: 'linear',
@@ -138,7 +138,7 @@ $( "#barra_6" ).load( "ajax/choiba.html", function() {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 4,
-                    speed: 10000,
+                    speed: 8000,
                     autoplay: false,
                     autoplaySpeed: 0,
                     cssEase: 'linear',
@@ -151,7 +151,7 @@ $( "#barra_6" ).load( "ajax/choiba.html", function() {
                 breakpoint: 700,
                 settings: {
                     slidesToShow: 2,
-                    speed: 10000,
+                    speed: 8000,
                     autoplay: false,
                     autoplaySpeed: 0,
                     cssEase: 'linear',
