@@ -506,10 +506,12 @@ mark {
   padding-right: 50px;
   margin: auto;
   display: flex; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 576px) {
     .container {
       padding: 10px;
       padding-right: 40px; } }
+  .container.no-padding {
+    padding: 0; }
   .container .col-6 {
     width: 50%;
     padding: 10px; }
@@ -729,7 +731,11 @@ mark {
   .infografia .contexto.verde .border-right {
     border-color: #66e3eb; }
   .infografia .contexto .mapa {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    max-width: 300px; }
+    @media only screen and (max-width: 576px) {
+      .infografia .contexto .mapa {
+        margin-top: 30px; } }
 
 .infografia .black-title {
   font-family: "Darker Grotesque", sans-serif;
