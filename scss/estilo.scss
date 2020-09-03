@@ -47,7 +47,9 @@ $large-and-down: "only screen and (max-width : #{$large-screen})" !default;
 $extralarge-and-down: "only screen and (max-width : #{$extralarge-screen})" !default;
 
 $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
 $extra-large-only: "only screen and (min-width : #{$large-screen-up}) and (max-width : #{$extralarge-screen})" !default;
+$large-only: "only screen and (min-width : #{$medium-screen-up}) and (max-width : #{$large-screen})" !default;
 
 * {
     box-sizing: border-box;
@@ -730,6 +732,7 @@ mark {
 .flex-column {
     display:flex;
     flex-direction: column;
+
 }
 
 .flex-row {
@@ -752,7 +755,6 @@ mark {
         padding: 10px;
         padding-right: $menu-width + 10px;
     }
-
 
     .col-6 {
         width: 50%;
@@ -802,15 +804,25 @@ mark {
 
     .col-30-p {
         width: 30%;
+        @media #{$large-and-down} { 
+            width: 100%;
+        }
     }
 
     .col-40-p {
         width: 40%;
+        @media #{$large-and-down} { 
+            width: 100%;
+        }
     }
 
     .col-5 {
         width: 40%;
         padding: 10px; 
+        @media #{$large-and-down} { 
+            width: 100%;
+            padding: 0; 
+        }
     }
 
     img {
@@ -1014,10 +1026,59 @@ mark {
 
         .col-4, .col-30-p, .col-40-p {
             padding: 0 20px;
+
+            @media #{$large-and-down} { 
+                padding: 0;
+            }
         }
+
+        .ubicacion {
+            @media #{$large-and-down} { 
+                flex-direction: row;
+                align-items: center;
+
+                p {
+                    margin-left: 22px;
+                }
+            }
+
+            @media #{$small-and-down} { 
+                flex-direction: column;
+                align-items: center;
+
+                p {
+                    margin-left: 0;
+                }
+            }
+
+        }
+
+        .poblacion-todo {
+            @media #{$large-and-down} { 
+                justify-content: space-around;
+            }
+
+            @media #{$small-and-down} { 
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .pie {
+                max-width: 300px;
+
+                @media #{$small-and-down} { 
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
 
         .border-right  {
             border-right: 2px solid;
+
+            @media #{$large-and-down} { 
+                border: none;
+            }
         }
 
         &.morado {

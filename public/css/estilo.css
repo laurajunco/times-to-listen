@@ -539,11 +539,21 @@ mark {
         width: 100%; } }
   .container .col-30-p {
     width: 30%; }
+    @media only screen and (max-width: 1024px) {
+      .container .col-30-p {
+        width: 100%; } }
   .container .col-40-p {
     width: 40%; }
+    @media only screen and (max-width: 1024px) {
+      .container .col-40-p {
+        width: 100%; } }
   .container .col-5 {
     width: 40%;
     padding: 10px; }
+    @media only screen and (max-width: 1024px) {
+      .container .col-5 {
+        width: 100%;
+        padding: 0; } }
   .container img {
     width: 100%;
     height: auto; }
@@ -678,8 +688,38 @@ mark {
   font-size: 20px; }
   .infografia .contexto .col-4, .infografia .contexto .col-30-p, .infografia .contexto .col-40-p {
     padding: 0 20px; }
+    @media only screen and (max-width: 1024px) {
+      .infografia .contexto .col-4, .infografia .contexto .col-30-p, .infografia .contexto .col-40-p {
+        padding: 0; } }
+  @media only screen and (max-width: 1024px) {
+    .infografia .contexto .ubicacion {
+      flex-direction: row;
+      align-items: center; }
+      .infografia .contexto .ubicacion p {
+        margin-left: 22px; } }
+  @media only screen and (max-width: 576px) {
+    .infografia .contexto .ubicacion {
+      flex-direction: column;
+      align-items: center; }
+      .infografia .contexto .ubicacion p {
+        margin-left: 0; } }
+  @media only screen and (max-width: 1024px) {
+    .infografia .contexto .poblacion-todo {
+      justify-content: space-around; } }
+  @media only screen and (max-width: 576px) {
+    .infografia .contexto .poblacion-todo {
+      flex-direction: column;
+      align-items: center; } }
+  .infografia .contexto .poblacion-todo .pie {
+    max-width: 300px; }
+    @media only screen and (max-width: 576px) {
+      .infografia .contexto .poblacion-todo .pie {
+        margin-bottom: 20px; } }
   .infografia .contexto .border-right {
     border-right: 2px solid; }
+    @media only screen and (max-width: 1024px) {
+      .infografia .contexto .border-right {
+        border: none; } }
   .infografia .contexto.morado .border-right {
     border-color: #9466ff; }
   .infografia .contexto.amarillo .border-right {
