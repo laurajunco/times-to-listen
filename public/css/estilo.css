@@ -495,6 +495,9 @@ mark {
 .flex-row {
   display: flex;
   flex-direction: row; }
+  @media only screen and (max-width: 576px) {
+    .flex-row.flex-column-small {
+      flex-direction: column; } }
 
 .flex-wrap {
   flex-wrap: wrap; }
@@ -515,6 +518,10 @@ mark {
   .container .col-6 {
     width: 50%;
     padding: 10px; }
+    @media only screen and (max-width: 576px) {
+      .container .col-6.col-12-sm {
+        width: 100%;
+        padding: 0; } }
   .container .col-2 {
     width: 16.66%;
     padding: 10px; }
@@ -538,6 +545,13 @@ mark {
     width: 33.3%; }
     @media only screen and (max-width: 1024px) {
       .container .col-4.col-12-md {
+        width: 100%; } }
+    @media only screen and (max-width: 1024px) {
+      .container .col-4.col-6-md {
+        width: 50%;
+        padding: 10px; } }
+    @media only screen and (max-width: 576px) {
+      .container .col-4.col-6-md {
         width: 100%; } }
   .container .col-30-p {
     width: 30%; }
@@ -694,6 +708,10 @@ mark {
       .infografia .contexto .col-4, .infografia .contexto .col-30-p, .infografia .contexto .col-40-p {
         padding: 0; } }
   @media only screen and (max-width: 1024px) {
+    .infografia .contexto .col-6-md {
+      padding: 10px;
+      margin-bottom: 20px; } }
+  @media only screen and (max-width: 1024px) {
     .infografia .contexto .ubicacion {
       flex-direction: row;
       align-items: center; }
@@ -804,6 +822,14 @@ mark {
 .infografia .carac {
   border: 2px solid;
   padding: 40px 0; }
+  @media only screen and (max-width: 1024px) {
+    .infografia .carac {
+      padding: 30px 10px; }
+      .infografia .carac .megatitulo {
+        font-size: 60px; } }
+  @media only screen and (max-width: 576px) {
+    .infografia .carac .megatitulo {
+      font-size: 30px; } }
   .infografia .carac.morado {
     border-color: #9466ff; }
   .infografia .carac.rosa {
