@@ -80,7 +80,8 @@ h1 {
     background-color: #FFBE33;
     margin: 0;
     height: 100px;
-    overflow: hidden; }
+    overflow: hidden;
+    padding: 20px 50px 20px 20px; }
   .flecha-nav img {
     width: 65px;
     cursor: pointer; }
@@ -1291,8 +1292,8 @@ mark {
       line-height: 80px; } }
   @media only screen and (max-width: 576px) {
     #titulo-hacer {
-      font-size: 60px;
-      line-height: 60px;
+      font-size: 50px;
+      line-height: 50px;
       -webkit-text-stroke-width: 0; } }
 
 #intro-hacer h1 {
@@ -1426,6 +1427,9 @@ div.lista-materiales > div > h1 {
 #hashtags h1 {
   text-transform: uppercase;
   text-align: center; }
+  @media only screen and (max-width: 576px) {
+    #hashtags h1 {
+      font-size: 25px; } }
 
 #ejemplos-hacer {
   justify-content: center;
@@ -1463,7 +1467,8 @@ div.lista-materiales > div > h1 {
     @media only screen and (max-width: 768px) {
       .creditos .azul {
         width: 100%;
-        min-height: 0; } }
+        min-height: 0;
+        padding: 0 40px 20px 15px; } }
     .creditos .azul .agradecimientos {
       font-family: "Darker Grotesque", sans-serif;
       font-size: 24px;
@@ -1495,9 +1500,13 @@ div.lista-materiales > div > h1 {
       padding: 20px; }
     .creditos .blanco .credito {
       padding: 20px;
-      padding-right: 50px;
+      padding-right: 45px;
       border-bottom: 1px solid black;
       text-transform: uppercase; }
+      @media only screen and (max-width: 768px) {
+        .creditos .blanco .credito {
+          padding: 15px;
+          padding-right: 40px; } }
       .creditos .blanco .credito h5 {
         font-family: "Darker Grotesque", sans-serif;
         margin: 5px 0;
@@ -1520,6 +1529,9 @@ div.lista-materiales > div > h1 {
       justify-content: space-evenly;
       align-items: center;
       padding: 0; }
+      @media only screen and (max-width: 576px) {
+        .creditos .blanco .social {
+          flex-direction: column; } }
       .creditos .blanco .social .boton {
         font-size: 25px;
         font-family: "terminal_grotesque", sans-serif;
@@ -1532,14 +1544,21 @@ div.lista-materiales > div > h1 {
         align-items: center;
         justify-content: center;
         cursor: pointer; }
+        @media only screen and (max-width: 576px) {
+          .creditos .blanco .social .boton {
+            border-right: none;
+            border-bottom: 1px solid black;
+            height: auto;
+            min-height: 70px;
+            width: 100%; } }
         @media (min-width: 768px) and (max-width: 1000px) {
           .creditos .blanco .social .boton {
             font-size: 20px; } }
+        .creditos .blanco .social .boton:hover a {
+          color: white; }
         .creditos .blanco .social .boton a {
           color: black;
           text-decoration: none; }
-          .creditos .blanco .social .boton a:hover {
-            color: white; }
         .creditos .blanco .social .boton:hover {
           background-color: #2727dc; }
     .creditos .blanco .logos {

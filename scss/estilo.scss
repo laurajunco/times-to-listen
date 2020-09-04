@@ -152,6 +152,7 @@ h1 {
        margin: 0;
        height: 100px;
        overflow: hidden;
+       padding: 20px 50px 20px 20px;
 
     }
 
@@ -321,7 +322,7 @@ h1 {
 
     @media #{$small-and-down} { 
         -webkit-text-stroke-width: 0;
-        color: white
+        color: white;
     }
 }
 
@@ -1986,8 +1987,8 @@ mark {
     }
 
     @media #{$small-and-down} { 
-        font-size: 60px;
-        line-height: 60px;
+        font-size: 50px;
+        line-height: 50px;
         -webkit-text-stroke-width: 0;
     }
   }
@@ -2138,18 +2139,23 @@ mark {
     text-transform: uppercase;
   }
   
-  #hashtags{
+  #hashtags {
     padding: 10vh 0 10vh 0;
     margin: 10vh 0 10vh 0;
     align-items: center;
     justify-content: space-around;
     border-top: 3px solid;
     border-bottom: 3px solid;
+
   }
   
   #hashtags h1{
     text-transform: uppercase;
     text-align: center;
+
+    @media #{$small-and-down} { 
+        font-size: 25px;
+    }
   }
   
   #ejemplos-hacer{
@@ -2197,6 +2203,7 @@ mark {
         @media #{$medium-and-down} { 
             width: 100%;
             min-height: 0;
+            padding: 0 40px 20px 15px;
         }
 
         .agradecimientos {
@@ -2239,9 +2246,14 @@ mark {
 
         .credito {
             padding: 20px;
-            padding-right: 20px + $menu-width;
+            padding-right: 15px + $menu-width;
             border-bottom: 1px solid black;
             text-transform: uppercase;
+
+            @media #{$medium-and-down} { 
+                padding: 15px;
+                padding-right: 10px + $menu-width;
+            }
 
             h5 {
                 font-family: $grotesque;
@@ -2271,7 +2283,19 @@ mark {
             align-items: center;
             padding: 0;
 
+            @media #{$small-and-down} { 
+                flex-direction: column;
+            }
+
             .boton {
+                @media #{$small-and-down} { 
+                    border-right: none;
+                    border-bottom: 1px solid black;
+                    height: auto;
+                    min-height: 70px;
+                    width: 100%
+                }
+
                 font-size: 25px;
                 font-family: $terminal;
                 text-align: center;
@@ -2289,13 +2313,16 @@ mark {
                     font-size: 20px;
                 }
 
+                &:hover {
+                    a {
+                    color: white;
+                    }
+                }
+
                 a {
                     color: black;
                     text-decoration: none;
 
-                    &:hover {
-                        color: white;
-                    }
                 }
 
                 &:hover {
