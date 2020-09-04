@@ -798,6 +798,16 @@ mark {
         padding: 10px;
     }
 
+    .col-7 {
+        width: 58.33%;
+        padding: 10px;
+
+        @media #{$large-and-down} { 
+            width: 100%;
+            padding: 5px;
+        }
+    }
+
     .col-8 {
         width: 66.6%;
         padding: 10px;
@@ -907,6 +917,12 @@ mark {
     display: none;
 }
 
+.hide-md {
+    @media #{$large-and-down} { 
+        display:none;
+    }
+}
+
 /* ---infografia---- */
 .infografia {
 
@@ -918,6 +934,11 @@ mark {
         .subtitle {
             font-size: 16px;
             line-height: 1.3;
+        }
+
+        .pieza-mampu {
+            max-width: 500px;
+            margin: auto;
         }
 
     }
