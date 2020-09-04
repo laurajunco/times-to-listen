@@ -1391,6 +1391,9 @@ div.lista-materiales > div > h1 {
   width: 100%;
   flex-direction: row;
   background-color: #2727dc; }
+  @media only screen and (max-width: 768px) {
+    .creditos {
+      flex-direction: column; } }
   .creditos .azul {
     min-height: 100vh;
     height: 100%;
@@ -1402,6 +1405,10 @@ div.lista-materiales > div > h1 {
     .creditos .azul h1 {
       height: 10%;
       color: white; }
+    @media only screen and (max-width: 768px) {
+      .creditos .azul {
+        width: 100%;
+        min-height: 0; } }
     .creditos .azul .agradecimientos {
       font-family: "Darker Grotesque", sans-serif;
       font-size: 24px;
@@ -1410,9 +1417,12 @@ div.lista-materiales > div > h1 {
       color: white;
       line-height: 1.5;
       margin-bottom: 3vh; }
-      @media (min-width: 768px) and (max-width: 1000px) {
+      @media only screen and (max-width: 1024px) {
         .creditos .azul .agradecimientos {
           font-size: 20px; } }
+      @media only screen and (max-width: 576px) {
+        .creditos .azul .agradecimientos {
+          font-size: 18px; } }
   .creditos .blanco {
     min-height: 100vh;
     height: 100%;
@@ -1421,6 +1431,10 @@ div.lista-materiales > div > h1 {
     flex-direction: column;
     justify-content: flex-end;
     background-color: white; }
+    @media only screen and (max-width: 768px) {
+      .creditos .blanco {
+        width: 100%;
+        min-height: 0; } }
     .creditos .blanco h1 {
       height: 10%;
       padding: 20px; }

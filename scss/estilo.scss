@@ -2089,6 +2089,10 @@ mark {
     flex-direction: row;
     background-color: $azul;
 
+    @media #{$medium-and-down} { 
+        flex-direction: column;
+    }
+
     .azul {
         min-height: 100vh;
         height: 100%;
@@ -2103,6 +2107,11 @@ mark {
             color: white;
         }
 
+        @media #{$medium-and-down} { 
+            width: 100%;
+            min-height: 0;
+        }
+
         .agradecimientos {
             font-family: $grotesque;
             font-size: 24px;
@@ -2112,8 +2121,12 @@ mark {
             line-height: 1.5;
             margin-bottom: 3vh;
 
-            @media (min-width: 768px) and (max-width: 1000px){
+            @media #{$large-and-down} {
                 font-size: 20px;
+            }
+
+            @media #{$small-and-down} { 
+                font-size: 18px;
             }
         }
     }
@@ -2126,6 +2139,11 @@ mark {
         flex-direction: column;
         justify-content: flex-end;
         background-color: white;
+
+        @media #{$medium-and-down} { 
+            width: 100%;
+            min-height: 0;
+        }
 
         h1 {
             height: 10%;
