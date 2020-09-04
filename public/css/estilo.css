@@ -1049,7 +1049,8 @@ mark {
       .pieza .descripcion-pieza .texto-descripcion {
         width: 100%;
         padding-left: 0;
-        border: none; } }
+        border: none;
+        font-size: 18px; } }
   @media (min-width: 768px) and (max-width: 1000px) {
     .pieza .descripcion-pieza h1 {
       font-size: 30px; }
@@ -1075,27 +1076,41 @@ mark {
     border-color: #ffc733; }
 
 /* ---- PARCHES ----- */
-.parches .intro-parches {
-  padding: 30px; }
-  .parches .intro-parches h1 {
-    line-height: 0.8;
-    margin-bottom: 20px;
-    margin-top: 0; }
-  .parches .intro-parches p {
-    margin: 0;
-    padding: 20px 0;
-    color: black;
-    font-size: 18px;
-    font-family: "Darker Grotesque", sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
-    line-height: 1.5;
-    max-width: 650px; }
+@media only screen and (max-width: 1024px) {
+  .parches .intro-parches .megatitulo {
+    font-size: 100px; } }
+
+@media only screen and (max-width: 768px) {
+  .parches .intro-parches .megatitulo {
+    font-size: 80px; } }
+
+@media only screen and (max-width: 768px) {
+  .parches .intro-parches .megatitulo {
+    font-size: 60px; } }
+
+.parches .intro-parches h1 {
+  line-height: 0.8;
+  margin-bottom: 20px;
+  margin-top: 0; }
+
+.parches .intro-parches p {
+  margin: 0;
+  padding: 20px 0;
+  color: black;
+  font-size: 18px;
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.5;
+  max-width: 650px; }
+  @media only screen and (max-width: 768px) {
+    .parches .intro-parches p {
+      font-size: 14px; } }
 
 .parches .parche {
-  padding: 35px;
+  padding: 30px;
   cursor: pointer; }
-  @media (min-width: 768px) and (max-width: 1000px) {
+  @media only screen and (max-width: 1024px) {
     .parches .parche {
       padding: 10px; } }
 
@@ -1110,7 +1125,7 @@ mark {
   .parches .parche-container .img-parche {
     padding: 10px;
     border-bottom: black 2px solid; }
-    @media (min-width: 768px) and (max-width: 1000px) {
+    @media only screen and (max-width: 1024px) {
       .parches .parche-container .img-parche {
         padding: 5px; } }
   .parches .parche-container .play-negro,
@@ -1135,7 +1150,10 @@ mark {
       padding: 10px;
       border-bottom: black 2px solid;
       flex-grow: 1; }
-      @media (min-width: 768px) and (max-width: 1000px) {
+      @media only screen and (max-width: 1024px) {
+        .parches .parche-container .des-parches .bordado-por {
+          padding: 10px; } }
+      @media only screen and (max-width: 768px) {
         .parches .parche-container .des-parches .bordado-por {
           padding: 5px; } }
     .parches .parche-container .des-parches .pais {
@@ -1144,7 +1162,7 @@ mark {
       justify-content: center;
       padding: 10px;
       flex-grow: 1; }
-      @media (min-width: 768px) and (max-width: 1000px) {
+      @media only screen and (max-width: 1024px) {
         .parches .parche-container .des-parches .pais {
           padding: 5px; } }
     .parches .parche-container .des-parches h6 {
@@ -1160,9 +1178,12 @@ mark {
       font-weight: normal;
       font-size: 36px;
       letter-spacing: 2px; }
-      @media (min-width: 768px) and (max-width: 1000px) {
+      @media only screen and (max-width: 1024px) {
         .parches .parche-container .des-parches h2 {
           font-size: 30px; } }
+      @media only screen and (max-width: 768px) {
+        .parches .parche-container .des-parches h2 {
+          font-size: 24px; } }
   .parches .parche-container .transcripcion {
     background-color: black;
     overflow-y: scroll;
@@ -1182,9 +1203,9 @@ mark {
       font-size: 22px;
       line-height: 1.2;
       color: white; }
-      @media (min-width: 768px) and (max-width: 1000px) {
+      @media (max-width: 1000px) {
         .parches .parche-container .transcripcion p {
-          font-size: 20px; } }
+          font-size: 18px; } }
 
 /*--------- HACER ----------- */
 #background-hacer {
