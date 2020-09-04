@@ -782,6 +782,12 @@ mark {
                 padding: 0;
             }
         }
+
+        &.col-6-md {
+            @media #{$small-and-down} { 
+                width: 100%;
+            }
+        }
     }
 
     .col-2 {
@@ -834,6 +840,12 @@ mark {
             }
         }
 
+        &.col-12-sm {
+            @media #{$medium-and-down} { 
+                width: 100%;
+            }
+        }
+
         &.col-6-md {
             @media #{$large-and-down} { 
                 width: 50%;
@@ -866,6 +878,13 @@ mark {
         @media #{$large-and-down} { 
             width: 100%;
             padding: 0; 
+        }
+
+        &.col-12-sm {
+            @media #{$small-and-down} { 
+                width: 100%;
+                padding: 0;
+            }
         }
     }
 
@@ -1861,18 +1880,43 @@ mark {
 #background-hacer{
     background-image: url(../img/svg/background_hacer.svg);
     background-position: center bottom;
-    background-size: 100%;
+    background-size: cover;    
+
   }
   
   #titulo-hacer{
     align-self: center;
     line-height: 120px;
+
+    @media #{$large-and-down} { 
+        font-size: 100px;
+        line-height: 100px;
+    }
+
+    @media #{$medium-and-down} { 
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    @media #{$small-and-down} { 
+        font-size: 60px;
+        line-height: 60px;
+        -webkit-text-stroke-width: 0;
+    }
   }
   
   #intro-hacer h1{
     font-weight: 600;
     font-family: "Darker grotesque";
     font-size: 40px;
+
+    @media #{$medium-and-down} { 
+        font-size: 35px;
+    }
+
+    @media #{$small-and-down} { 
+        font-size: 25px;
+    }
   }
   
   #intro-hacer{
@@ -1918,10 +1962,19 @@ mark {
     line-height: 20px;
     letter-spacing: 0.3px; 
   }
+
+  .logo-hacer {
+      max-width: 500px;
+  }
   
   .container .col-6.lista-materiales {
     width: 50%;
     padding: 3vw; 
+
+    @media #{$large-and-down} { 
+        width: 100%;
+        padding: 0;
+    }
   }
   
   #instrucciones-hacer{
@@ -1980,11 +2033,11 @@ mark {
   }
   
   #paso-a-paso{
-    margin: 0 -2vw;
+    padding: 0 -2vw;
   }
   
   .paso{
-    margin: 2vh 2vw;
+    padding: 2vh 2vw;
   }
   
   .paso img{
