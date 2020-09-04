@@ -405,7 +405,9 @@ mark {
       #menu section.rosa {
         background: #ff6656; }
       #menu section.azul {
-        background: #2727dc; } }
+        background: #2727dc; }
+      #menu section.disabled {
+        background: #dedede; } }
   #menu .cerrar {
     position: absolute;
     top: 0;
@@ -428,6 +430,16 @@ mark {
     flex-direction: column;
     box-shadow: -8px 0px 13px 0px rgba(0, 0, 0, 0.09);
     cursor: pointer; }
+    #menu section.disabled {
+      pointer-events: none;
+      cursor: auto; }
+      #menu section.disabled h1 {
+        color: #ccc; }
+        @media only screen and (max-width: 768px) {
+          #menu section.disabled h1 {
+            color: white; } }
+      #menu section.disabled .bg-img img {
+        filter: grayscale(100%); }
     #menu section h1 {
       margin: 80px 15px 60px 15px;
       background-color: white;

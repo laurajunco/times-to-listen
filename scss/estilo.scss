@@ -604,6 +604,10 @@ mark {
             background: $azul;
         }
 
+        section.disabled{
+            background: #dedede;
+        }
+
      }
 
     .cerrar {
@@ -633,6 +637,24 @@ mark {
         flex-direction: column;
         box-shadow: -8px 0px 13px 0px rgba(0,0,0,0.09);
         cursor: pointer;
+
+        &.disabled {
+            pointer-events: none;
+            cursor: auto;
+
+            h1 {
+                color: #ccc;
+
+                @media #{$medium-and-down} { 
+                    color: white;
+                }
+            }
+            .bg-img {
+                img {
+                    filter: grayscale(100%);
+                } 
+            }
+        }
 
         h1 {
             margin: 80px 15px 60px 15px;

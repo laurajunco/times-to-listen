@@ -29,16 +29,17 @@ var lineas = [
     {id: 6,linea:'.linea-tiempo.choiba'}, 
 ];
 
-var id = 8; // Iniciar en la seccion 1
+var id = 1; // Iniciar en la seccion 1
 var $selected;
 
-//$menu.hide(); //ocultar el menu
+$menu.hide(); //ocultar el menu
 seleccionarBarra(id);
 
 /* Pasar del menu a la intro */
 $barra1.on('click', '#es-select, #en-select', function() {
-    id = 2;
     $menu.show();
+    $menu.removeClass('cerrado').removeClass('abierto')
+    $menu.addClass('abierto');
     seleccionarBarra(id);
 });
 
@@ -60,6 +61,11 @@ $menu.on("click", '#ir-intro', function() {
     $menu.addClass('cerrado');  
     id = 2;
     seleccionarBarra(id);
+    $('#ir-bojaya').removeClass('disabled');
+    $('#ir-mampujan').removeClass('disabled');
+    $('#ir-sonson').removeClass('disabled');
+    $('#ir-choiba').removeClass('disabled');
+    $('#ir-hacer').removeClass('disabled');
 });
 
 $menu.on("click", '#ir-bojaya', function() {
