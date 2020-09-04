@@ -395,17 +395,29 @@ mark {
         min-height: auto;
         color: white; }
       #menu section.rojo {
-        background: #fc4141; }
+        background: white; }
+        #menu section.rojo h1 {
+          color: #fc4141; }
       #menu section.morado {
         background: #9466ff; }
+        #menu section.morado h1 {
+          color: white; }
       #menu section.amarillo {
         background: #ffc733; }
+        #menu section.amarillo h1 {
+          color: white; }
       #menu section.verde {
         background: #66e3eb; }
+        #menu section.verde h1 {
+          color: white; }
       #menu section.rosa {
         background: #ff6656; }
+        #menu section.rosa h1 {
+          color: white; }
       #menu section.azul {
-        background: #2727dc; }
+        background: white; }
+        #menu section.azul h1 {
+          color: #2727dc; }
       #menu section.disabled {
         background: #dedede; } }
   #menu .cerrar {
@@ -802,7 +814,7 @@ mark {
     max-width: 300px; }
     @media only screen and (max-width: 576px) {
       .infografia .contexto .poblacion-todo .pie {
-        margin-bottom: 20px; } }
+        margin-bottom: 30px; } }
   .infografia .contexto .border-right {
     border-right: 2px solid; }
     @media only screen and (max-width: 1024px) {
@@ -840,6 +852,9 @@ mark {
   margin-left: 20px;
   text-transform: uppercase;
   font-family: "terminal_grotesque", sans-serif; }
+  @media only screen and (max-width: 576px) {
+    .infografia .poblacion {
+      margin-left: 0; } }
   .infografia .poblacion p {
     margin-bottom: 0; }
   .infografia .poblacion .border {

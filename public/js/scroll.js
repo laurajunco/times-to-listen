@@ -31,8 +31,8 @@ var lineas = [
 
 var id = 1; // Iniciar en la seccion 1
 var $selected;
-
 $menu.hide(); //ocultar el menu
+
 seleccionarBarra(id);
 
 /* Pasar del menu a la intro */

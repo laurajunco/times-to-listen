@@ -581,27 +581,45 @@ mark {
         }
 
         section.rojo {
-            background: $rojo;
+            background: white;
+            h1 {
+                color:$rojo;
+            }
         }
 
         section.morado {
             background: $morado;
+            h1 {
+                color:white;
+            }
         }
 
         section.amarillo {
             background: $amarillo;
+            h1 {
+                color:white;
+            }
         }
 
         section.verde {
             background: $verde-claro;
+            h1 {
+                color:white;
+            }
         }
 
         section.rosa {
             background: $rosa;
+            h1 {
+                color:white;
+            }
         }
 
         section.azul {
-            background: $azul;
+            background: white;
+            h1 {
+                color:$azul;
+            }
         }
 
         section.disabled{
@@ -1213,7 +1231,7 @@ mark {
                 max-width: 300px;
 
                 @media #{$small-and-down} { 
-                    margin-bottom: 20px;
+                    margin-bottom: 30px;
                 }
             }
         }
@@ -1281,6 +1299,10 @@ mark {
         margin-left: 20px;
         text-transform: uppercase;
         font-family: $terminal;
+
+        @media #{$small-and-down} { 
+            margin-left: 0;
+        }
 
         p {
             margin-bottom: 0;
