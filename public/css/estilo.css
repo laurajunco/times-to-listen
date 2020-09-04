@@ -986,7 +986,11 @@ mark {
 
 @media only screen and (max-width: 1024px) {
   .pieza h3 {
-    font-size: 18px; } }
+    font-size: 16px; } }
+
+@media only screen and (max-width: 768px) {
+  .pieza h3 {
+    font-size: 14px; } }
 
 .pieza .descripcion-pieza {
   border-bottom: 2px solid #9466ff; }
@@ -1444,10 +1448,16 @@ div.lista-materiales > div > h1 {
 .interactive .max-800 {
   max-width: 50%;
   margin: auto; }
+  @media only screen and (max-width: 768px) {
+    .interactive .max-800 {
+      max-width: 100%; } }
 
 .interactive .max-1000 {
   max-width: 70%;
   margin: auto; }
+  @media only screen and (max-width: 768px) {
+    .interactive .max-1000 {
+      max-width: 100%; } }
 
 .interactive .contenedor {
   position: relative;

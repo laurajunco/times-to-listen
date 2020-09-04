@@ -1535,7 +1535,11 @@ mark {
 
     h3 {
         @media #{$large-and-down} { 
-            font-size: 18px;
+            font-size: 16px;
+        }
+
+        @media #{$medium-and-down} { 
+            font-size: 14px;
         }
     }
 
@@ -2151,11 +2155,20 @@ mark {
     .max-800 {
         max-width: 50%;
         margin: auto;
+
+        @media #{$medium-and-down} { 
+            max-width: 100%;
+        }
+        
     }
 
     .max-1000 {
         max-width: 70%;
         margin: auto;
+
+        @media #{$medium-and-down} { 
+            max-width: 100%;
+        }
     }
     
     .contenedor {
