@@ -744,6 +744,12 @@ mark {
             flex-direction: column;
         }
     }
+
+    &.flex-column-md {
+        @media #{$medium-and-down} { 
+            flex-direction: column;
+        }
+    }
 }
 
 .flex-wrap {
@@ -1593,6 +1599,12 @@ mark {
             border-right: 2px solid $morado;
             justify-content: flex-end;
 
+            @media #{$medium-and-down} { 
+                width: 100%;
+                border: none;
+            }
+
+
             h1 {
                 padding: 15px 0;
                 text-transform: uppercase;
@@ -1620,7 +1632,13 @@ mark {
             font-size: 22px;
             font-family: $grotesque;
             font-weight: 600;
-            width: 70%
+            width: 70%;
+
+            @media #{$medium-and-down} { 
+                width: 100%;
+                padding-left: 0;
+                border: none;
+            }
         }
 
         @media (min-width: 768px) and (max-width: 1000px){

@@ -498,6 +498,9 @@ mark {
   @media only screen and (max-width: 576px) {
     .flex-row.flex-column-small {
       flex-direction: column; } }
+  @media only screen and (max-width: 768px) {
+    .flex-row.flex-column-md {
+      flex-direction: column; } }
 
 .flex-wrap {
   flex-wrap: wrap; }
@@ -1019,6 +1022,10 @@ mark {
     width: 30%;
     border-right: 2px solid #9466ff;
     justify-content: flex-end; }
+    @media only screen and (max-width: 768px) {
+      .pieza .descripcion-pieza .ficha-tecnica {
+        width: 100%;
+        border: none; } }
     .pieza .descripcion-pieza .ficha-tecnica h1 {
       padding: 15px 0;
       text-transform: uppercase;
@@ -1038,6 +1045,11 @@ mark {
     font-family: "Darker Grotesque", sans-serif;
     font-weight: 600;
     width: 70%; }
+    @media only screen and (max-width: 768px) {
+      .pieza .descripcion-pieza .texto-descripcion {
+        width: 100%;
+        padding-left: 0;
+        border: none; } }
   @media (min-width: 768px) and (max-width: 1000px) {
     .pieza .descripcion-pieza h1 {
       font-size: 30px; }
