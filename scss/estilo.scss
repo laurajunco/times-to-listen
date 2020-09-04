@@ -1056,6 +1056,7 @@ mark {
         font-size: 70px;
         margin-bottom: 0;
         margin-right: 10px;
+
     }
 
     .divider {
@@ -1451,6 +1452,10 @@ mark {
         .big-number {
             font-size: 50px;
             line-height: 0.8;
+
+            @media #{$small-and-down} { 
+                font-size: 35px;
+            }
         }
 
         .big {

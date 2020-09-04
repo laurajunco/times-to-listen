@@ -941,6 +941,9 @@ mark {
   .infografia .estado .big-number {
     font-size: 50px;
     line-height: 0.8; }
+    @media only screen and (max-width: 576px) {
+      .infografia .estado .big-number {
+        font-size: 35px; } }
   .infografia .estado .big {
     padding-top: 20px;
     padding-bottom: 20px;
