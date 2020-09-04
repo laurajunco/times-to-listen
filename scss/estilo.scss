@@ -1495,7 +1495,7 @@ mark {
     min-height: auto !important;
     
     .player {
-        width: 100%;
+        width: calc(100% - 30px);
         height: 100%;
     }
 }
@@ -1518,6 +1518,25 @@ mark {
     .megatitulo {
         text-align: center;
         -webkit-text-stroke-width: 2px;
+
+        @media #{$large-and-down} { 
+            font-size: 80px;
+        }
+
+        @media #{$medium-and-down} { 
+            font-size: 60px;
+        }
+
+        @media #{$small-and-down} { 
+            font-size: 45px;
+            -webkit-text-stroke-width: 0;
+        }
+    }
+
+    h3 {
+        @media #{$large-and-down} { 
+            font-size: 18px;
+        }
     }
 
     .descripcion-pieza {
@@ -2162,9 +2181,39 @@ mark {
             background-color: rgba(255,255,255,0.2);
             transform: translate(-50%, -50%);
 
+            @media #{$large-and-down} { 
+                height: 100px;
+                width: 100px;
+            }
+
+            @media #{$medium-and-down} { 
+                height: 70px;
+                width: 70px;
+            }
+
+            @media #{$small-and-down} { 
+                height: 40px;
+                width: 40px;
+            }
+
             &.big {
                 height: 200px;
                 width: 200px;
+
+                @media #{$large-and-down} { 
+                    height: 120px;
+                    width: 120px;
+                }
+    
+                @media #{$medium-and-down} { 
+                    height: 90px;
+                    width: 90px;
+                }
+    
+                @media #{$small-and-down} { 
+                    height: 50px;
+                    width: 50px;
+                }
             }
             
             &:hover {
@@ -2178,6 +2227,10 @@ mark {
         padding: 20px;
         height: auto;
 
+        @media #{$large-and-down} { 
+            padding: 10px;
+        }
+
         .transcripcion-pieza {
             display: none;
             font-family: $grotesque;
@@ -2185,6 +2238,10 @@ mark {
             font-size: 22px;
             line-height: 1.2;
             color: white;
+
+            @media #{$large-and-down} { 
+                font-size: 18px;
+            }
 
             &.text-negro {
                 color:black;

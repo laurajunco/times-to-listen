@@ -956,7 +956,7 @@ mark {
 .video {
   min-height: auto !important; }
   .video .player {
-    width: 100%;
+    width: calc(100% - 30px);
     height: 100%; }
 
 .cuadro-titulo {
@@ -973,6 +973,20 @@ mark {
 .pieza .megatitulo {
   text-align: center;
   -webkit-text-stroke-width: 2px; }
+  @media only screen and (max-width: 1024px) {
+    .pieza .megatitulo {
+      font-size: 80px; } }
+  @media only screen and (max-width: 768px) {
+    .pieza .megatitulo {
+      font-size: 60px; } }
+  @media only screen and (max-width: 576px) {
+    .pieza .megatitulo {
+      font-size: 45px;
+      -webkit-text-stroke-width: 0; } }
+
+@media only screen and (max-width: 1024px) {
+  .pieza h3 {
+    font-size: 18px; } }
 
 .pieza .descripcion-pieza {
   border-bottom: 2px solid #9466ff; }
@@ -1451,9 +1465,33 @@ div.lista-materiales > div > h1 {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.2);
     transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 1024px) {
+      .interactive .contenedor .rect {
+        height: 100px;
+        width: 100px; } }
+    @media only screen and (max-width: 768px) {
+      .interactive .contenedor .rect {
+        height: 70px;
+        width: 70px; } }
+    @media only screen and (max-width: 576px) {
+      .interactive .contenedor .rect {
+        height: 40px;
+        width: 40px; } }
     .interactive .contenedor .rect.big {
       height: 200px;
       width: 200px; }
+      @media only screen and (max-width: 1024px) {
+        .interactive .contenedor .rect.big {
+          height: 120px;
+          width: 120px; } }
+      @media only screen and (max-width: 768px) {
+        .interactive .contenedor .rect.big {
+          height: 90px;
+          width: 90px; } }
+      @media only screen and (max-width: 576px) {
+        .interactive .contenedor .rect.big {
+          height: 50px;
+          width: 50px; } }
     .interactive .contenedor .rect:hover {
       background-color: rgba(255, 255, 255, 0.3); }
 
@@ -1461,6 +1499,9 @@ div.lista-materiales > div > h1 {
   overflow-y: scroll;
   padding: 20px;
   height: auto; }
+  @media only screen and (max-width: 1024px) {
+    .interactive .transcripciones {
+      padding: 10px; } }
   .interactive .transcripciones .transcripcion-pieza {
     display: none;
     font-family: "Darker Grotesque", sans-serif;
@@ -1468,6 +1509,9 @@ div.lista-materiales > div > h1 {
     font-size: 22px;
     line-height: 1.2;
     color: white; }
+    @media only screen and (max-width: 1024px) {
+      .interactive .transcripciones .transcripcion-pieza {
+        font-size: 18px; } }
     .interactive .transcripciones .transcripcion-pieza.text-negro {
       color: black; }
     @media (min-width: 768px) and (max-width: 1000px) {
