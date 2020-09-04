@@ -565,7 +565,7 @@ mark {
     flex-direction: row;
     justify-content: space-evenly;
 
-    @media (max-width: 800px){
+    @media #{$medium-and-down} { 
         flex-direction: column;
 
         .bg-img {
@@ -577,6 +577,31 @@ mark {
             font-size: 39px;
             padding: 20px;
             min-height: auto;
+            color:white;
+        }
+
+        section.rojo {
+            background: $rojo;
+        }
+
+        section.morado {
+            background: $morado;
+        }
+
+        section.amarillo {
+            background: $amarillo;
+        }
+
+        section.verde {
+            background: $verde-claro;
+        }
+
+        section.rosa {
+            background: $rosa;
+        }
+
+        section.azul {
+            background: $azul;
         }
 
      }
@@ -589,6 +614,12 @@ mark {
         width: 70px;
         padding: 20px;
         cursor: pointer;
+
+        @media #{$large-and-down} { 
+            height: 55px;
+            width: 40px;
+            padding: 5px;
+        }
     }
 
     h1 {
@@ -604,9 +635,21 @@ mark {
         cursor: pointer;
 
         h1 {
-            margin: 80px 20px 60px 20px;
+            margin: 80px 15px 60px 15px;
             background-color: white;
-            font-size: 35px;
+            font-size: 30px;
+
+            @media #{$large-and-down} { 
+                font-size: 24px;
+                padding: 0;
+                margin: 50px 10px 20px 10px;
+            }
+
+            @media #{$medium-and-down} { 
+                background-color: transparent;
+                margin:  auto 5px;
+                text-align: center;
+            }
         }
 
         .bg-img {
@@ -624,7 +667,7 @@ mark {
         width: 100%;
 
         .sidebar {
-            left: -5%;
+            left: -10%;
         }
         
     }
