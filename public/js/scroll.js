@@ -31,15 +31,14 @@ var lineas = [
 
 var id = 1; // Iniciar en la seccion 1
 var $selected;
-//$menu.hide(); //ocultar el menu
+$menu.hide(); //ocultar el menu
 
 seleccionarBarra(id);
 
 /* Pasar del menu a la intro */
 $barra1.on('click', '#es-select, #en-select', function() {
     $menu.show();
-    $menu.removeClass('cerrado').removeClass('abierto')
-    $menu.addClass('abierto');
+    id = 2;
     seleccionarBarra(id);
 });
 
@@ -47,25 +46,20 @@ $barra1.on('click', '#es-select, #en-select', function() {
 $menu.on("click", '#open-menu', function() {
     $menu.removeClass('cerrado').removeClass('abierto')
     $menu.addClass('abierto');
+    seleccionarBarra(id);
 });
 
 $menu.on("click", '#close-menu', function() {
     $menu.removeClass('cerrado').removeClass('abierto')
-    $menu.addClass('cerrado');  
+    $menu.addClass('cerrado'); 
 });
 
 /* Navegación menú */
-
 $menu.on("click", '#ir-intro', function() {
     $menu.removeClass('cerrado').removeClass('abierto')
     $menu.addClass('cerrado');  
     id = 2;
     seleccionarBarra(id);
-    $('#ir-bojaya').removeClass('disabled');
-    $('#ir-mampujan').removeClass('disabled');
-    $('#ir-sonson').removeClass('disabled');
-    $('#ir-choiba').removeClass('disabled');
-    $('#ir-hacer').removeClass('disabled');
 });
 
 $menu.on("click", '#ir-bojaya', function() {
@@ -155,6 +149,21 @@ function retroceder() {
 
 /* funcion para cambiar de sección */
 function seleccionarBarra(i) {
+    
+    //pausar todos los audios
+    $("audio").each(function () {
+        this.pause(); 
+        this.currentTime = 0; 
+    });
+
+    $(".parche").each(function () {
+        console.log($(this).find('.transcripcion'));
+        $(this).find('.transcripcion').hide();
+        $(this).find('.play-color').hide();
+        $(this).find('.play-negro').show();
+        $(this).removeClass('playing').removeClass('paused');
+        $(this).addClass('paused');
+    });
 
     for (var j = 0; j < barras.length; j++){
 
