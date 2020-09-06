@@ -714,6 +714,9 @@ mark {
         #open-menu {
             flex-grow: 2;
             cursor: pointer;
+            @media #{$small-and-down} { 
+                margin-top: 60px;
+            }
         }
 
         .texto-menu {
@@ -741,6 +744,10 @@ mark {
                     display: flex;
                     a {
                         padding: 0 4px;
+                    }
+
+                    @media #{$small-and-down} { 
+                        margin-bottom: 60px;
                     }
                 }
             }
