@@ -23,7 +23,10 @@ $( "#barra_3" ).load( "ajax/bojaya.html" , function() {
             {
                 breakpoint: 700,
                 settings: {
-                    slidesToShow: 2,
+                    speed: 500,
+                    cssEase: 'linear',
+                    autoplay: false,
+                    slidesToShow: 2
                 }
             }
         ]
@@ -50,7 +53,9 @@ $( "#barra_3" ).load( "ajax/bojaya.html" , function() {
             {
                 breakpoint: 700,
                 settings: {
-                    slidesToShow: 2,
+                    cssEase: 'linear',
+                    autoplay: false,
+                    slidesToShow: 2
                 }
             }
         ]
@@ -79,7 +84,9 @@ $( "#barra_4" ).load( "ajax/mampujan.html", function() {
             {
                 breakpoint: 700,
                 settings: {
-                    slidesToShow: 2,
+                    cssEase: 'linear',
+                    autoplay: false,
+                    slidesToShow: 2
                 }
             }
         ]
@@ -106,7 +113,9 @@ $( "#barra_4" ).load( "ajax/mampujan.html", function() {
             {
                 breakpoint: 700,
                 settings: {
-                    slidesToShow: 2,
+                    cssEase: 'linear',
+                    autoplay: false,
+                    slidesToShow: 2
                 }
             }
         ]
@@ -135,7 +144,9 @@ $( "#barra_5" ).load( "ajax/sonson.html", function() {
             {
                 breakpoint: 700,
                 settings: {
-                    slidesToShow: 2,
+                    cssEase: 'linear',
+                    autoplay: false,
+                    slidesToShow: 2
                 }
             }
         ]
@@ -162,7 +173,9 @@ $( "#barra_5" ).load( "ajax/sonson.html", function() {
             {
                 breakpoint: 700,
                 settings: {
-                    slidesToShow: 2,
+                    cssEase: 'linear',
+                    autoplay: false,
+                    slidesToShow: 2
                 }
             }
         ]
@@ -190,7 +203,9 @@ $( "#barra_6" ).load( "ajax/choiba.html", function() {
             {
                 breakpoint: 700,
                 settings: {
-                    slidesToShow: 2,
+                    cssEase: 'linear',
+                    autoplay: false,
+                    slidesToShow: 2
                 }
             }
         ]
@@ -217,7 +232,9 @@ $( "#barra_6" ).load( "ajax/choiba.html", function() {
             {
                 breakpoint: 700,
                 settings: {
-                    slidesToShow: 2,
+                    cssEase: 'linear',
+                    autoplay: false,
+                    slidesToShow: 2
                 }
             }
         ]
