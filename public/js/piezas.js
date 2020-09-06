@@ -16,6 +16,17 @@
         return false;
     });
 
+    $('body').on("click",'.rect', function() {
+
+        audio = $(this).find('audio')[0];
+        $bot = $(this);
+        iden = $(this).attr("trans");
+        trans = $("#" + iden);
+        trans.show();
+        audio.play();
+        return false;
+    });
+
     $('body').on("mouseleave",'.rect', function() {
         audio.currentTime = 0;
         audio.pause();

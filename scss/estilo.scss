@@ -715,10 +715,9 @@ mark {
             flex-grow: 2;
             cursor: pointer;
             @media #{$small-and-down} { 
-                margin-top: 60px;
+                padding-top: 40px;
             }
         }
-
         .texto-menu {
             display: flex;
             flex-direction: column;
