@@ -418,9 +418,7 @@ mark {
       #menu section.azul {
         background: white; }
         #menu section.azul h1 {
-          color: #2727dc; }
-      #menu section.disabled {
-        background: #dedede; } }
+          color: #2727dc; } }
   #menu .cerrar {
     position: absolute;
     top: 0;
@@ -443,16 +441,6 @@ mark {
     flex-direction: column;
     box-shadow: -8px 0px 13px 0px rgba(0, 0, 0, 0.09);
     cursor: pointer; }
-    #menu section.disabled {
-      pointer-events: none;
-      cursor: auto; }
-      #menu section.disabled h1 {
-        color: #ccc; }
-        @media only screen and (max-width: 768px) {
-          #menu section.disabled h1 {
-            color: white; } }
-      #menu section.disabled .bg-img img {
-        filter: grayscale(100%); }
     #menu section h1 {
       margin: 80px 15px 60px 15px;
       background-color: white;
@@ -490,6 +478,9 @@ mark {
     flex-direction: column;
     justify-content: space-between;
     padding: 5vh 0; }
+    #menu .sidebar #open-menu {
+      flex-grow: 2;
+      cursor: pointer; }
     #menu .sidebar .texto-menu {
       display: flex;
       flex-direction: column; }
@@ -992,11 +983,11 @@ mark {
     .linea-tiempo .hito:focus {
       outline: none; }
     .linea-tiempo .hito:nth-child(4n) {
-      height: 300px; }
-    .linea-tiempo .hito:nth-child(2n) {
-      height: 280px; }
-    .linea-tiempo .hito:nth-child(3n) {
       height: 320px; }
+    .linea-tiempo .hito:nth-child(2n) {
+      height: 300px; }
+    .linea-tiempo .hito:nth-child(3n) {
+      height: 340px; }
     .linea-tiempo .hito .bottom {
       display: flex;
       flex-direction: column;

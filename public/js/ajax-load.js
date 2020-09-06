@@ -2,81 +2,111 @@ $( "#barra_2" ).load( "ajax/intro.html")
 
 $( "#barra_3" ).load( "ajax/bojaya.html" , function() {
 
-    $('.linea-tiempo.bojaya').slick({
+    $('.linea-tiempo.bojaya.arriba').slick({
         slidesToShow: 6,
-        speed: 10000,
-        autoplay: false,
-        autoplaySpeed: 0,
-        cssEase: 'linear',
-        pauseOnFocus: false,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2500,
+        autoplaySpeed: 2500,
+        cssEase: 'ease-in-out',
+        pauseOnFocus: true,
         pauseOnHover: false,
         infinite: true,
-        responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 4,
-                speed: 8000,
-                autoplay: false,
-                autoplaySpeed: 0,
-                cssEase: 'linear',
-                pauseOnFocus: false,
-                pauseOnHover: false,
-                infinite: true,
-            }
-        },
-        {
-            breakpoint: 700,
-            settings: {
-                slidesToShow: 2,
-                speed: 8000,
-                autoplay: false,
-                autoplaySpeed: 0,
-                cssEase: 'linear',
-                pauseOnFocus: false,
-                pauseOnHover: false,
-                infinite: true,
-            }
-        }
-        ]
-    });
-})
-
-$( "#barra_4" ).load( "ajax/mampujan.html", function() {
-    $('.linea-tiempo.mampujan').slick({
-        slidesToShow: 6,
-        speed: 10000,
-        autoplay: false,
-        autoplaySpeed: 0,
-        cssEase: 'linear',
-        pauseOnFocus: false,
-        pauseOnHover: false,
-        infinite: true,
+        asNavFor: '.linea-tiempo.bojaya.abajo',
         responsive: [
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 4,
-                    speed: 8000,
-                    autoplay: false,
-                    autoplaySpeed: 0,
-                    cssEase: 'linear',
-                    pauseOnFocus: false,
-                    pauseOnHover: false,
-                    infinite: true,
+                    slidesToShow: 4
                 }
             },
             {
                 breakpoint: 700,
                 settings: {
                     slidesToShow: 2,
-                    speed: 8000,
-                    autoplay: false,
-                    autoplaySpeed: 0,
-                    cssEase: 'linear',
-                    pauseOnFocus: false,
-                    pauseOnHover: false,
-                    infinite: true,
+                }
+            }
+        ]
+    });
+
+    $('.linea-tiempo.bojaya.abajo').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2500,
+        autoplaySpeed: 2500,
+        cssEase: 'ease-in-out',
+        pauseOnFocus: true,
+        pauseOnHover: false,
+        infinite: true,
+        asNavFor: '.linea-tiempo.bojaya.arriba',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 2,
+                }
+            }
+        ]
+    });
+})
+
+$( "#barra_4" ).load( "ajax/mampujan.html", function() {
+    $('.linea-tiempo.mampujan.arriba').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2500,
+        autoplaySpeed: 2500,
+        cssEase: 'ease-in-out',
+        pauseOnFocus: true,
+        pauseOnHover: false,
+        infinite: true,
+        asNavFor: '.linea-tiempo.mampujan.abajo',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 2,
+                }
+            }
+        ]
+    });
+
+    $('.linea-tiempo.mampujan.abajo').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2500,
+        autoplaySpeed: 2500,
+        cssEase: 'ease-in-out',
+        pauseOnFocus: true,
+        pauseOnHover: false,
+        infinite: true,
+        asNavFor: '.linea-tiempo.mampujan.arriba',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 2,
                 }
             }
         ]
@@ -84,80 +114,110 @@ $( "#barra_4" ).load( "ajax/mampujan.html", function() {
 })
 
 $( "#barra_5" ).load( "ajax/sonson.html", function() {
-    $('.linea-tiempo.sonson').slick({
+    $('.linea-tiempo.sonson.arriba').slick({
         slidesToShow: 6,
-        speed: 10000,
-        autoplay: false,
-        autoplaySpeed: 0,
-        cssEase: 'linear',
-        pauseOnFocus: false,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2500,
+        autoplaySpeed: 2500,
+        cssEase: 'ease-in-out',
+        pauseOnFocus: true,
         pauseOnHover: false,
         infinite: true,
+        asNavFor: '.linea-tiempo.sonson.abajo',
         responsive: [
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 4,
-                    speed: 8000,
-                    autoplay: false,
-                    autoplaySpeed: 0,
-                    cssEase: 'linear',
-                    pauseOnFocus: false,
-                    pauseOnHover: false,
-                    infinite: true,
+                    slidesToShow: 4
                 }
             },
             {
                 breakpoint: 700,
                 settings: {
                     slidesToShow: 2,
-                    speed: 8000,
-                    autoplay: false,
-                    autoplaySpeed: 0,
-                    cssEase: 'linear',
-                    pauseOnFocus: false,
-                    pauseOnHover: false,
-                    infinite: true,
                 }
             }
         ]
-    }); 
-})
-$( "#barra_6" ).load( "ajax/choiba.html", function() {
-    $('.linea-tiempo.choiba').slick({
+    });
+
+    $('.linea-tiempo.sonson.abajo').slick({
         slidesToShow: 6,
-        speed: 10000,
-        autoplay: false,
-        autoplaySpeed: 0,
-        cssEase: 'linear',
-        pauseOnFocus: false,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2500,
+        autoplaySpeed: 2500,
+        cssEase: 'ease-in-out',
+        pauseOnFocus: true,
         pauseOnHover: false,
         infinite: true,
+        asNavFor: '.linea-tiempo.sonson.arriba',
         responsive: [
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 4,
-                    speed: 8000,
-                    autoplay: false,
-                    autoplaySpeed: 0,
-                    cssEase: 'linear',
-                    pauseOnFocus: false,
-                    pauseOnHover: false,
-                    infinite: true,
+                    slidesToShow: 4
                 }
             },
             {
                 breakpoint: 700,
                 settings: {
                     slidesToShow: 2,
-                    speed: 8000,
-                    autoplay: false,
-                    autoplaySpeed: 0,
-                    cssEase: 'linear',
-                    pauseOnFocus: false,
-                    pauseOnHover: false,
-                    infinite: true,
+                }
+            }
+        ]
+    });
+})
+$( "#barra_6" ).load( "ajax/choiba.html", function() {
+    $('.linea-tiempo.choiba.arriba').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2500,
+        autoplaySpeed: 2500,
+        cssEase: 'ease-in-out',
+        pauseOnFocus: true,
+        pauseOnHover: false,
+        infinite: true,
+        asNavFor: '.linea-tiempo.choiba.abajo',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 2,
+                }
+            }
+        ]
+    });
+
+    $('.linea-tiempo.choiba.abajo').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2500,
+        autoplaySpeed: 2500,
+        cssEase: 'ease-in-out',
+        pauseOnFocus: true,
+        pauseOnHover: false,
+        infinite: true,
+        asNavFor: '.linea-tiempo.choiba.arriba',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 2,
                 }
             }
         ]
